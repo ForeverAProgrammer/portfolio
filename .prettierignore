@@ -1,0 +1,3 @@
+# Ignore markdown files to preserve front matter formatting
+*.md
+*.mdx

@@ -1,0 +1,148 @@
+facebook:
+  label: Facebook
+  permalink: /facebook
+  description: Facebook tag description
+
+hello:
+  label: Hello
+  permalink: /hello
+  description: Hello tag description
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus tag description
+
+hola:
+  label: Hola
+  permalink: /hola
+  description: Hola tag description
+
+# DevOps and Cloud tags
+cicd:
+  label: CI/CD
+  permalink: /cicd
+  description: Continuous Integration and Continuous Deployment
+
+gitlab:
+  label: GitLab
+  permalink: /gitlab
+  description: GitLab platform and CI/CD
+
+devops:
+  label: DevOps
+  permalink: /devops
+  description: DevOps practices and tools
+
+automation:
+  label: Automation
+  permalink: /automation
+  description: Automation tools and techniques
+
+kubernetes:
+  label: Kubernetes
+  permalink: /kubernetes
+  description: Kubernetes container orchestration
+
+cloud:
+  label: Cloud
+  permalink: /cloud
+  description: Cloud computing and infrastructure
+
+production:
+  label: Production
+  permalink: /production
+  description: Production deployment and best practices
+
+terraform:
+  label: Terraform
+  permalink: /terraform
+  description: Terraform infrastructure as code
+
+iac:
+  label: IaC
+  permalink: /iac
+  description: Infrastructure as Code
+
+aws:
+  label: AWS
+  permalink: /aws
+  description: Amazon Web Services
+
+# Web Development tags
+cms:
+  label: CMS
+  permalink: /cms
+  description: Content Management Systems
+
+web-development:
+  label: Web Development
+  permalink: /web-development
+  description: Web development practices and technologies
+
+contentful:
+  label: Contentful
+  permalink: /contentful
+  description: Contentful headless CMS
+
+wordpress:
+  label: WordPress
+  permalink: /wordpress
+  description: WordPress content management
+
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: Productivity tips and tools
+
+# Software Engineering tags
+software-engineering:
+  label: Software Engineering
+  permalink: /software-engineering
+  description: Software engineering practices
+
+best-practices:
+  label: Best Practices
+  permalink: /best-practices
+  description: Software development best practices
+
+technical-debt:
+  label: Technical Debt
+  permalink: /technical-debt
+  description: Managing technical debt
+
+decision-making:
+  label: Decision Making
+  permalink: /decision-making
+  description: Engineering decision making
+
+architecture:
+  label: Architecture
+  permalink: /architecture
+  description: Software architecture and design
+
+# Security tags
+security:
+  label: Security
+  permalink: /security
+  description: Software security practices
+
+sql:
+  label: SQL
+  permalink: /sql
+  description: SQL databases and queries
+
+database:
+  label: Database
+  permalink: /database
+  description: Database management and design
+
+web-security:
+  label: Web Security
+  permalink: /web-security
+  description: Web application security
+
+lessons-learned:
+  label: Lessons Learned
+  permalink: /lessons-learned
+  description: Lessons learned from real experiences
