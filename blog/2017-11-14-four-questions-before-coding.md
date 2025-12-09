@@ -355,35 +355,7 @@ public class PartConfiguration
 
 ## Putting It All Together: Real Decision Examples
 
-### Example 1: API Versioning Request
-
-**Request:** "Add API versioning to our REST API"
-
-**Question 1 - Benefit:**
-- ✅ Can make breaking changes without affecting existing clients
-- ✅ Better backwards compatibility
-- ⚠️ We currently have only 2 client applications exposing API calls
-- ⚠️ We've never made a breaking change in 3 years
-
-**Question 2 - Effort:**
-- Implement versioning middleware
-- Update documentation
-- Update all 40 existing endpoints (routes like `/users`, `/orders`, etc.) for the 2 client applications
-- Change deployment process
-- Estimated: 2 weeks
-
-**Question 3 - Risk:**
-- Low risk: Mostly additive changes
-- Rollback: Easy, can revert
-
-**Question 4 - Future:**
-- ✅ Will make future breaking changes easier
-- ⚠️ But we rarely make breaking changes
-- ⚠️ And we control all consumers
-
-**Decision:** Declined for now. Will implement when we have external API consumers or when we actually need to make a breaking change. Saved 2 weeks of work on something we don't need yet.
-
-### Example 2: Database Index Addition
+### Example 1: Database Index Addition
 
 **Request:** "Add index to speed up slow query"
 
@@ -411,7 +383,7 @@ public class PartConfiguration
 
 **Decision:** Absolutely do this! High benefit, low effort, low risk, no future complications.
 
-### Example 3: Microservices Migration
+### Example 2: Microservices Migration
 
 **Request:** "Migrate monolith to microservices"
 
