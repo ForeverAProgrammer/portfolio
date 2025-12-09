@@ -948,15 +948,14 @@ Vitest/Jest + ts-jest + Supertest + Playwright + tsd
 ```
 Backend: JUnit 5 + Mockito
 Frontend: Jest + Testing Library
-E2E: Playwright (TypeScript)
+E2E: Playwright (TypeScript) or Cypress
 API: REST Assured (Java) or Supertest (Node.js)
 ```
 
 ## Next Steps
 
 Now that you understand testing fundamentals, explore:
-- **[JUnit 5 Guide](./junit5)** - Complete JUnit testing guide
-- **[JUnit 5 Advanced](./junit5)** - Master advanced JUnit features
+- **[JUnit 5 Guide](../../languages/java/testing/junit5)** - Complete JUnit testing guide
 - **Test-Driven Development (TDD)** - Write tests first
 - **Behavior-Driven Development (BDD)** - Given/When/Then style
 - **Mutation Testing** - Verify test effectiveness

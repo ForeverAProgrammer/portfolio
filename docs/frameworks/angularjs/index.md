@@ -33,10 +33,10 @@ Test your AngularJS applications.
 - Testing directives
 - End-to-end testing
 
-### [Migration](./migration/)
+### Migration
 Migrate from AngularJS to modern frameworks.
 
-**Topics covered:**
+**Key considerations:**
 - Migration strategies
 - Upgrading to Angular (modern)
 - Hybrid approach with ngUpgrade
@@ -94,7 +94,7 @@ If you're maintaining an AngularJS app:
    - **Incremental Upgrade** - Use ngUpgrade to migrate component-by-component
    - **Full Rewrite** - Build a new app in modern framework
    - **Hybrid Approach** - Run AngularJS and Angular side-by-side
-3. **Follow [Migration Guide](./migration/)** - Step-by-step instructions
+3. **Plan Migration** - Assess your application and choose a strategy
 4. **Plan Timeline** - Migration can take months to years for large apps
 
 ## Alternatives
@@ -118,7 +118,7 @@ If you're maintaining an AngularJS app:
 
 1. **Review [Fundamentals](./fundamentals/)** - Understand existing codebase
 2. **Learn [Testing](./angularjs-testing)** - Add tests before migrating
-3. **Plan [Migration](./migration/)** - Choose strategy and timeline
+3. **Plan Migration** - Choose strategy and timeline
 4. **Learn Modern Framework** - Angular, React, or Vue
 5. **Execute Migration** - Incrementally or full rewrite
 

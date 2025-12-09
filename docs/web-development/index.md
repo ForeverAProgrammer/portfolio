@@ -42,7 +42,7 @@ Manage and deliver content efficiently with modern CMS platforms.
    - [Character Encoding](./character-encoding)
 2. **Explore [CMS](./cms/)** to understand content management options
 3. **Choose a framework** from [Frontend Frameworks](../frameworks/)
-4. **Learn deployment** with [DevOps](../devops/) and [Architecture](../architecture/)
+4. **Learn deployment** with [DevOps](../devops/)
 
 ## Why Web Development?
 
@@ -55,8 +55,8 @@ Manage and deliver content efficiently with modern CMS platforms.
 ## Related Topics
 
 - [Frontend Frameworks](../frameworks/) - React, Angular, Vue
-- [JavaScript](../languages/javascript/) - The language of the web
-- [TypeScript](../languages/typescript/) - Type-safe web development
+- [JavaScript](../languages/javascript/fundamentals/) - The language of the web
+- [TypeScript](../languages/typescript/fundamentals/) - Type-safe web development
 - [DevOps](../devops/) - Deployment and CI/CD
 
 ---

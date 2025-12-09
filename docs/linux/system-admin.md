@@ -533,4 +533,3 @@ iotop                 # Install: sudo apt install iotop
 - Master [Terminal Basics](./terminal-basics) for command-line efficiency
 - Learn [User Management](./user-management) for access control
 - Explore [Package Management](./package-management) for software installation
-- Review [Security Best Practices](./security) for system hardening

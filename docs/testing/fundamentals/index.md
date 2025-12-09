@@ -267,9 +267,9 @@ Vague names make it hard to understand what broke.
 
 After mastering these fundamentals, explore language-specific testing:
 
-- **[Java Testing](../../languages/java/testing/)** - JUnit 5, Mockito
-- **[JavaScript Testing](../../languages/javascript/testing/)** - Jest, Mocha
-- **[TypeScript Testing](../../languages/typescript/testing/)** - Jest with TypeScript
+- **[Java Testing](../../languages/java/testing/junit5)** - JUnit 5, Mockito
+- **JavaScript Testing** - Jest, Mocha
+- **TypeScript Testing** - Jest with TypeScript
 - **[React Testing](../../frameworks/react/react-testing)** - React Testing Library
 - **[Angular Testing](../../frameworks/angular/angular-testing)** - Jasmine, Karma
 

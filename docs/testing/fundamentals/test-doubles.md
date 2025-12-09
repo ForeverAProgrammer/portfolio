@@ -1054,5 +1054,4 @@ describe('OrderService', () => {
 
 - **[Testing Fundamentals](./testing-basics)** - Core testing concepts
 - **[TDD Guide](./tdd)** - Write tests first with mocks
-- **[JUnit 5 Guide](./junit5)** - Java testing framework
-- **[JUnit 5 Advanced](./junit5)** - Advanced testing patterns
+- **[JUnit 5 Guide](../../languages/java/testing/junit5/)** - Java testing framework

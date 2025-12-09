@@ -314,5 +314,4 @@ sudo apt install htop ncdu tree net-tools
 ## Next Steps
 
 - Learn about [System Administration](./system-admin) for managing services
-- Explore [Security Best Practices](./security) for system hardening
 - Master [Terminal Basics](./terminal-basics) for package management efficiency

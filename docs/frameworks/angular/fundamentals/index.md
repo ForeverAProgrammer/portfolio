@@ -10,7 +10,7 @@ A comprehensive TypeScript-based framework for building scalable web application
 
 Angular is a **complete framework** (not just a library) for building dynamic web applications. It provides everything you need out of the box: routing, forms, HTTP client, testing utilities, and more. Angular enforces strong opinions about application structure and best practices.
 
-**Note**: This guide covers Angular (2+), not AngularJS (1.x). See the [AngularJS guide](./angularjs) for the legacy framework.
+**Note**: This guide covers Angular (2+), not AngularJS (1.x). See the [AngularJS guide](../../angularjs/) for the legacy framework.
 
 ### Key Characteristics
 

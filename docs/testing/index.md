@@ -37,7 +37,6 @@ For language and framework-specific testing guides, visit:
 
 ### Java Testing
 - **[JUnit 5 Guide](../languages/java/testing/junit5)** - Complete JUnit 5 testing
-- **[Mockito](../languages/java/testing/)** - Mocking for Java
 - **Build Tools** - Gradle and Maven integration
 
 ### JavaScript Testing

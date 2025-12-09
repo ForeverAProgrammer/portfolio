@@ -104,15 +104,14 @@ The original Angular framework (v1.x) - now in long-term support.
 ### Angular Developer Path
 1. [TypeScript fundamentals](../languages/typescript/fundamentals/)
 2. [Angular fundamentals](./angular/fundamentals/)
-3. [Angular testing](./angular/angular-testing)
+3. [Angular testing](./angular/angular-testing/)
 4. RxJS and reactive programming
 5. NgRx for state management
 
 ### Migrating from AngularJS
 1. Review [AngularJS fundamentals](./angularjs/fundamentals/)
 2. Learn [Angular fundamentals](./angular/fundamentals/)
-3. Follow [migration guide](./angularjs/migration/)
-4. Incremental upgrade or full rewrite
+3. Incremental upgrade or full rewrite
 
 ## Common Concepts
 
@@ -200,7 +199,6 @@ Every framework needs testing:
 ## Migration Guides
 
 ### From AngularJS to Angular
-- [Official Angular Migration Guide](./angularjs/migration/)
 - Hybrid approach (ngUpgrade)
 - Component-by-component migration
 - Full rewrite considerations

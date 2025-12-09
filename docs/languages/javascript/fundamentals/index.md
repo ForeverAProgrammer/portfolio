@@ -95,16 +95,7 @@ Write professional, maintainable JavaScript code.
 - Performance optimization
 - Security considerations
 
-## Next Steps
-
-1. Start with [ES6 Features](./es6-features) to learn modern JavaScript syntax
-2. Master [Async Programming](./async-programming) for handling asynchronous operations
-3. Learn [Modules](./modules) for code organization
-4. Follow [Best Practices](./best-practices) for professional development
-
 ## Related Topics
-
-- [JavaScript Testing](../testing/) - Test your JavaScript code with Jest and Mocha
-- [Build Tools](../build-tools/) - Webpack, Vite, and modern build systems
-- [React](../../frameworks/react/) - Build UIs with React
-- [TypeScript](../../typescript/) - Add static typing to JavaScript
+- [ES6 Features](./es6-features) to learn modern JavaScript syntax
+- [React](../../../frameworks/react/) - Build UIs with React
+- [TypeScript](../../typescript/fundamentals/) - Add static typing to JavaScript

@@ -30,7 +30,7 @@ Write comprehensive tests for your Angular applications.
 - Service testing
 - End-to-end testing with Protractor/Cypress
 
-### [Ecosystem](./ecosystem/)
+### Ecosystem
 Explore the Angular ecosystem.
 
 **Coming soon:**

@@ -326,4 +326,4 @@ String result = switch (day) {
 
 - Review [JUnit 5 Testing](../testing/junit5) for testing best practices
 - Learn about [Gradle Build Tool](../build-tools/gradle) for project management
-- Explore [Design Patterns](../design-patterns/) for advanced topics
+- Explore [Design Patterns](../../../design-patterns/) for advanced topics

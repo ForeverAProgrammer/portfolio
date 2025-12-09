@@ -19,7 +19,7 @@ Master core Java programming concepts and best practices.
 - Data types and variables
 - Best practices and coding standards
 
-### [Testing](./testing/)
+### [Testing](./testing/junit5/)
 Write reliable, maintainable tests for your Java applications.
 
 **Topics covered:**
@@ -28,7 +28,7 @@ Write reliable, maintainable tests for your Java applications.
 - Mocking with Mockito
 - Integration testing
 
-### [Build Tools](./build-tools/)
+### [Build Tools](./build-tools/gradle)
 Automate your Java build process with modern tools.
 
 **Topics covered:**
@@ -91,8 +91,8 @@ java Hello
 ## Learning Path
 
 1. **Start with [Fundamentals](./fundamentals/)** - Learn Java syntax, OOP, and best practices
-2. **Learn [Testing](./testing/)** - Write tests with JUnit 5
-3. **Master [Build Tools](./build-tools/)** - Automate with Gradle or Maven
+2. **Learn [Testing](./testing/junit5)** - Write tests with JUnit 5
+3. **Master [Build Tools](./build-tools/gradle)** - Automate with Gradle or Maven
 4. **Explore Frameworks** - Spring Boot, Jakarta EE, Micronaut
 
 ## Related Topics

@@ -10,7 +10,7 @@ Comprehensive guide to testing AngularJS (1.x) applications using Jasmine, Karma
 
 AngularJS provides a robust testing infrastructure with dependency injection support. This guide covers testing controllers, services, directives, filters, and more using Jasmine and Karma.
 
-**Note**: This guide is for AngularJS 1.x. For Angular 2+ testing, see the [Angular Testing Guide](./angular-testing).
+**Note**: This guide is for AngularJS 1.x. For Angular 2+ testing, see the [Angular Testing Guide](../angularjs/angularjs-testing).
 
 ### What You'll Learn
 

@@ -10,7 +10,7 @@ The original Angular framework (version 1.x) for building dynamic web applicatio
 
 AngularJS is the **original Angular framework** (version 1.x), released in 2010 by Google. It revolutionized front-end development with features like two-way data binding, dependency injection, and directives. While it's now in Long Term Support (LTS) until December 31, 2021 and officially ended support, many legacy applications still use it.
 
-**Important**: This is AngularJS (1.x), **not** Angular (2+). They are fundamentally different frameworks. See the [Angular guide](./angular) for the modern version.
+**Important**: This is AngularJS (1.x), **not** Angular (2+). They are fundamentally different frameworks.
 
 ### Key Characteristics
 

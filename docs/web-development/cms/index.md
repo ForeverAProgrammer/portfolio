@@ -12,56 +12,6 @@ This section provides comprehensive guides for understanding, choosing, and impl
 
 ## Topics
 
-### CMS Fundamentals
-Understanding what CMS is and why it matters for modern web development.
-
-**You'll learn:**
-- What is a Content Management System
-- The problem CMS solves
-- Content vs Code separation
-- When to use a CMS
-- Types of CMS (Traditional, Decoupled, Headless)
-- Choosing the right CMS for your project
-
-[Read CMS Fundamentals →](./cms-fundamentals)
-
----
-
-### Traditional CMS
-Comprehensive guide to traditional content management systems like WordPress and Drupal.
-
-**You'll learn:**
-- What is a traditional CMS
-- How traditional CMS works
-- WordPress setup and basics
-- Drupal overview
-- Shopify for e-commerce
-- Themes and plugins
-- Pros and cons
-- When to use traditional CMS
-- Migration strategies
-
-[Read Traditional CMS Guide →](./traditional-cms)
-
----
-
-### Headless CMS
-Modern API-first content management for multi-platform delivery.
-
-**You'll learn:**
-- What is a headless CMS
-- API-first architecture
-- Content modeling
-- Multi-platform content delivery
-- JAMstack integration
-- Headless CMS comparison
-- Pros and cons
-- When to use headless CMS
-
-[Read Headless CMS Guide →](./headless-cms)
-
----
-
 ### Contentful Guide
 Complete guide to getting started with Contentful, the leading headless CMS.
 
@@ -79,44 +29,6 @@ Complete guide to getting started with Contentful, the leading headless CMS.
 - Real-world examples
 
 [Read Contentful Guide →](./contentful)
-
----
-
-### Strapi Guide
-Self-hosted, open-source headless CMS built with JavaScript.
-
-**You'll learn:**
-- Strapi overview and features
-- Self-hosting vs cloud options
-- Installation and setup
-- Content-Type Builder
-- RESTful and GraphQL APIs
-- Authentication and permissions
-- Media library
-- Plugins and customization
-- Deployment strategies
-- Best practices
-
-[Read Strapi Guide →](./strapi)
-
----
-
-### Sanity Guide
-Real-time collaborative headless CMS with powerful customization.
-
-**You'll learn:**
-- Sanity overview and features
-- Real-time collaboration
-- Sanity Studio customization
-- Schema definition
-- GROQ query language
-- Image pipeline and optimization
-- Portable Text (rich text)
-- Integrations and plugins
-- Deployment
-- Best practices
-
-[Read Sanity Guide →](./sanity)
 
 ---
 
@@ -482,10 +394,7 @@ BlogPost {
 
 Choose your path based on your needs:
 
-1. **New to CMS?** Start with [CMS Fundamentals](./cms-fundamentals)
-2. **Need simple solution?** Try [Traditional CMS Guide](./traditional-cms)
-3. **Building modern app?** Jump to [Headless CMS Guide](./headless-cms)
-4. **Ready to code?** Follow [Contentful Getting Started](./contentful)
+1. **Ready to code?** Follow [Contentful Getting Started](./contentful)
 
 ---
 

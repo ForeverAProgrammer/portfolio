@@ -859,7 +859,6 @@ class UserServiceTest {
 }
 ```
 
-For more on mocking, see the [Mocking and Test Doubles Guide](./mocking-and-test-doubles).
 
 ## Test Coverage with JaCoCo
 

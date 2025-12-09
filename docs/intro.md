@@ -51,7 +51,7 @@ Learn cloud computing with Amazon Web Services (AWS) to build, deploy, and scale
 Master relational and NoSQL databases for efficient data management and application development.
 
 **Topics covered:**
-- **[T-SQL & SQL Server](database/tsql)** - Query syntax, stored procedures, and optimization
+- **[T-SQL & SQL Server](database/tsql-guide)** - Query syntax, stored procedures, and optimization
 - **[MongoDB](database/mongodb)** - Document database, CRUD operations, and aggregation
 - Character encoding in databases
 - Query optimization and performance tuning

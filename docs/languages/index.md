@@ -20,7 +20,7 @@ Enterprise-grade, object-oriented programming language known for "write once, ru
 
 ---
 
-### [JavaScript](./javascript/)
+### [JavaScript](./javascript/fundamentals/)
 The language of the web - runs in browsers and on servers with Node.js.
 
 **What you'll learn:**
@@ -33,7 +33,7 @@ The language of the web - runs in browsers and on servers with Node.js.
 
 ---
 
-### [TypeScript](./typescript/)
+### [TypeScript](./typescript/fundamentals/)
 JavaScript with static typing - scales from small scripts to large applications.
 
 **What you'll learn:**
@@ -86,19 +86,19 @@ JavaScript with static typing - scales from small scripts to large applications.
 ### Frontend Developer Path
 1. Start with [JavaScript fundamentals](./javascript/fundamentals/)
 2. Learn modern frameworks ([React](../frameworks/react/), [Angular](../frameworks/angular/))
-3. Add [TypeScript](./typescript/) for type safety
+3. Add [TypeScript](./typescript/fundamentals/) for type safety
 4. Master [testing](../testing/) and build tools
 
 ### Backend Developer Path
 1. Start with [Java fundamentals](./java/fundamentals/)
-2. Learn [testing with JUnit](./java/testing/)
-3. Master [build tools](./java/build-tools/) (Gradle, Maven)
+2. Learn [testing with JUnit](./java/testing/junit5)
+3. Master [build tools](./java/build-tools/gradle) (Gradle, Maven)
 4. Explore frameworks (Spring, Jakarta EE)
 
 ### Full-Stack Developer Path
 1. Learn [JavaScript fundamentals](./javascript/fundamentals/)
 2. Master both frontend frameworks and Node.js
-3. Add [TypeScript](./typescript/) for full-stack type safety
+3. Add [TypeScript](./typescript/fundamentals/) for full-stack type safety
 4. Learn database and deployment
 
 ## Common Concepts Across Languages
@@ -136,10 +136,10 @@ Every language needs testing. Visit our [Testing section](../testing/) for:
 
 Pick a language and dive in:
 
-1. **New to programming?** Start with [JavaScript](./javascript/) - it's beginner-friendly and widely used
+1. **New to programming?** Start with [JavaScript](./javascript/fundamentals/) - it's beginner-friendly and widely used
 2. **Coming from another language?** Check out the language-specific guides for syntax and idioms
 3. **Building enterprise apps?** Explore [Java](./java/) for robust, scalable solutions
-4. **Want type safety?** Learn [TypeScript](./typescript/) for better tooling and fewer bugs
+4. **Want type safety?** Learn [TypeScript](./typescript/fundamentals/) for better tooling and fewer bugs
 
 ---
 

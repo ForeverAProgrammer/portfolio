@@ -28,15 +28,6 @@ Write reliable tests for your React applications.
 - Integration testing
 - End-to-end testing
 
-### [Ecosystem](./ecosystem/)
-Explore the rich React ecosystem.
-
-**Coming soon:**
-- Next.js for server-side rendering
-- Redux for state management
-- React Query for data fetching
-- Popular UI libraries
-
 ## Quick Start
 
 ```bash
@@ -81,7 +72,7 @@ npm start
 ## Related Topics
 
 - [JavaScript Fundamentals](../../languages/javascript/fundamentals/) - Essential JavaScript knowledge
-- [TypeScript](../../languages/typescript/) - Add type safety to React
+- [TypeScript](../../languages/typescript/fundamentals/) - Add type safety to React
 - [Testing](../../testing/) - Universal testing concepts
 - [Web Development](../../web-development/) - HTML, CSS, HTTP basics
 

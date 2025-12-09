@@ -8,7 +8,7 @@ Master advanced testing methodologies and patterns to write better, more maintai
 
 ## What You'll Learn
 
-### [Test-Driven Development (TDD)](./tdd)
+### [Test-Driven Development (TDD)](../fundamentals/tdd/)
 Learn the Red-Green-Refactor cycle and how writing tests first leads to better design.
 
 **You'll learn:**
@@ -18,7 +18,7 @@ Learn the Red-Green-Refactor cycle and how writing tests first leads to better d
 - Common TDD patterns
 - When to use TDD
 
-### [Test Doubles](./test-doubles)
+### [Test Doubles](../fundamentals/test-doubles/)
 Master mocks, stubs, spies, and fakes for effective unit testing.
 
 **You'll learn:**
@@ -52,9 +52,9 @@ Master mocks, stubs, spies, and fakes for effective unit testing.
 ## Getting Started
 
 ### For Beginners
-1. Start with [Test-Driven Development](./tdd) to understand the TDD workflow
+1. Start with [Test-Driven Development](../fundamentals/tdd/) to understand the TDD workflow
 2. Practice the Red-Green-Refactor cycle
-3. Learn [Test Doubles](./test-doubles) for isolating code under test
+3. Learn [Test Doubles](../fundamentals/test-doubles/) for isolating code under test
 
 ### For Experienced Developers
 1. Refine your TDD practice

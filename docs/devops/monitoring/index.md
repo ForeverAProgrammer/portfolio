@@ -468,8 +468,6 @@ provider.addSpanProcessor(
 provider.register();
 ```
 
-## Next Steps
+## Related Topics
 
-- Explore Kubernetes (coming soon)
-- Learn about CI/CD (coming soon)
-- Review [DevOps & Cloud](./devops/)
+- [DevOps Overview](../) - Introduction to DevOps practices
