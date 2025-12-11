@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Four Questions to Ask Before Writing Code | Kristina Haynes</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://ForeverAProgrammer.github.io/portfolio/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://ForeverAProgrammer.github.io/portfolio/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Four Questions to Ask Before Writing Code | Kristina Haynes"><meta data-rh="true" name="description" content="Evaluating code decisions before implementation helps prevent technical debt and costly mistakes. This post outlines a practical framework for assessing feature requests and architectural decisions by considering benefits, effort, risks, and long-term maintainability."><meta data-rh="true" property="og:description" content="Evaluating code decisions before implementation helps prevent technical debt and costly mistakes. This post outlines a practical framework for assessing feature requests and architectural decisions by considering benefits, effort, risks, and long-term maintainability."><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2017-11-14T00:00:00.000Z"><meta data-rh="true" property="article:author" content="https://www.linkedin.com/in/kristina-haynes-94915147"><meta data-rh="true" property="article:tag" content="Software Engineering,Best Practices,Technical Debt,Decision Making,Architecture"><link data-rh="true" rel="icon" href="/portfolio/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask"><link data-rh="true" rel="alternate" href="https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask" hreflang="en"><link data-rh="true" rel="alternate" href="https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask","mainEntityOfPage":"https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask","url":"https://ForeverAProgrammer.github.io/portfolio/blog/four-questions-every-developer-should-ask","headline":"Four Questions to Ask Before Writing Code","name":"Four Questions to Ask Before Writing Code","description":"Evaluating code decisions before implementation helps prevent technical debt and costly mistakes. This post outlines a practical framework for assessing feature requests and architectural decisions by considering benefits, effort, risks, and long-term maintainability.","datePublished":"2017-11-14T00:00:00.000Z","author":{"@type":"Person","name":"Kristina Haynes","description":"DevOps Engineer & Full Stack Developer","url":"https://www.linkedin.com/in/kristina-haynes-94915147","image":"https://avatars.githubusercontent.com/u/21247589?v=4"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://ForeverAProgrammer.github.io/portfolio/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/portfolio/blog/rss.xml" title="Kristina Haynes RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/portfolio/blog/atom.xml" title="Kristina Haynes Atom Feed"><link rel="stylesheet" href="/portfolio/assets/css/styles.9e02b5c9.css">
+<script src="/portfolio/assets/js/runtime~main.6cf67d21.js" defer="defer"></script>
+<script src="/portfolio/assets/js/main.8bbf85df.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/portfolio/img/logo.svg"><link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/21247589?v=4"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/portfolio/"><div class="navbar__logo"><img src="/portfolio/img/logo.svg" alt="kristina.codes Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/portfolio/img/logo.svg" alt="kristina.codes Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">kristina.codes</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/portfolio/">Home</a><a class="navbar__item navbar__link" href="/portfolio/projects">Projects</a><a class="navbar__item navbar__link" href="/portfolio/docs/intro">Documentation</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/portfolio/blog">Blog</a><a href="/portfolio/files/resume.pdf" class="navbar__item navbar__link" target="_blank">Resume</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/ForeverAProgrammer" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role="group"><h3 class="yearGroupHeading_rMGB">2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/portfolio/blog/gitlab-cicd-pipelines">Building CI/CD Pipelines with GitLab</a></li></ul></div><div role="group"><h3 class="yearGroupHeading_rMGB">2024</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/portfolio/blog/sql-injection-apostrophe-lesson">Understanding SQL Injection Through a Real-World Example</a></li></ul></div><div role="group"><h3 class="yearGroupHeading_rMGB">2020</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/portfolio/blog/cms-empowering-users-freeing-developers">How a CMS Enables Self-Service Content Management</a></li></ul></div><div role="group"><h3 class="yearGroupHeading_rMGB">2017</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/portfolio/blog/four-questions-every-developer-should-ask">Four Questions to Ask Before Writing Code</a></li></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class="title_f1Hy">Four Questions to Ask Before Writing Code</h1><div class="container_mt6G margin-vert--md"><time datetime="2017-11-14T00:00:00.000Z">November 14, 2017</time> · <!-- -->15 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a class="avatar__photo-link" href="/portfolio/blog/authors/kristina-haynes"><img class="avatar__photo authorImage_XqGP" src="https://avatars.githubusercontent.com/u/21247589?v=4" alt="Kristina Haynes"></a><div class="avatar__intro authorDetails_lV9A"><div class="avatar__name"><a href="/portfolio/blog/authors/kristina-haynes"><span class="authorName_yefp" translate="no">Kristina Haynes</span></a></div><small class="authorTitle_nd0D" title="DevOps Engineer &amp; Full Stack Developer">DevOps Engineer &amp; Full Stack Developer</small><div class="authorSocials_rSDt"><a href="https://www.linkedin.com/in/kristina-haynes-94915147" target="_blank" rel="noopener noreferrer" class="authorSocialLink_owbf" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256" style="--dark:#0a66c2;--light:#ffffffe6" class="authorSocialIcon_XYv3 linkedinSvg_FCgI"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"></path></svg></a><a href="https://github.com/ForeverAProgrammer" target="_blank" rel="noopener noreferrer" class="authorSocialLink_owbf" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 250" preserveAspectRatio="xMidYMid" style="--dark:#000;--light:#fff" class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"></path></svg></a></div></div></div></div></div></header><div id="__blog-post-container" class="markdown"><p>Evaluating code decisions before implementation helps prevent technical debt and costly mistakes. This post outlines a practical framework for assessing feature requests and architectural decisions by considering benefits, effort, risks, and long-term maintainability.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-problem-when-just-code-it-goes-wrong">The Problem: When &quot;Just Code It&quot; Goes Wrong<a href="#the-problem-when-just-code-it-goes-wrong" class="hash-link" aria-label="Direct link to The Problem: When &quot;Just Code It&quot; Goes Wrong" title="Direct link to The Problem: When &quot;Just Code It&quot; Goes Wrong" translate="no">​</a></h2>
+<p>Early in my career, I was the developer who said &quot;yes&quot; to everything. Someone wanted a feature? I&#x27;d build it. Manager suggested a &quot;quick improvement&quot;? Already on it. The result? A codebase full of half-baked features, technical debt, and solutions looking for problems.</p>
+<p>The turning point came when I watched a client lose <strong>hundreds of thousands of dollars</strong> because of what seemed like a simple architectural decision. They designed two critical applications to share the same database &quot;for convenience.&quot; When that database locked up, both applications went down simultaneously, causing them to miss a regulatory deadline. The fine was devastating.</p>
+<p>That incident taught me a crucial lesson: <strong>every code decision has consequences that ripple far beyond the immediate implementation</strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-four-question-framework">The Four-Question Framework<a href="#the-four-question-framework" class="hash-link" aria-label="Direct link to The Four-Question Framework" title="Direct link to The Four-Question Framework" translate="no">​</a></h2>
+<p>Before I write code—or even agree to a request—I run it through these four questions:</p>
+<ol>
+<li class=""><strong>What&#x27;s the benefit?</strong></li>
+<li class=""><strong>What&#x27;s the effort?</strong></li>
+<li class=""><strong>What&#x27;s the risk?</strong></li>
+<li class=""><strong>How will this work with future changes?</strong></li>
+</ol>
+<p>Let&#x27;s break down each one.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-1-whats-the-benefit">Question 1: What&#x27;s the Benefit?<a href="#question-1-whats-the-benefit" class="hash-link" aria-label="Direct link to Question 1: What&#x27;s the Benefit?" title="Direct link to Question 1: What&#x27;s the Benefit?" translate="no">​</a></h2>
+<p>This seems obvious, but most developers skip the deep analysis. Don&#x27;t just ask &quot;what does this do?&quot;—dig deeper.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-sub-questions">Key Sub-Questions<a href="#key-sub-questions" class="hash-link" aria-label="Direct link to Key Sub-Questions" title="Direct link to Key Sub-Questions" translate="no">​</a></h3>
+<p><strong>Performance Impact:</strong></p>
+<ul>
+<li class="">Will this improve performance? By how much?</li>
+<li class="">Could it decrease performance?</li>
+<li class="">Have we measured the current performance to know if this matters?</li>
+</ul>
+<p><strong>User Impact:</strong></p>
+<ul>
+<li class="">Will users notice this change?</li>
+<li class="">Does it solve a real user problem or just a theoretical one?</li>
+<li class="">What&#x27;s the user&#x27;s current workaround, and how painful is it?</li>
+</ul>
+<p><strong>Code Quality:</strong></p>
+<ul>
+<li class="">Will this make the code easier or harder to maintain?</li>
+<li class="">Does it reduce technical debt or increase it?</li>
+<li class="">Will future developers thank you or curse you?</li>
+</ul>
+<p><strong>Security:</strong></p>
+<ul>
+<li class="">Does this make the application more secure or less secure?</li>
+<li class="">Are we introducing new attack vectors?</li>
+<li class="">Does it meet our security compliance requirements?</li>
+</ul>
+<p><strong>Business Value:</strong></p>
+<ul>
+<li class="">What&#x27;s the ROI? (Revenue increase? Cost reduction? Risk mitigation?)</li>
+<li class="">Does this align with business priorities?</li>
+<li class="">What&#x27;s the opportunity cost of building this instead of something else?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-example-the-pretty-ui-trap">Real Example: The Pretty UI Trap<a href="#real-example-the-pretty-ui-trap" class="hash-link" aria-label="Direct link to Real Example: The Pretty UI Trap" title="Direct link to Real Example: The Pretty UI Trap" translate="no">​</a></h3>
+<p>I once worked on a legacy ASP.NET Web Forms application using the AJAX Control Toolkit. A stakeholder requested we add jQuery UI tabs to make the interface &quot;look more modern.&quot;</p>
+<p><strong>Initial thought:</strong> &quot;Sure, jQuery tabs are easy!&quot;</p>
+<p><strong>After asking &#x27;What&#x27;s the benefit?&#x27;:</strong></p>
+<ul>
+<li class=""><strong>Performance:</strong> Actually worse. Each AJAX partial postback would wipe out JavaScript state, requiring re-initialization</li>
+<li class=""><strong>User impact:</strong> Users didn&#x27;t complain about the current UI</li>
+<li class=""><strong>Maintenance:</strong> Would require complex workarounds to maintain state across postbacks</li>
+<li class=""><strong>Business value:</strong> Zero. Purely cosmetic change to a system scheduled for replacement</li>
+</ul>
+<p><strong>Decision:</strong> Declined the request. Suggested focusing on the planned migration to modern framework instead.</p>
+<p><strong>Outcome:</strong> Saved 2-3 weeks of development on a feature that would have created more problems than it solved.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="warning-the-small-benefit-trap">Warning: The &quot;Small Benefit&quot; Trap<a href="#warning-the-small-benefit-trap" class="hash-link" aria-label="Direct link to Warning: The &quot;Small Benefit&quot; Trap" title="Direct link to Warning: The &quot;Small Benefit&quot; Trap" translate="no">​</a></h3>
+<p>Beware of changes with small benefits but high hidden costs:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Small Benefit + High Effort = Bad Decision</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Small Benefit + High Risk = Bad Decision</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Small Benefit + Technical Debt = Bad Decision</span><br></span></code></pre></div></div>
+<p>Just because you <em>can</em> build something doesn&#x27;t mean you <em>should</em>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-2-whats-the-effort">Question 2: What&#x27;s the Effort?<a href="#question-2-whats-the-effort" class="hash-link" aria-label="Direct link to Question 2: What&#x27;s the Effort?" title="Direct link to Question 2: What&#x27;s the Effort?" translate="no">​</a></h2>
+<p>Effort estimation isn&#x27;t just about time—it&#x27;s about understanding the full scope of impact.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-sub-questions-1">Key Sub-Questions<a href="#key-sub-questions-1" class="hash-link" aria-label="Direct link to Key Sub-Questions" title="Direct link to Key Sub-Questions" translate="no">​</a></h3>
+<p><strong>Scope of Change:</strong></p>
+<ul>
+<li class="">How many files will I need to modify?</li>
+<li class="">How many lines of code will change?</li>
+<li class="">How many systems/applications are affected?</li>
+<li class="">Are we touching critical code paths?</li>
+</ul>
+<p><strong>Dependencies:</strong></p>
+<ul>
+<li class="">Do I need other teams to make changes?</li>
+<li class="">Are there infrastructure changes required?</li>
+<li class="">Do I need access to production systems?</li>
+<li class="">Will this require coordinating multiple deployments?</li>
+</ul>
+<p><strong>Testing Requirements:</strong></p>
+<ul>
+<li class="">What&#x27;s the testing scope?</li>
+<li class="">Do we need to involve QA?</li>
+<li class="">Are there regression testing concerns?</li>
+<li class="">Do we need performance testing?</li>
+</ul>
+<p><strong>Knowledge Gaps:</strong></p>
+<ul>
+<li class="">Do I understand the existing code well enough?</li>
+<li class="">Will I need to learn new technologies?</li>
+<li class="">Do I need domain expertise I don&#x27;t have?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-example-the-simple-database-change">Real Example: The &quot;Simple&quot; Database Change<a href="#real-example-the-simple-database-change" class="hash-link" aria-label="Direct link to Real Example: The &quot;Simple&quot; Database Change" title="Direct link to Real Example: The &quot;Simple&quot; Database Change" translate="no">​</a></h3>
+<p><strong>Request:</strong> &quot;Just add a new field to track customer preferences.&quot;</p>
+<p><strong>After asking &#x27;What&#x27;s the effort?&#x27;:</strong></p>
+<p><strong>Direct changes:</strong></p>
+<ul>
+<li class="">Database schema update</li>
+<li class="">3 API endpoints</li>
+<li class="">5 UI screens</li>
+<li class="">Data migration script</li>
+</ul>
+<p><strong>Hidden effort:</strong></p>
+<ul>
+<li class=""><strong>12 applications</strong> reading from this table (not just 1!)</li>
+<li class="">Database replication to 3 different systems</li>
+<li class="">ETL processes that need updating</li>
+<li class="">50+ automated tests to update</li>
+<li class="">Documentation across 4 wikis</li>
+<li class="">Notification to 3 other teams</li>
+</ul>
+<p><strong>Estimated:</strong> 2 hours → <strong>Actual:</strong> 40+ hours</p>
+<p><strong>Lesson:</strong> Always map the full dependency tree before committing.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-multiplier-effect">The Multiplier Effect<a href="#the-multiplier-effect" class="hash-link" aria-label="Direct link to The Multiplier Effect" title="Direct link to The Multiplier Effect" translate="no">​</a></h3>
+<p>When estimating effort, consider these multipliers:</p>
+<table><thead><tr><th>Factor</th><th>Multiplier</th><th>Why</th></tr></thead><tbody><tr><td>Legacy codebase</td><td>2-3x</td><td>No tests, poor docs, brittle code</td></tr><tr><td>Cross-team dependencies</td><td>2x</td><td>Coordination overhead</td></tr><tr><td>Production data migration</td><td>3x</td><td>Testing, rollback plans, monitoring</td></tr><tr><td>Security-sensitive changes</td><td>2x</td><td>Extra review, pentesting, compliance</td></tr><tr><td>&quot;Critical&quot; systems</td><td>2x</td><td>Extra caution, more thorough testing</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-3-whats-the-risk">Question 3: What&#x27;s the Risk?<a href="#question-3-whats-the-risk" class="hash-link" aria-label="Direct link to Question 3: What&#x27;s the Risk?" title="Direct link to Question 3: What&#x27;s the Risk?" translate="no">​</a></h2>
+<p>This is where many developers fail to think critically. We focus on the happy path and ignore Murphy&#x27;s Law.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-sub-questions-2">Key Sub-Questions<a href="#key-sub-questions-2" class="hash-link" aria-label="Direct link to Key Sub-Questions" title="Direct link to Key Sub-Questions" translate="no">​</a></h3>
+<p><strong>Technical Risk:</strong></p>
+<ul>
+<li class="">What&#x27;s the worst that can happen if this fails?</li>
+<li class="">Can it bring down the entire system or just a feature?</li>
+<li class="">Is the failure obvious or subtle?</li>
+<li class="">Can we roll back easily?</li>
+</ul>
+<p><strong>Business Risk:</strong></p>
+<ul>
+<li class="">How much money could the company lose?</li>
+<li class="">Could this cause regulatory violations?</li>
+<li class="">What&#x27;s the reputational risk?</li>
+<li class="">Are there legal implications?</li>
+</ul>
+<p><strong>Data Risk:</strong></p>
+<ul>
+<li class="">Could we lose data?</li>
+<li class="">Could data be corrupted?</li>
+<li class="">Is there a privacy/security exposure?</li>
+<li class="">Can we recover from data issues?</li>
+</ul>
+<p><strong>Operational Risk:</strong></p>
+<ul>
+<li class="">Will this require 24/7 monitoring?</li>
+<li class="">Do we have the expertise to support this?</li>
+<li class="">What happens if the primary developer leaves?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-example-the-shared-database-disaster">Real Example: The Shared Database Disaster<a href="#real-example-the-shared-database-disaster" class="hash-link" aria-label="Direct link to Real Example: The Shared Database Disaster" title="Direct link to Real Example: The Shared Database Disaster" translate="no">​</a></h3>
+<p>I mentioned this earlier, but it&#x27;s worth examining in detail because it perfectly illustrates risk analysis failure.</p>
+<p><strong>Decision:</strong> Share a database between two critical applications</p>
+<p><strong>Perceived benefits:</strong></p>
+<ul>
+<li class="">Easy data sharing</li>
+<li class="">No need for APIs or data sync</li>
+<li class="">&quot;Simpler&quot; architecture</li>
+</ul>
+<p><strong>After asking &#x27;What&#x27;s the risk?&#x27;:</strong></p>
+<p><strong>What they considered:</strong></p>
+<ul>
+<li class="">Database performance (added indexes, seemed fine)</li>
+</ul>
+<p><strong>What they DIDN&#x27;T consider:</strong></p>
+<ul>
+<li class=""><strong>Single point of failure</strong> - one database crash takes down TWO applications</li>
+<li class=""><strong>Coupling</strong> - schema changes in one app can break the other</li>
+<li class=""><strong>Lock contention</strong> - long-running queries in one app lock tables for the other</li>
+<li class=""><strong>Deployment complexity</strong> - can&#x27;t deploy apps independently</li>
+<li class=""><strong>Scaling limitations</strong> - can&#x27;t scale databases independently</li>
+<li class=""><strong>Blast radius</strong> - a bug in one app&#x27;s query can kill performance for both</li>
+</ul>
+<p><strong>What actually happened:</strong></p>
+<ol>
+<li class="">Application A had a bad query that locked the database</li>
+<li class="">Application B couldn&#x27;t process transactions</li>
+<li class="">Missed a critical regulatory deadline</li>
+<li class=""><strong>Fine: $500,000+</strong></li>
+<li class="">Emergency weekend to separate the databases</li>
+</ol>
+<p><strong>Lesson:</strong> When the risk is &quot;total system failure,&quot; the architecture is wrong—no matter how convenient it seems.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="risk-matrix">Risk Matrix<a href="#risk-matrix" class="hash-link" aria-label="Direct link to Risk Matrix" title="Direct link to Risk Matrix" translate="no">​</a></h3>
+<p>Use this matrix to evaluate decisions:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">         Low Impact          High Impact</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       ┌──────────────┬──────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Low    │   PROCEED    │   CAREFUL    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Risk   │   Quickly    │   Planning   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       ├──────────────┼──────────────┤</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">High   │   CAREFUL    │   AVOID OR   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Risk   │   Planning   │   REDESIGN   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       └──────────────┴──────────────┘</span><br></span></code></pre></div></div>
+<p><strong>Avoid or Redesign Zone Examples:</strong></p>
+<ul>
+<li class="">Sharing databases between critical systems</li>
+<li class="">Storing passwords in plain text</li>
+<li class="">&quot;Big bang&quot; migrations</li>
+<li class="">Single points of failure in critical paths</li>
+<li class="">Irreversible data transformations</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="question-4-how-will-this-work-with-future-changes">Question 4: How Will This Work With Future Changes?<a href="#question-4-how-will-this-work-with-future-changes" class="hash-link" aria-label="Direct link to Question 4: How Will This Work With Future Changes?" title="Direct link to Question 4: How Will This Work With Future Changes?" translate="no">​</a></h2>
+<p>This is about future-proofing without over-engineering. The goal is flexibility, not building features you don&#x27;t need yet.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-sub-questions-3">Key Sub-Questions<a href="#key-sub-questions-3" class="hash-link" aria-label="Direct link to Key Sub-Questions" title="Direct link to Key Sub-Questions" translate="no">​</a></h3>
+<p><strong>Extensibility:</strong></p>
+<ul>
+<li class="">How hard will it be to add similar features later?</li>
+<li class="">Are we hardcoding assumptions that will change?</li>
+<li class="">Does this support the roadmap?</li>
+</ul>
+<p><strong>Maintainability:</strong></p>
+<ul>
+<li class="">Will new developers understand this?</li>
+<li class="">Is it consistent with our existing patterns?</li>
+<li class="">Does it follow our coding standards?</li>
+</ul>
+<p><strong>Compatibility:</strong></p>
+<ul>
+<li class="">Will this work with planned changes/projects?</li>
+<li class="">Does it align with our architecture direction?</li>
+<li class="">Are we painting ourselves into a corner?</li>
+</ul>
+<p><strong>Data-Driven vs. Hardcoded:</strong></p>
+<ul>
+<li class="">Should this be configurable instead of hardcoded?</li>
+<li class="">Will this require code changes every time values change?</li>
+<li class="">Can business users manage this themselves?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-example-the-multi-part-solution">Real Example: The Multi-Part Solution<a href="#real-example-the-multi-part-solution" class="hash-link" aria-label="Direct link to Real Example: The Multi-Part Solution" title="Direct link to Real Example: The Multi-Part Solution" translate="no">​</a></h3>
+<p><strong>Context:</strong> Building a system to track machine parts. Currently using only one part number.</p>
+<p><strong>Temptation:</strong> Hardcode the part number</p>
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">// ❌ Bad: Hardcoded</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class Machine</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    private const string PART_NUMBER = &quot;ABC-123&quot;;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public Part GetPart()</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        return partRepository.GetByPartNumber(PART_NUMBER);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p><strong>After asking &#x27;How will this work with future changes?&#x27;:</strong></p>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li class="">Will we always use just one part? (Probably not)</li>
+<li class="">What happens when we want to test a new part?</li>
+<li class="">Do we want to require a code change and deployment for part changes?</li>
+</ul>
+<p><strong>Better solution:</strong> Make it data-driven</p>
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">// ✅ Good: Data-driven</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class Machine</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public int MachineId { get; set; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public List&lt;Part&gt; Parts { get; set; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public Machine(int machineId, IPartRepository partRepository)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        MachineId = machineId;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        // Load parts from database configuration</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        Parts = partRepository.GetPartsByMachineId(machineId);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p><strong>Database:</strong></p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">CREATE</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">TABLE</span><span class="token plain"> MachineParts </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    MachineId </span><span class="token keyword" style="color:#00009f">INT</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    PartNumber </span><span class="token keyword" style="color:#00009f">VARCHAR</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">50</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">PRIMARY</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">KEY</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">MachineId</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> PartNumber</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<p><strong>Outcome:</strong></p>
+<ul>
+<li class="">6 months later: Business wanted to test a new part</li>
+<li class=""><strong>Solution:</strong> Added one database row. Zero code changes. Zero deployment.</li>
+<li class="">Time saved: 2-3 days of development + testing + deployment</li>
+</ul>
+<p><strong>ROI:</strong> 30 minutes of upfront thinking saved weeks of future work.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-balance-future-proofing-vs-over-engineering">The Balance: Future-Proofing vs. Over-Engineering<a href="#the-balance-future-proofing-vs-over-engineering" class="hash-link" aria-label="Direct link to The Balance: Future-Proofing vs. Over-Engineering" title="Direct link to The Balance: Future-Proofing vs. Over-Engineering" translate="no">​</a></h3>
+<p><strong>❌ Over-Engineering:</strong></p>
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">// Building a plugin architecture for a feature used once</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public interface IPartValidator { }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class DefaultPartValidator : IPartValidator { }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class PluginPartValidatorLoader { }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class PartValidatorFactory { }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">// ... 500 lines of abstraction for 10 lines of logic</span><br></span></code></pre></div></div>
+<p><strong>✅ Good Future-Proofing:</strong></p>
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">// Making values configurable instead of hardcoded</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">public class PartConfiguration</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public List&lt;string&gt; ValidPartNumbers { get; set; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public int MaxPartsPerMachine { get; set; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // Load from config file or database</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public static PartConfiguration Load() { }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p><strong>Rule of thumb:</strong></p>
+<ul>
+<li class="">If you&#x27;re adding it &quot;because we might need it someday&quot; → Over-engineering</li>
+<li class="">If you&#x27;re making existing requirements flexible → Good future-proofing</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="putting-it-all-together-real-decision-examples">Putting It All Together: Real Decision Examples<a href="#putting-it-all-together-real-decision-examples" class="hash-link" aria-label="Direct link to Putting It All Together: Real Decision Examples" title="Direct link to Putting It All Together: Real Decision Examples" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-1-database-index-addition">Example 1: Database Index Addition<a href="#example-1-database-index-addition" class="hash-link" aria-label="Direct link to Example 1: Database Index Addition" title="Direct link to Example 1: Database Index Addition" translate="no">​</a></h3>
+<p><strong>Request:</strong> &quot;Add index to speed up slow query&quot;</p>
+<p><strong>Question 1 - Benefit:</strong></p>
+<ul>
+<li class="">✅ Query runs in 15s, index would reduce to &lt;1s</li>
+<li class="">✅ Query runs 10,000 times per day</li>
+<li class="">✅ Saving 140,000 seconds per day = huge impact</li>
+</ul>
+<p><strong>Question 2 - Effort:</strong></p>
+<ul>
+<li class="">Create index (5 minutes)</li>
+<li class="">Test in staging (30 minutes)</li>
+<li class="">Deploy to production (10 minutes)</li>
+<li class="">Estimated: 1 hour</li>
+</ul>
+<p><strong>Question 3 - Risk:</strong></p>
+<ul>
+<li class="">⚠️ Indexes slow down writes</li>
+<li class="">✅ But this table is read-heavy (99% reads)</li>
+<li class="">⚠️ Index creation locks table</li>
+<li class="">✅ Can create online (no lock)</li>
+<li class="">Low risk overall</li>
+</ul>
+<p><strong>Question 4 - Future:</strong></p>
+<ul>
+<li class="">✅ No negative impact on future changes</li>
+<li class="">✅ Improves system scalability</li>
+</ul>
+<p><strong>Decision:</strong> Absolutely do this! High benefit, low effort, low risk, no future complications.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-2-microservices-migration">Example 2: Microservices Migration<a href="#example-2-microservices-migration" class="hash-link" aria-label="Direct link to Example 2: Microservices Migration" title="Direct link to Example 2: Microservices Migration" translate="no">​</a></h3>
+<p><strong>Request:</strong> &quot;Migrate monolith to microservices&quot;</p>
+<p><strong>Question 1 - Benefit:</strong></p>
+<ul>
+<li class="">✅ Better scalability (maybe—if we have scale issues)</li>
+<li class="">✅ Independent deployments (nice to have)</li>
+<li class="">✅ Technology diversity (do we want this?)</li>
+<li class="">⚠️ Current system handles load fine</li>
+<li class="">⚠️ Team has limited distributed systems experience</li>
+</ul>
+<p><strong>Question 2 - Effort:</strong></p>
+<ul>
+<li class="">6-12 months of development</li>
+<li class="">Completely rewrite application</li>
+<li class="">New infrastructure (Kubernetes, service mesh, etc.)</li>
+<li class="">Retrain entire team</li>
+<li class="">Massive effort</li>
+</ul>
+<p><strong>Question 3 - Risk:</strong></p>
+<ul>
+<li class="">❌ Distributed systems are complex</li>
+<li class="">❌ New failure modes (network, partial failures)</li>
+<li class="">❌ Data consistency challenges</li>
+<li class="">❌ Team lacks experience</li>
+<li class="">❌ Operational complexity 10x higher</li>
+<li class="">Very high risk</li>
+</ul>
+<p><strong>Question 4 - Future:</strong></p>
+<ul>
+<li class="">✅ Easier to scale individual services</li>
+<li class="">❌ Much harder to refactor across services</li>
+<li class="">❌ Harder to onboard new developers</li>
+<li class="">❌ Harder to debug issues</li>
+</ul>
+<p><strong>Decision:</strong> Declined. This is a solution looking for a problem. Current architecture handles our needs. If we hit actual scale issues, we can scale the monolith or extract specific services strategically.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-say-no">When to Say No<a href="#when-to-say-no" class="hash-link" aria-label="Direct link to When to Say No" title="Direct link to When to Say No" translate="no">​</a></h2>
+<p>The four-question framework often leads to saying &quot;no&quot;—and that&#x27;s okay. Here&#x27;s when to push back:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="red-flags">Red Flags<a href="#red-flags" class="hash-link" aria-label="Direct link to Red Flags" title="Direct link to Red Flags" translate="no">​</a></h3>
+<p>🚩 <strong>High effort, low benefit</strong></p>
+<ul>
+<li class="">Example: Rewriting working code for &quot;cleanliness&quot;</li>
+</ul>
+<p>🚩 <strong>High risk, low benefit</strong></p>
+<ul>
+<li class="">Example: Changing database engines because it&#x27;s &quot;cool&quot;</li>
+</ul>
+<p>🚩 <strong>Creates future technical debt</strong></p>
+<ul>
+<li class="">Example: Quick hacks that &quot;we&#x27;ll fix later&quot; (you won&#x27;t)</li>
+</ul>
+<p>🚩 <strong>Solves a problem that doesn&#x27;t exist</strong></p>
+<ul>
+<li class="">Example: Building for scale you&#x27;ll never reach</li>
+</ul>
+<p>🚩 <strong>Violates security best practices</strong></p>
+<ul>
+<li class="">Example: Storing passwords in plain text &quot;temporarily&quot;</li>
+</ul>
+<p>🚩 <strong>Creates single points of failure</strong></p>
+<ul>
+<li class="">Example: Shared databases between critical systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-say-no-professionally">How to Say No (Professionally)<a href="#how-to-say-no-professionally" class="hash-link" aria-label="Direct link to How to Say No (Professionally)" title="Direct link to How to Say No (Professionally)" translate="no">​</a></h3>
+<p><strong>❌ Bad:</strong>
+&quot;That&#x27;s a terrible idea.&quot;</p>
+<p><strong>✅ Good:</strong>
+&quot;I&#x27;ve analyzed this using our risk/benefit framework. While I understand the benefit, I&#x27;m concerned about [specific risks]. Have we considered [alternative approach]?&quot;</p>
+<p><strong>Template:</strong></p>
+<ol>
+<li class="">Acknowledge the request&#x27;s intent</li>
+<li class="">Share your analysis (benefit, effort, risk, future)</li>
+<li class="">Present alternatives or conditions</li>
+<li class="">Ask for their input</li>
+</ol>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p>&quot;I understand we want to improve the user experience with jQuery tabs. I&#x27;ve analyzed this and I&#x27;m concerned about several issues:</p>
+<p><strong>Effort:</strong> Due to AJAX Control Toolkit postback behavior, we&#x27;d need significant workarounds (~2-3 weeks)</p>
+<p><strong>Risk:</strong> Each postback would require state re-initialization, creating potential bugs</p>
+<p><strong>Alternative:</strong> Since we&#x27;re planning to migrate to React next quarter, could we include improved UI as part of that migration? This would give us a better result with less throwaway work.&quot;</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-mistakes-to-avoid">Common Mistakes to Avoid<a href="#common-mistakes-to-avoid" class="hash-link" aria-label="Direct link to Common Mistakes to Avoid" title="Direct link to Common Mistakes to Avoid" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-skipping-the-questions-for-simple-changes">1. Skipping the Questions for &quot;Simple&quot; Changes<a href="#1-skipping-the-questions-for-simple-changes" class="hash-link" aria-label="Direct link to 1. Skipping the Questions for &quot;Simple&quot; Changes" title="Direct link to 1. Skipping the Questions for &quot;Simple&quot; Changes" translate="no">​</a></h3>
+<p><strong>Mistake:</strong> &quot;It&#x27;s just changing a config value, what could go wrong?&quot;</p>
+<p><strong>Reality:</strong> That &quot;simple&quot; config change:</p>
+<ul>
+<li class="">Was referenced in 15 places</li>
+<li class="">Had undocumented dependencies</li>
+<li class="">Broke a critical integration</li>
+<li class="">Required emergency rollback</li>
+</ul>
+<p><strong>Lesson:</strong> Run ALL changes through the framework, no matter how &quot;simple.&quot;</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-letting-perfect-become-the-enemy-of-good-enough">2. Letting &quot;Perfect&quot; Become the Enemy of &quot;Good Enough&quot;<a href="#2-letting-perfect-become-the-enemy-of-good-enough" class="hash-link" aria-label="Direct link to 2. Letting &quot;Perfect&quot; Become the Enemy of &quot;Good Enough&quot;" title="Direct link to 2. Letting &quot;Perfect&quot; Become the Enemy of &quot;Good Enough&quot;" translate="no">​</a></h3>
+<p><strong>Mistake:</strong> Spending weeks building the &quot;perfect&quot; solution for a problem that needed a quick fix.</p>
+<p><strong>Reality:</strong></p>
+<ul>
+<li class="">The business needed a solution in days, not weeks</li>
+<li class="">Your perfect solution addressed problems that don&#x27;t exist</li>
+<li class="">Opportunity cost was huge</li>
+</ul>
+<p><strong>Lesson:</strong> The framework helps you balance thoroughness with pragmatism. Sometimes &quot;good enough now&quot; beats &quot;perfect later.&quot;</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-ignoring-operational-costs">3. Ignoring Operational Costs<a href="#3-ignoring-operational-costs" class="hash-link" aria-label="Direct link to 3. Ignoring Operational Costs" title="Direct link to 3. Ignoring Operational Costs" translate="no">​</a></h3>
+<p><strong>Mistake:</strong> &quot;It works in dev, ship it!&quot;</p>
+<p><strong>Reality:</strong></p>
+<ul>
+<li class="">Requires 24/7 monitoring</li>
+<li class="">Needs specialized knowledge to debug</li>
+<li class="">Creates on-call burden</li>
+<li class="">Costs more to operate than the value it provides</li>
+</ul>
+<p><strong>Lesson:</strong> Always ask &quot;who will maintain this at 2 AM?&quot;</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-building-for-hypothetical-future-requirements">4. Building for Hypothetical Future Requirements<a href="#4-building-for-hypothetical-future-requirements" class="hash-link" aria-label="Direct link to 4. Building for Hypothetical Future Requirements" title="Direct link to 4. Building for Hypothetical Future Requirements" translate="no">​</a></h3>
+<p><strong>Mistake:</strong> &quot;We might need this someday, so let&#x27;s build it now.&quot;</p>
+<p><strong>Reality:</strong></p>
+<ul>
+<li class="">YAGNI (You Aren&#x27;t Gonna Need It) is usually right</li>
+<li class="">Requirements change</li>
+<li class="">Wasted effort on features never used</li>
+</ul>
+<p><strong>Lesson:</strong> Build for today&#x27;s requirements, design for tomorrow&#x27;s flexibility.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-underestimating-risk-because-it-worked-in-dev">5. Underestimating Risk Because &quot;It Worked in Dev&quot;<a href="#5-underestimating-risk-because-it-worked-in-dev" class="hash-link" aria-label="Direct link to 5. Underestimating Risk Because &quot;It Worked in Dev&quot;" title="Direct link to 5. Underestimating Risk Because &quot;It Worked in Dev&quot;" translate="no">​</a></h3>
+<p><strong>Mistake:</strong> &quot;It passed all our tests, what could go wrong in production?&quot;</p>
+<p><strong>Reality:</strong></p>
+<ul>
+<li class="">Production has 10,000x the data</li>
+<li class="">Production has real users doing unexpected things</li>
+<li class="">Production has years of technical debt</li>
+<li class="">Production never works exactly like dev</li>
+</ul>
+<p><strong>Lesson:</strong> Always ask &quot;what&#x27;s different about production?&quot;</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-meta-question-should-i-even-build-this">The Meta-Question: Should I Even Build This?<a href="#the-meta-question-should-i-even-build-this" class="hash-link" aria-label="Direct link to The Meta-Question: Should I Even Build This?" title="Direct link to The Meta-Question: Should I Even Build This?" translate="no">​</a></h2>
+<p>Sometimes the framework reveals the uncomfortable truth: <strong>this entire project shouldn&#x27;t exist</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="projects-ive-declined-using-this-framework">Projects I&#x27;ve Declined Using This Framework<a href="#projects-ive-declined-using-this-framework" class="hash-link" aria-label="Direct link to Projects I&#x27;ve Declined Using This Framework" title="Direct link to Projects I&#x27;ve Declined Using This Framework" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Rewrite Cypress Plugin from JavaScript to TypeScript</strong></p>
+<ul>
+<li class="">High effort (complex rewrite), minimal benefit, high risk of breaking existing functionality</li>
+<li class="">The plugin worked fine in newer versions of Cypress without conversion</li>
+<li class="">Just because TypeScript is trendy doesn&#x27;t mean every working JavaScript needs rewriting</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Add jQuery UI tabs to legacy ASP.NET Web Forms application</strong></p>
+<ul>
+<li class="">High effort (2-3 weeks of workarounds for AJAX postback state management)</li>
+<li class="">Zero benefit (purely cosmetic, users weren&#x27;t complaining)</li>
+<li class="">System was already scheduled for migration to modern framework</li>
+<li class="">Detailed example covered earlier in this post</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Create yet another internal tool</strong></p>
+<ul>
+<li class="">We already had 3 similar tools</li>
+<li class="">Benefit was &quot;convenience,&quot; cost was fragmentation</li>
+</ul>
+</li>
+<li class="">
+<p><strong>&quot;Future-proof&quot; architecture for scale we&#x27;ll never reach</strong></p>
+<ul>
+<li class="">Optimizing for 1M users when we had 1,000</li>
+<li class="">Unnecessary complexity</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Shared database between critical systems</strong></p>
+<ul>
+<li class="">As we discussed—huge risk, medium benefit</li>
+<li class="">Single point of failure is never worth the convenience</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-framework-in-practice-a-checklist">The Framework in Practice: A Checklist<a href="#the-framework-in-practice-a-checklist" class="hash-link" aria-label="Direct link to The Framework in Practice: A Checklist" title="Direct link to The Framework in Practice: A Checklist" translate="no">​</a></h2>
+<p>Use this checklist before starting any significant work:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="benefit-analysis">Benefit Analysis<a href="#benefit-analysis" class="hash-link" aria-label="Direct link to Benefit Analysis" title="Direct link to Benefit Analysis" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What specific problem does this solve?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Have we measured the current pain point?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the quantifiable improvement?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Will users notice/care?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Does this align with business priorities?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the opportunity cost?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="effort-analysis">Effort Analysis<a href="#effort-analysis" class="hash-link" aria-label="Direct link to Effort Analysis" title="Direct link to Effort Analysis" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->How many files/systems affected?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the realistic timeline?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What dependencies exist?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What knowledge gaps do I have?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the testing scope?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Who else needs to be involved?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="risk-analysis">Risk Analysis<a href="#risk-analysis" class="hash-link" aria-label="Direct link to Risk Analysis" title="Direct link to Risk Analysis" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the worst-case scenario?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the blast radius if this fails?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Can we roll back easily?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the business impact of failure?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->What&#x27;s the regulatory/legal risk?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Do we have monitoring/alerting for failures?</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="future-analysis">Future Analysis<a href="#future-analysis" class="hash-link" aria-label="Direct link to Future Analysis" title="Direct link to Future Analysis" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Does this support the roadmap?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Will this make future changes easier or harder?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Are we hardcoding things that should be configurable?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Is this compatible with planned changes?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Will this create technical debt?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Would we make this decision again in 6 months?</li>
+</ul>
+<p><strong>Decision Rule:</strong></p>
+<ul>
+<li class="">3-4 categories positive → Likely proceed</li>
+<li class="">2 categories positive → Needs redesign or alternatives</li>
+<li class="">0-1 categories positive → Say no</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>The four-question framework has saved me from:</p>
+<ul>
+<li class="">Countless hours of wasted work</li>
+<li class="">Multiple production disasters</li>
+<li class="">Technical debt nightmares</li>
+<li class="">Political battles over bad projects</li>
+</ul>
+<p>But more importantly, it&#x27;s helped me:</p>
+<ul>
+<li class=""><strong>Build better software</strong> by thinking critically</li>
+<li class=""><strong>Say no confidently</strong> with data, not opinion</li>
+<li class=""><strong>Prioritize effectively</strong> based on real impact</li>
+<li class=""><strong>Communicate better</strong> with non-technical stakeholders</li>
+</ul>
+<p>Every &quot;no&quot; saved time for meaningful work. Every &quot;yes&quot; was well-justified and successful. Every decision was defendable with clear reasoning.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="your-turn">Your Turn<a href="#your-turn" class="hash-link" aria-label="Direct link to Your Turn" title="Direct link to Your Turn" translate="no">​</a></h2>
+<p>Next time you&#x27;re about to write code, pause and ask:</p>
+<ol>
+<li class=""><strong>What&#x27;s the benefit?</strong> (Measure it)</li>
+<li class=""><strong>What&#x27;s the effort?</strong> (Include hidden costs)</li>
+<li class=""><strong>What&#x27;s the risk?</strong> (Think worst-case)</li>
+<li class=""><strong>How will this work with future changes?</strong> (Don&#x27;t paint yourself into corners)</li>
+</ol>
+<p>These four questions will save you from disasters I wish I&#x27;d avoided earlier in my career.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="critical-analysis-issues-with-the-original-content">Critical Analysis: Issues with the Original Content<a href="#critical-analysis-issues-with-the-original-content" class="hash-link" aria-label="Direct link to Critical Analysis: Issues with the Original Content" title="Direct link to Critical Analysis: Issues with the Original Content" translate="no">​</a></h2>
+<p>While reflecting on my framework, I should note some potential concerns:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="potential-over-analysis-paralysis">Potential Over-Analysis Paralysis<a href="#potential-over-analysis-paralysis" class="hash-link" aria-label="Direct link to Potential Over-Analysis Paralysis" title="Direct link to Potential Over-Analysis Paralysis" translate="no">​</a></h3>
+<p><strong>Issue:</strong> Following this religiously could lead to analysis paralysis.</p>
+<p><strong>Balance:</strong> Use proportional analysis:</p>
+<ul>
+<li class="">5-minute change? 5-minute analysis</li>
+<li class="">5-week project? Multi-day analysis</li>
+<li class="">Not everything needs a formal risk matrix</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-perfect-code-trap">The &quot;Perfect Code&quot; Trap<a href="#the-perfect-code-trap" class="hash-link" aria-label="Direct link to The &quot;Perfect Code&quot; Trap" title="Direct link to The &quot;Perfect Code&quot; Trap" translate="no">​</a></h3>
+<p><strong>Issue:</strong> The original text mentions &quot;always wanting to create perfect code.&quot;</p>
+<p><strong>Reality:</strong> Perfect code doesn&#x27;t exist. The framework helps you find &quot;good enough,&quot; not perfect. Don&#x27;t let analysis prevent shipping.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="context-matters">Context Matters<a href="#context-matters" class="hash-link" aria-label="Direct link to Context Matters" title="Direct link to Context Matters" translate="no">​</a></h3>
+<p><strong>Issue:</strong> These questions work great for established systems but might be overkill for:</p>
+<ul>
+<li class="">Prototypes</li>
+<li class="">Proof of concepts</li>
+<li class="">Learning projects</li>
+<li class="">Throwaway code</li>
+</ul>
+<p><strong>Nuance:</strong> Adjust the depth of analysis to the context.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resources">Resources<a href="#resources" class="hash-link" aria-label="Direct link to Resources" title="Direct link to Resources" translate="no">​</a></h2>
+<ul>
+<li class=""><strong><a href="https://martinfowler.com/bliki/Yagni.html" target="_blank" rel="noopener noreferrer" class="">YAGNI Principle</a></strong> - You Aren&#x27;t Gonna Need It</li>
+<li class=""><strong><a href="https://martinfowler.com/bliki/TechnicalDebtQuadrant.html" target="_blank" rel="noopener noreferrer" class="">Technical Debt Quadrant</a></strong> - Understanding debt types</li>
+<li class=""><strong><a href="https://www.amazon.com/Risk-Driven-Software-Architecture-Adam-Trendowicz/dp/0321674340" target="_blank" rel="noopener noreferrer" class="">Risk-Driven Development</a></strong> - Architecture decisions</li>
+</ul>
+<hr>
+<p><em>Remember: The best code is sometimes the code you don&#x27;t write.</em></p></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" title="Software engineering practices" class="tag_zVej tagRegular_sFm0" href="/portfolio/blog/tags/software-engineering">Software Engineering</a></li><li class="tag_QGVx"><a rel="tag" title="Software development best practices" class="tag_zVej tagRegular_sFm0" href="/portfolio/blog/tags/best-practices">Best Practices</a></li><li class="tag_QGVx"><a rel="tag" title="Managing technical debt" class="tag_zVej tagRegular_sFm0" href="/portfolio/blog/tags/technical-debt">Technical Debt</a></li><li class="tag_QGVx"><a rel="tag" title="Engineering decision making" class="tag_zVej tagRegular_sFm0" href="/portfolio/blog/tags/decision-making">Decision Making</a></li><li class="tag_QGVx"><a rel="tag" title="Software architecture and design" class="tag_zVej tagRegular_sFm0" href="/portfolio/blog/tags/architecture">Architecture</a></li></ul></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/portfolio/blog/cms-empowering-users-freeing-developers"><div class="pagination-nav__sublabel">Newer post</div><div class="pagination-nav__label">How a CMS Enables Self-Service Content Management</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#the-problem-when-just-code-it-goes-wrong" class="table-of-contents__link toc-highlight">The Problem: When &quot;Just Code It&quot; Goes Wrong</a></li><li><a href="#the-four-question-framework" class="table-of-contents__link toc-highlight">The Four-Question Framework</a></li><li><a href="#question-1-whats-the-benefit" class="table-of-contents__link toc-highlight">Question 1: What&#39;s the Benefit?</a><ul><li><a href="#key-sub-questions" class="table-of-contents__link toc-highlight">Key Sub-Questions</a></li><li><a href="#real-example-the-pretty-ui-trap" class="table-of-contents__link toc-highlight">Real Example: The Pretty UI Trap</a></li><li><a href="#warning-the-small-benefit-trap" class="table-of-contents__link toc-highlight">Warning: The &quot;Small Benefit&quot; Trap</a></li></ul></li><li><a href="#question-2-whats-the-effort" class="table-of-contents__link toc-highlight">Question 2: What&#39;s the Effort?</a><ul><li><a href="#key-sub-questions-1" class="table-of-contents__link toc-highlight">Key Sub-Questions</a></li><li><a href="#real-example-the-simple-database-change" class="table-of-contents__link toc-highlight">Real Example: The &quot;Simple&quot; Database Change</a></li><li><a href="#the-multiplier-effect" class="table-of-contents__link toc-highlight">The Multiplier Effect</a></li></ul></li><li><a href="#question-3-whats-the-risk" class="table-of-contents__link toc-highlight">Question 3: What&#39;s the Risk?</a><ul><li><a href="#key-sub-questions-2" class="table-of-contents__link toc-highlight">Key Sub-Questions</a></li><li><a href="#real-example-the-shared-database-disaster" class="table-of-contents__link toc-highlight">Real Example: The Shared Database Disaster</a></li><li><a href="#risk-matrix" class="table-of-contents__link toc-highlight">Risk Matrix</a></li></ul></li><li><a href="#question-4-how-will-this-work-with-future-changes" class="table-of-contents__link toc-highlight">Question 4: How Will This Work With Future Changes?</a><ul><li><a href="#key-sub-questions-3" class="table-of-contents__link toc-highlight">Key Sub-Questions</a></li><li><a href="#real-example-the-multi-part-solution" class="table-of-contents__link toc-highlight">Real Example: The Multi-Part Solution</a></li><li><a href="#the-balance-future-proofing-vs-over-engineering" class="table-of-contents__link toc-highlight">The Balance: Future-Proofing vs. Over-Engineering</a></li></ul></li><li><a href="#putting-it-all-together-real-decision-examples" class="table-of-contents__link toc-highlight">Putting It All Together: Real Decision Examples</a><ul><li><a href="#example-1-database-index-addition" class="table-of-contents__link toc-highlight">Example 1: Database Index Addition</a></li><li><a href="#example-2-microservices-migration" class="table-of-contents__link toc-highlight">Example 2: Microservices Migration</a></li></ul></li><li><a href="#when-to-say-no" class="table-of-contents__link toc-highlight">When to Say No</a><ul><li><a href="#red-flags" class="table-of-contents__link toc-highlight">Red Flags</a></li><li><a href="#how-to-say-no-professionally" class="table-of-contents__link toc-highlight">How to Say No (Professionally)</a></li></ul></li><li><a href="#common-mistakes-to-avoid" class="table-of-contents__link toc-highlight">Common Mistakes to Avoid</a><ul><li><a href="#1-skipping-the-questions-for-simple-changes" class="table-of-contents__link toc-highlight">1. Skipping the Questions for &quot;Simple&quot; Changes</a></li><li><a href="#2-letting-perfect-become-the-enemy-of-good-enough" class="table-of-contents__link toc-highlight">2. Letting &quot;Perfect&quot; Become the Enemy of &quot;Good Enough&quot;</a></li><li><a href="#3-ignoring-operational-costs" class="table-of-contents__link toc-highlight">3. Ignoring Operational Costs</a></li><li><a href="#4-building-for-hypothetical-future-requirements" class="table-of-contents__link toc-highlight">4. Building for Hypothetical Future Requirements</a></li><li><a href="#5-underestimating-risk-because-it-worked-in-dev" class="table-of-contents__link toc-highlight">5. Underestimating Risk Because &quot;It Worked in Dev&quot;</a></li></ul></li><li><a href="#the-meta-question-should-i-even-build-this" class="table-of-contents__link toc-highlight">The Meta-Question: Should I Even Build This?</a><ul><li><a href="#projects-ive-declined-using-this-framework" class="table-of-contents__link toc-highlight">Projects I&#39;ve Declined Using This Framework</a></li></ul></li><li><a href="#the-framework-in-practice-a-checklist" class="table-of-contents__link toc-highlight">The Framework in Practice: A Checklist</a><ul><li><a href="#benefit-analysis" class="table-of-contents__link toc-highlight">Benefit Analysis</a></li><li><a href="#effort-analysis" class="table-of-contents__link toc-highlight">Effort Analysis</a></li><li><a href="#risk-analysis" class="table-of-contents__link toc-highlight">Risk Analysis</a></li><li><a href="#future-analysis" class="table-of-contents__link toc-highlight">Future Analysis</a></li></ul></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li><li><a href="#your-turn" class="table-of-contents__link toc-highlight">Your Turn</a></li><li><a href="#critical-analysis-issues-with-the-original-content" class="table-of-contents__link toc-highlight">Critical Analysis: Issues with the Original Content</a><ul><li><a href="#potential-over-analysis-paralysis" class="table-of-contents__link toc-highlight">Potential Over-Analysis Paralysis</a></li><li><a href="#the-perfect-code-trap" class="table-of-contents__link toc-highlight">The &quot;Perfect Code&quot; Trap</a></li><li><a href="#context-matters" class="table-of-contents__link toc-highlight">Context Matters</a></li></ul></li><li><a href="#resources" class="table-of-contents__link toc-highlight">Resources</a></li></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Navigation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/portfolio/">Home</a></li><li class="footer__item"><a class="footer__link-item" href="/portfolio/projects">Projects</a></li><li class="footer__item"><a class="footer__link-item" href="/portfolio/docs/intro">Documentation</a></li><li class="footer__item"><a class="footer__link-item" href="/portfolio/blog">Blog</a></li><li class="footer__item"><a href="/portfolio/files/resume.pdf" class="footer__link-item" target="_blank">Resume</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Social</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/ForeverAProgrammer" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/in/kristina-haynes-94915147" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:kristinathecoder@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Email<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 kristina.codes</div></div></div></footer></div>
+</body>
+</html>

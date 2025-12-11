@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-cloud/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Cloud Platforms | Kristina Haynes</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://ForeverAProgrammer.github.io/portfolio/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://ForeverAProgrammer.github.io/portfolio/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://ForeverAProgrammer.github.io/portfolio/docs/cloud/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Cloud Platforms | Kristina Haynes"><meta data-rh="true" name="description" content="Master cloud computing platforms and services to build, deploy, and scale applications in the cloud. Learn infrastructure management, container services, and cloud-native architectures."><meta data-rh="true" property="og:description" content="Master cloud computing platforms and services to build, deploy, and scale applications in the cloud. Learn infrastructure management, container services, and cloud-native architectures."><link data-rh="true" rel="icon" href="/portfolio/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://ForeverAProgrammer.github.io/portfolio/docs/cloud/"><link data-rh="true" rel="alternate" href="https://ForeverAProgrammer.github.io/portfolio/docs/cloud/" hreflang="en"><link data-rh="true" rel="alternate" href="https://ForeverAProgrammer.github.io/portfolio/docs/cloud/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Cloud Platforms","item":"https://ForeverAProgrammer.github.io/portfolio/docs/cloud/"}]}</script><link rel="alternate" type="application/rss+xml" href="/portfolio/blog/rss.xml" title="Kristina Haynes RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/portfolio/blog/atom.xml" title="Kristina Haynes Atom Feed"><link rel="stylesheet" href="/portfolio/assets/css/styles.9e02b5c9.css">
+<script src="/portfolio/assets/js/runtime~main.6cf67d21.js" defer="defer"></script>
+<script src="/portfolio/assets/js/main.8bbf85df.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/portfolio/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/portfolio/"><div class="navbar__logo"><img src="/portfolio/img/logo.svg" alt="kristina.codes Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/portfolio/img/logo.svg" alt="kristina.codes Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">kristina.codes</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/portfolio/">Home</a><a class="navbar__item navbar__link" href="/portfolio/projects">Projects</a><a class="navbar__item navbar__link" href="/portfolio/docs/intro">Documentation</a><a class="navbar__item navbar__link" href="/portfolio/blog">Blog</a><a href="/portfolio/files/resume.pdf" class="navbar__item navbar__link" target="_blank">Resume</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/ForeverAProgrammer" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/portfolio/docs/intro"><span title="Welcome to the Documentation" class="linkLabel_WmDU">Welcome to the Documentation</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible menu__list-item-collapsible--active"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" aria-current="page" href="/portfolio/docs/cloud/"><span title="Cloud Platforms" class="categoryLinkLabel_W154">Cloud Platforms</span></a><button aria-label="Collapse sidebar category &#x27;Cloud Platforms&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/portfolio/docs/cloud/aws/"><span title="AWS Guide" class="categoryLinkLabel_W154">AWS Guide</span></a><button aria-label="Expand sidebar category &#x27;AWS Guide&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/database/"><span title="Database" class="categoryLinkLabel_W154">Database</span></a><button aria-label="Expand sidebar category &#x27;Database&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/design-patterns/"><span title="Design Patterns" class="categoryLinkLabel_W154">Design Patterns</span></a><button aria-label="Expand sidebar category &#x27;Design Patterns&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/devops/"><span title="DevOps" class="categoryLinkLabel_W154">DevOps</span></a><button aria-label="Expand sidebar category &#x27;DevOps&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/frameworks/"><span title="Frontend Frameworks" class="categoryLinkLabel_W154">Frontend Frameworks</span></a><button aria-label="Expand sidebar category &#x27;Frontend Frameworks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/languages/"><span title="Programming Languages" class="categoryLinkLabel_W154">Programming Languages</span></a><button aria-label="Expand sidebar category &#x27;Programming Languages&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/linux/"><span title="Linux" class="categoryLinkLabel_W154">Linux</span></a><button aria-label="Expand sidebar category &#x27;Linux&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/testing/"><span title="Testing" class="categoryLinkLabel_W154">Testing</span></a><button aria-label="Expand sidebar category &#x27;Testing&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/portfolio/docs/web-development/"><span title="Web Development" class="categoryLinkLabel_W154">Web Development</span></a><button aria-label="Expand sidebar category &#x27;Web Development&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/portfolio/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Cloud Platforms</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Cloud Platforms</h1></header>
+<p>Master cloud computing platforms and services to build, deploy, and scale applications in the cloud. Learn infrastructure management, container services, and cloud-native architectures.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-covered">What&#x27;s Covered<a href="#whats-covered" class="hash-link" aria-label="Direct link to What&#x27;s Covered" title="Direct link to What&#x27;s Covered" translate="no">​</a></h2>
+<p>This section covers major cloud platforms with focus on Amazon Web Services (AWS). Learn how to leverage cloud services for compute, storage, networking, and container orchestration.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="topics">Topics<a href="#topics" class="hash-link" aria-label="Direct link to Topics" title="Direct link to Topics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aws-guide"><a class="" href="/portfolio/docs/cloud/aws">AWS Guide</a><a href="#aws-guide" class="hash-link" aria-label="Direct link to aws-guide" title="Direct link to aws-guide" translate="no">​</a></h3>
+<p>Comprehensive guide to Amazon Web Services covering essential services for modern applications.</p>
+<p><strong>You&#x27;ll learn:</strong></p>
+<ul>
+<li class="">AWS fundamentals and account setup</li>
+<li class="">CloudFormation for Infrastructure as Code</li>
+<li class="">EC2 instances and compute services</li>
+<li class="">ECR (Elastic Container Registry)</li>
+<li class="">EKS (Elastic Kubernetes Service)</li>
+<li class="">Networking and security best practices</li>
+<li class="">Cost optimization strategies</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-cloud-computing">Why Cloud Computing?<a href="#why-cloud-computing" class="hash-link" aria-label="Direct link to Why Cloud Computing?" title="Direct link to Why Cloud Computing?" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="benefits">Benefits<a href="#benefits" class="hash-link" aria-label="Direct link to Benefits" title="Direct link to Benefits" translate="no">​</a></h3>
+<p><strong>Scalability</strong></p>
+<ul>
+<li class="">Scale up or down based on demand</li>
+<li class="">Handle traffic spikes automatically</li>
+<li class="">Pay only for what you use</li>
+</ul>
+<p><strong>Reliability</strong></p>
+<ul>
+<li class="">High availability across regions</li>
+<li class="">Built-in redundancy</li>
+<li class="">Disaster recovery capabilities</li>
+</ul>
+<p><strong>Cost Efficiency</strong></p>
+<ul>
+<li class="">No upfront hardware costs</li>
+<li class="">Pay-as-you-go pricing</li>
+<li class="">Reduced operational overhead</li>
+</ul>
+<p><strong>Global Reach</strong></p>
+<ul>
+<li class="">Deploy worldwide in minutes</li>
+<li class="">Low-latency access for users</li>
+<li class="">Multi-region architectures</li>
+</ul>
+<p><strong>Security</strong></p>
+<ul>
+<li class="">Enterprise-grade security</li>
+<li class="">Compliance certifications</li>
+<li class="">Managed security services</li>
+</ul>
+<p><strong>Innovation</strong></p>
+<ul>
+<li class="">Access to latest technologies</li>
+<li class="">Managed services (databases, ML, analytics)</li>
+<li class="">Rapid experimentation</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloud-service-models">Cloud Service Models<a href="#cloud-service-models" class="hash-link" aria-label="Direct link to Cloud Service Models" title="Direct link to Cloud Service Models" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="infrastructure-as-a-service-iaas">Infrastructure as a Service (IaaS)<a href="#infrastructure-as-a-service-iaas" class="hash-link" aria-label="Direct link to Infrastructure as a Service (IaaS)" title="Direct link to Infrastructure as a Service (IaaS)" translate="no">​</a></h3>
+<p><strong>What it is:</strong> Virtual machines, storage, and networking</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">AWS EC2</li>
+<li class="">Azure Virtual Machines</li>
+<li class="">Google Compute Engine</li>
+</ul>
+<p><strong>Use when:</strong></p>
+<ul>
+<li class="">You need full control over infrastructure</li>
+<li class="">Migrating existing applications</li>
+<li class="">Custom software stacks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-as-a-service-paas">Platform as a Service (PaaS)<a href="#platform-as-a-service-paas" class="hash-link" aria-label="Direct link to Platform as a Service (PaaS)" title="Direct link to Platform as a Service (PaaS)" translate="no">​</a></h3>
+<p><strong>What it is:</strong> Managed runtime environment for applications</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">AWS Elastic Beanstalk</li>
+<li class="">Azure App Service</li>
+<li class="">Google App Engine</li>
+<li class="">Heroku</li>
+</ul>
+<p><strong>Use when:</strong></p>
+<ul>
+<li class="">Focus on code, not infrastructure</li>
+<li class="">Standard application frameworks</li>
+<li class="">Rapid development and deployment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="software-as-a-service-saas">Software as a Service (SaaS)<a href="#software-as-a-service-saas" class="hash-link" aria-label="Direct link to Software as a Service (SaaS)" title="Direct link to Software as a Service (SaaS)" translate="no">​</a></h3>
+<p><strong>What it is:</strong> Complete applications delivered over the internet</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Salesforce</li>
+<li class="">Microsoft 365</li>
+<li class="">Google Workspace</li>
+</ul>
+<p><strong>Use when:</strong></p>
+<ul>
+<li class="">Standard business applications</li>
+<li class="">No development required</li>
+<li class="">Quick deployment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="container-as-a-service-caas">Container as a Service (CaaS)<a href="#container-as-a-service-caas" class="hash-link" aria-label="Direct link to Container as a Service (CaaS)" title="Direct link to Container as a Service (CaaS)" translate="no">​</a></h3>
+<p><strong>What it is:</strong> Managed container orchestration</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">AWS EKS</li>
+<li class="">Azure AKS</li>
+<li class="">Google GKE</li>
+</ul>
+<p><strong>Use when:</strong></p>
+<ul>
+<li class="">Running containerized applications</li>
+<li class="">Microservices architecture</li>
+<li class="">Need orchestration without managing control plane</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="major-cloud-providers">Major Cloud Providers<a href="#major-cloud-providers" class="hash-link" aria-label="Direct link to Major Cloud Providers" title="Direct link to Major Cloud Providers" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="amazon-web-services-aws">Amazon Web Services (AWS)<a href="#amazon-web-services-aws" class="hash-link" aria-label="Direct link to Amazon Web Services (AWS)" title="Direct link to Amazon Web Services (AWS)" translate="no">​</a></h3>
+<p><strong>Market Leader</strong></p>
+<ul>
+<li class="">Largest cloud provider (32% market share)</li>
+<li class="">Most comprehensive service offering</li>
+<li class="">Global infrastructure (30+ regions)</li>
+</ul>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li class="">Mature ecosystem</li>
+<li class="">Extensive documentation</li>
+<li class="">Large community</li>
+<li class="">Wide range of services</li>
+</ul>
+<p><strong>Key Services:</strong></p>
+<ul>
+<li class="">EC2 (compute)</li>
+<li class="">S3 (storage)</li>
+<li class="">RDS (databases)</li>
+<li class="">Lambda (serverless)</li>
+<li class="">EKS (Kubernetes)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="microsoft-azure">Microsoft Azure<a href="#microsoft-azure" class="hash-link" aria-label="Direct link to Microsoft Azure" title="Direct link to Microsoft Azure" translate="no">​</a></h3>
+<p><strong>Enterprise Focus</strong></p>
+<ul>
+<li class="">Strong integration with Microsoft products</li>
+<li class="">Hybrid cloud capabilities</li>
+<li class="">Enterprise agreements</li>
+</ul>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li class="">Windows Server and .NET</li>
+<li class="">Active Directory integration</li>
+<li class="">Office 365 integration</li>
+<li class="">Hybrid cloud (Azure Arc)</li>
+</ul>
+<p><strong>Key Services:</strong></p>
+<ul>
+<li class="">Virtual Machines</li>
+<li class="">Azure Kubernetes Service (AKS)</li>
+<li class="">Azure Functions</li>
+<li class="">Cosmos DB</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="google-cloud-platform-gcp">Google Cloud Platform (GCP)<a href="#google-cloud-platform-gcp" class="hash-link" aria-label="Direct link to Google Cloud Platform (GCP)" title="Direct link to Google Cloud Platform (GCP)" translate="no">​</a></h3>
+<p><strong>Data and ML Leader</strong></p>
+<ul>
+<li class="">Advanced data analytics</li>
+<li class="">Machine learning tools</li>
+<li class="">Kubernetes expertise (created K8s)</li>
+</ul>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li class="">BigQuery analytics</li>
+<li class="">TensorFlow and AI services</li>
+<li class="">Kubernetes (GKE)</li>
+<li class="">Developer-friendly</li>
+</ul>
+<p><strong>Key Services:</strong></p>
+<ul>
+<li class="">Compute Engine</li>
+<li class="">Google Kubernetes Engine (GKE)</li>
+<li class="">Cloud Functions</li>
+<li class="">BigQuery</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloud-architecture-patterns">Cloud Architecture Patterns<a href="#cloud-architecture-patterns" class="hash-link" aria-label="Direct link to Cloud Architecture Patterns" title="Direct link to Cloud Architecture Patterns" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-tier-architecture">Multi-Tier Architecture<a href="#multi-tier-architecture" class="hash-link" aria-label="Direct link to Multi-Tier Architecture" title="Direct link to Multi-Tier Architecture" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">┌─────────────────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│     Load Balancer (ELB)         │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└────────────┬────────────────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">             │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ┌────────┴────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │                 │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌───▼────┐      ┌────▼───┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│Web Tier│      │Web Tier│  (Auto-scaling)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└───┬────┘      └────┬───┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │                │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    └────────┬───────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">             │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌────────────▼────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│     Application Tier (ECS)      │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└────────────┬────────────────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">             │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌────────────▼────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│     Database (RDS)              │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─────────────────────────────────┘</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="microservices-on-kubernetes">Microservices on Kubernetes<a href="#microservices-on-kubernetes" class="hash-link" aria-label="Direct link to Microservices on Kubernetes" title="Direct link to Microservices on Kubernetes" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">┌─────────────────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   Ingress (ALB/NLB)             │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└────────────┬────────────────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">             │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌────────────▼────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│     EKS Cluster                 │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  ┌──────────┐  ┌──────────┐    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  │Service A │  │Service B │    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  │  Pod     │  │  Pod     │    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  └─────┬────┘  └────┬─────┘    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│        │            │           │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  ┌─────▼────────────▼─────┐    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  │   Shared Services      │    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│  └────────────────────────┘    │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└────────────┬────────────────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">             │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌────────────▼────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   RDS / DynamoDB / S3           │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─────────────────────────────────┘</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="serverless-architecture">Serverless Architecture<a href="#serverless-architecture" class="hash-link" aria-label="Direct link to Serverless Architecture" title="Direct link to Serverless Architecture" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">┌─────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   API Gateway   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└────────┬────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ┌────┴────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │         │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌───▼───┐ ┌──▼─────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│Lambda │ │Lambda  │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│Func 1 │ │Func 2  │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└───┬───┘ └──┬─────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    │        │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    └────┬───┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">         │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">┌────────▼────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   DynamoDB      │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└─────────────────┘</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-optimization">Cost Optimization<a href="#cost-optimization" class="hash-link" aria-label="Direct link to Cost Optimization" title="Direct link to Cost Optimization" translate="no">​</a></h3>
+<p><strong>Right-Sizing</strong></p>
+<ul>
+<li class="">Choose appropriate instance types</li>
+<li class="">Monitor utilization metrics</li>
+<li class="">Use auto-scaling effectively</li>
+</ul>
+<p><strong>Reserved Instances</strong></p>
+<ul>
+<li class="">Commit to 1 or 3-year terms</li>
+<li class="">Save up to 70% vs on-demand</li>
+<li class="">Use for predictable workloads</li>
+</ul>
+<p><strong>Spot Instances</strong></p>
+<ul>
+<li class="">Use spare capacity at discount</li>
+<li class="">Great for batch processing</li>
+<li class="">Fault-tolerant workloads</li>
+</ul>
+<p><strong>Storage Optimization</strong></p>
+<ul>
+<li class="">Use appropriate storage classes</li>
+<li class="">Lifecycle policies for S3</li>
+<li class="">Delete unused volumes and snapshots</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="security">Security<a href="#security" class="hash-link" aria-label="Direct link to Security" title="Direct link to Security" translate="no">​</a></h3>
+<p><strong>Identity and Access Management</strong></p>
+<ul>
+<li class="">Principle of least privilege</li>
+<li class="">Use IAM roles, not access keys</li>
+<li class="">Enable MFA for sensitive accounts</li>
+<li class="">Regular access reviews</li>
+</ul>
+<p><strong>Network Security</strong></p>
+<ul>
+<li class="">Use VPCs and security groups</li>
+<li class="">Private subnets for databases</li>
+<li class="">Network ACLs for defense in depth</li>
+<li class="">VPN or Direct Connect for hybrid</li>
+</ul>
+<p><strong>Data Protection</strong></p>
+<ul>
+<li class="">Encrypt data at rest</li>
+<li class="">Encrypt data in transit (TLS)</li>
+<li class="">Regular backups</li>
+<li class="">Key management (KMS)</li>
+</ul>
+<p><strong>Monitoring and Logging</strong></p>
+<ul>
+<li class="">Enable CloudTrail</li>
+<li class="">Centralized logging</li>
+<li class="">Security monitoring</li>
+<li class="">Alerting for suspicious activity</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-availability">High Availability<a href="#high-availability" class="hash-link" aria-label="Direct link to High Availability" title="Direct link to High Availability" translate="no">​</a></h3>
+<p><strong>Multi-AZ Deployments</strong></p>
+<ul>
+<li class="">Distribute across availability zones</li>
+<li class="">Use managed services with HA</li>
+<li class="">Database replication</li>
+</ul>
+<p><strong>Disaster Recovery</strong></p>
+<ul>
+<li class="">Regular backups</li>
+<li class="">Cross-region replication</li>
+<li class="">Recovery time objectives (RTO)</li>
+<li class="">Recovery point objectives (RPO)</li>
+</ul>
+<p><strong>Health Checks</strong></p>
+<ul>
+<li class="">Implement application health checks</li>
+<li class="">Auto-scaling based on health</li>
+<li class="">Automated failover</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started">Getting Started<a href="#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-path">Learning Path<a href="#learning-path" class="hash-link" aria-label="Direct link to Learning Path" title="Direct link to Learning Path" translate="no">​</a></h3>
+<p><strong>Week 1: Cloud Fundamentals</strong></p>
+<ol>
+<li class="">Understand cloud service models</li>
+<li class="">Create cloud account (AWS free tier)</li>
+<li class="">Learn about regions and availability zones</li>
+<li class="">Explore the console/dashboard</li>
+</ol>
+<p><strong>Week 2: Compute Services</strong></p>
+<ol>
+<li class="">Launch first EC2 instance</li>
+<li class="">Understand instance types</li>
+<li class="">Configure security groups</li>
+<li class="">Connect via SSH</li>
+</ol>
+<p><strong>Week 3: Infrastructure as Code</strong></p>
+<ol>
+<li class="">Learn CloudFormation basics</li>
+<li class="">Write first template</li>
+<li class="">Deploy a stack</li>
+<li class="">Update and version templates</li>
+</ol>
+<p><strong>Week 4: Containers</strong></p>
+<ol>
+<li class="">Push image to ECR</li>
+<li class="">Create ECS cluster</li>
+<li class="">Deploy containerized application</li>
+<li class="">Explore EKS</li>
+</ol>
+<p><strong>Beyond: Advanced Topics</strong></p>
+<ul>
+<li class="">Kubernetes on EKS</li>
+<li class="">Serverless architectures</li>
+<li class="">Multi-region deployments</li>
+<li class="">Cost optimization</li>
+<li class="">Security hardening</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hands-on-practice">Hands-On Practice<a href="#hands-on-practice" class="hash-link" aria-label="Direct link to Hands-On Practice" title="Direct link to Hands-On Practice" translate="no">​</a></h3>
+<p><strong>Free Tier Resources:</strong></p>
+<ul>
+<li class="">AWS: 750 hours EC2 (t2.micro/t3.micro)</li>
+<li class="">Azure: $200 credit for 30 days</li>
+<li class="">GCP: $300 credit for 90 days</li>
+</ul>
+<p><strong>Learning Platforms:</strong></p>
+<ul>
+<li class=""><a href="https://aws.amazon.com/training/" target="_blank" rel="noopener noreferrer" class="">AWS Training and Certification</a></li>
+<li class=""><a href="https://acloudguru.com/" target="_blank" rel="noopener noreferrer" class="">A Cloud Guru</a></li>
+<li class=""><a href="https://www.pluralsight.com/" target="_blank" rel="noopener noreferrer" class="">Pluralsight</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloud-certifications">Cloud Certifications<a href="#cloud-certifications" class="hash-link" aria-label="Direct link to Cloud Certifications" title="Direct link to Cloud Certifications" translate="no">​</a></h2>
+<p>AWS offers a comprehensive certification program with four levels: Foundational, Associate, Professional, and Specialty. Each level builds upon the previous, validating your cloud expertise.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="certification-levels-explained">Certification Levels Explained<a href="#certification-levels-explained" class="hash-link" aria-label="Direct link to Certification Levels Explained" title="Direct link to Certification Levels Explained" translate="no">​</a></h3>
+<p><strong>Foundational Level</strong></p>
+<ul>
+<li class="">Entry point for AWS certifications</li>
+<li class="">No prerequisites required</li>
+<li class="">Validates overall cloud understanding</li>
+<li class="">Ideal for non-technical roles and beginners</li>
+<li class="">6 months recommended AWS experience</li>
+</ul>
+<p><strong>Associate Level</strong></p>
+<ul>
+<li class="">Intermediate certifications for technical roles</li>
+<li class="">Validates ability to design, deploy, and manage AWS solutions</li>
+<li class="">Role-based certifications (architect, developer, operations)</li>
+<li class="">1+ year recommended AWS experience</li>
+<li class="">Most popular certification level</li>
+</ul>
+<p><strong>Professional Level</strong></p>
+<ul>
+<li class="">Advanced certifications demonstrating expertise</li>
+<li class="">Requires deep technical knowledge and hands-on experience</li>
+<li class="">Validates ability to design complex, distributed systems</li>
+<li class="">2+ years recommended AWS experience</li>
+<li class="">Highly valued by employers</li>
+</ul>
+<p><strong>Specialty Level</strong></p>
+<ul>
+<li class="">Domain-specific expertise certifications</li>
+<li class="">Focus on specialized technical areas</li>
+<li class="">Can be pursued independently or after Associate/Professional</li>
+<li class="">Demonstrates deep knowledge in specific AWS services</li>
+<li class="">Ideal for subject matter experts</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aws-certifications">AWS Certifications<a href="#aws-certifications" class="hash-link" aria-label="Direct link to AWS Certifications" title="Direct link to AWS Certifications" translate="no">​</a></h3>
+<p><strong>Foundational</strong></p>
+<p><a href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Cloud Practitioner</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Basic understanding of AWS services, cloud concepts, security, and pricing</li>
+<li class=""><strong>Best for:</strong> Business analysts, project managers, sales, marketing, or anyone new to cloud</li>
+<li class=""><strong>Duration:</strong> 90 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 700/1000</li>
+<li class=""><strong>Topics:</strong> Cloud concepts (26%), Security (25%), Technology (33%), Billing/Pricing (16%)</li>
+</ul>
+<p><strong>Associate Level</strong></p>
+<p><a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Solutions Architect - Associate</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Ability to design distributed systems and applications on AWS</li>
+<li class=""><strong>Best for:</strong> Solutions architects, cloud engineers</li>
+<li class=""><strong>Duration:</strong> 130 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 720/1000</li>
+<li class=""><strong>Topics:</strong> Design secure architectures, resilient architectures, high-performing architectures, cost-optimized architectures</li>
+<li class=""><strong>Most popular AWS certification</strong></li>
+</ul>
+<p><a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Developer - Associate</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Proficiency in developing and maintaining AWS-based applications</li>
+<li class=""><strong>Best for:</strong> Software developers, application engineers</li>
+<li class=""><strong>Duration:</strong> 130 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 720/1000</li>
+<li class=""><strong>Topics:</strong> Development with AWS services, security, deployment, debugging</li>
+</ul>
+<p><a href="https://aws.amazon.com/certification/certified-sysops-admin-associate/" target="_blank" rel="noopener noreferrer" class="">AWS Certified SysOps Administrator - Associate</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Ability to deploy, manage, and operate workloads on AWS</li>
+<li class=""><strong>Best for:</strong> System administrators, DevOps engineers</li>
+<li class=""><strong>Duration:</strong> 130 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 720/1000</li>
+<li class=""><strong>Topics:</strong> Monitoring/logging, remediation, security/compliance, networking, cost optimization</li>
+<li class=""><strong>Includes hands-on lab exam section</strong></li>
+</ul>
+<p><strong>Professional Level</strong></p>
+<p><a href="https://aws.amazon.com/certification/certified-solutions-architect-professional/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Solutions Architect - Professional</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Advanced technical skills in designing complex distributed applications</li>
+<li class=""><strong>Best for:</strong> Senior solutions architects, cloud architects</li>
+<li class=""><strong>Duration:</strong> 180 minutes | <strong>Questions:</strong> 75 | <strong>Passing Score:</strong> 750/1000</li>
+<li class=""><strong>Topics:</strong> Organizational complexity, design for new solutions, continuous improvement, migration/cost optimization</li>
+<li class=""><strong>One of the most challenging AWS certifications</strong></li>
+</ul>
+<p><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/" target="_blank" rel="noopener noreferrer" class="">AWS Certified DevOps Engineer - Professional</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Expertise in provisioning, operating, and managing AWS environments</li>
+<li class=""><strong>Best for:</strong> DevOps engineers, site reliability engineers</li>
+<li class=""><strong>Duration:</strong> 180 minutes | <strong>Questions:</strong> 75 | <strong>Passing Score:</strong> 750/1000</li>
+<li class=""><strong>Topics:</strong> SDLC automation, configuration management, monitoring/logging, incident response, security</li>
+</ul>
+<p><strong>Specialty</strong></p>
+<p><a href="https://aws.amazon.com/certification/certified-security-specialty/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Security - Specialty</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Expertise in securing AWS workloads</li>
+<li class=""><strong>Best for:</strong> Security engineers, security architects, compliance officers</li>
+<li class=""><strong>Duration:</strong> 170 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 750/1000</li>
+<li class=""><strong>Topics:</strong> Incident response, logging/monitoring, infrastructure security, identity/access management, data protection</li>
+</ul>
+<p><a href="https://aws.amazon.com/certification/certified-database-specialty/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Database - Specialty</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Expertise in designing and maintaining AWS database solutions</li>
+<li class=""><strong>Best for:</strong> Database administrators, database engineers</li>
+<li class=""><strong>Duration:</strong> 180 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 750/1000</li>
+<li class=""><strong>Topics:</strong> Workload-specific database design, deployment/migration, management/operations, monitoring/troubleshooting</li>
+</ul>
+<p><a href="https://aws.amazon.com/certification/certified-machine-learning-specialty/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Machine Learning - Specialty</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Ability to design, implement, and maintain ML solutions on AWS</li>
+<li class=""><strong>Best for:</strong> ML engineers, data scientists</li>
+<li class=""><strong>Duration:</strong> 180 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 750/1000</li>
+<li class=""><strong>Topics:</strong> Data engineering, exploratory data analysis, modeling, ML implementation/operations</li>
+</ul>
+<p><a href="https://aws.amazon.com/certification/certified-advanced-networking-specialty/" target="_blank" rel="noopener noreferrer" class="">AWS Certified Advanced Networking - Specialty</a></p>
+<ul>
+<li class=""><strong>What it validates:</strong> Expertise in designing and implementing AWS and hybrid network architectures</li>
+<li class=""><strong>Best for:</strong> Network engineers, network architects</li>
+<li class=""><strong>Duration:</strong> 170 minutes | <strong>Questions:</strong> 65 | <strong>Passing Score:</strong> 750/1000</li>
+<li class=""><strong>Topics:</strong> Network design, network implementation, automation, security, optimization</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="certification-path-recommendations">Certification Path Recommendations<a href="#certification-path-recommendations" class="hash-link" aria-label="Direct link to Certification Path Recommendations" title="Direct link to Certification Path Recommendations" translate="no">​</a></h3>
+<p><strong>Path 1: Solutions Architect Track</strong></p>
+<ol>
+<li class="">Cloud Practitioner (Foundational)</li>
+<li class="">Solutions Architect Associate</li>
+<li class="">Solutions Architect Professional</li>
+</ol>
+<p><strong>Path 2: Developer Track</strong></p>
+<ol>
+<li class="">Cloud Practitioner (Foundational)</li>
+<li class="">Developer Associate</li>
+<li class="">DevOps Engineer Professional</li>
+</ol>
+<p><strong>Path 3: Operations Track</strong></p>
+<ol>
+<li class="">Cloud Practitioner (Foundational)</li>
+<li class="">SysOps Administrator Associate</li>
+<li class="">DevOps Engineer Professional</li>
+</ol>
+<p><strong>Path 4: Specialty Focus</strong></p>
+<ol>
+<li class="">Associate-level certification (any)</li>
+<li class="">Relevant Specialty certification</li>
+</ol>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-get-certified">Why Get Certified?<a href="#why-get-certified" class="hash-link" aria-label="Direct link to Why Get Certified?" title="Direct link to Why Get Certified?" translate="no">​</a></h3>
+<p><strong>Career Benefits:</strong></p>
+<ul>
+<li class="">Validate cloud skills and knowledge</li>
+<li class="">Stand out in competitive job market</li>
+<li class="">Career advancement opportunities</li>
+<li class="">Average salary increase of 20-30%</li>
+<li class="">Meet employer certification requirements</li>
+</ul>
+<p><strong>Personal Benefits:</strong></p>
+<ul>
+<li class="">Structured learning path</li>
+<li class="">Hands-on AWS experience</li>
+<li class="">Industry recognition</li>
+<li class="">Access to AWS certification community</li>
+<li class="">Exclusive AWS certification benefits (digital badge, networking events)</li>
+</ul>
+<p><strong>Employer Benefits:</strong></p>
+<ul>
+<li class="">Demonstrate team expertise</li>
+<li class="">AWS Partner Network requirements</li>
+<li class="">Customer confidence</li>
+<li class="">Access to AWS support programs</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-use-cases">Common Use Cases<a href="#common-use-cases" class="hash-link" aria-label="Direct link to Common Use Cases" title="Direct link to Common Use Cases" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="web-applications">Web Applications<a href="#web-applications" class="hash-link" aria-label="Direct link to Web Applications" title="Direct link to Web Applications" translate="no">​</a></h3>
+<ul>
+<li class="">EC2 for compute</li>
+<li class="">RDS for database</li>
+<li class="">S3 for static assets</li>
+<li class="">CloudFront for CDN</li>
+<li class="">Route 53 for DNS</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="microservices">Microservices<a href="#microservices" class="hash-link" aria-label="Direct link to Microservices" title="Direct link to Microservices" translate="no">​</a></h3>
+<ul>
+<li class="">EKS for orchestration</li>
+<li class="">ECR for container registry</li>
+<li class="">Application Load Balancer</li>
+<li class="">Service mesh (App Mesh)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-analytics">Data Analytics<a href="#data-analytics" class="hash-link" aria-label="Direct link to Data Analytics" title="Direct link to Data Analytics" translate="no">​</a></h3>
+<ul>
+<li class="">S3 for data lake</li>
+<li class="">Athena for queries</li>
+<li class="">Glue for ETL</li>
+<li class="">Redshift for warehousing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="machine-learning">Machine Learning<a href="#machine-learning" class="hash-link" aria-label="Direct link to Machine Learning" title="Direct link to Machine Learning" translate="no">​</a></h3>
+<ul>
+<li class="">SageMaker for model training</li>
+<li class="">S3 for data storage</li>
+<li class="">Lambda for inference</li>
+<li class="">EKS for ML workloads</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resources">Resources<a href="#resources" class="hash-link" aria-label="Direct link to Resources" title="Direct link to Resources" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="official-documentation">Official Documentation<a href="#official-documentation" class="hash-link" aria-label="Direct link to Official Documentation" title="Direct link to Official Documentation" translate="no">​</a></h3>
+<ul>
+<li class=""><a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener noreferrer" class="">AWS Documentation</a></li>
+<li class=""><a href="https://docs.microsoft.com/azure/" target="_blank" rel="noopener noreferrer" class="">Azure Documentation</a></li>
+<li class=""><a href="https://cloud.google.com/docs" target="_blank" rel="noopener noreferrer" class="">GCP Documentation</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-platforms">Learning Platforms<a href="#learning-platforms" class="hash-link" aria-label="Direct link to Learning Platforms" title="Direct link to Learning Platforms" translate="no">​</a></h3>
+<ul>
+<li class=""><a href="https://aws.amazon.com/training/" target="_blank" rel="noopener noreferrer" class="">AWS Training</a></li>
+<li class=""><a href="https://docs.microsoft.com/learn/" target="_blank" rel="noopener noreferrer" class="">Microsoft Learn</a></li>
+<li class=""><a href="https://www.cloudskillsboost.google/" target="_blank" rel="noopener noreferrer" class="">Google Cloud Skills Boost</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="communities">Communities<a href="#communities" class="hash-link" aria-label="Direct link to Communities" title="Direct link to Communities" translate="no">​</a></h3>
+<ul>
+<li class="">AWS Community Builders</li>
+<li class="">Cloud Native Computing Foundation (CNCF)</li>
+<li class="">r/aws on Reddit</li>
+<li class="">Stack Overflow</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<ol>
+<li class=""><strong>New to cloud?</strong> Start with <a class="" href="/portfolio/docs/cloud/aws">AWS Guide</a> to learn fundamentals</li>
+<li class=""><strong>Ready to deploy?</strong> Learn <a class="" href="/portfolio/docs/devops/infrastructure-as-code">Infrastructure as Code</a> with Terraform</li>
+<li class=""><strong>Running containers?</strong> Explore <a class="" href="/portfolio/docs/cloud/aws/eks">EKS - Elastic Kubernetes Service</a></li>
+<li class=""><strong>Need automation?</strong> Check out <a class="" href="/portfolio/docs/devops/cicd">CI/CD</a> for deployment pipelines</li>
+</ol>
+<hr>
+<p><strong>Leverage the cloud to build scalable, reliable, and cost-effective applications!</strong></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/portfolio/docs/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Welcome to the Documentation</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/portfolio/docs/cloud/aws/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">AWS Guide</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#whats-covered" class="table-of-contents__link toc-highlight">What&#39;s Covered</a></li><li><a href="#topics" class="table-of-contents__link toc-highlight">Topics</a><ul><li><a href="#aws-guide" class="table-of-contents__link toc-highlight">AWS Guide</a></li></ul></li><li><a href="#why-cloud-computing" class="table-of-contents__link toc-highlight">Why Cloud Computing?</a><ul><li><a href="#benefits" class="table-of-contents__link toc-highlight">Benefits</a></li></ul></li><li><a href="#cloud-service-models" class="table-of-contents__link toc-highlight">Cloud Service Models</a><ul><li><a href="#infrastructure-as-a-service-iaas" class="table-of-contents__link toc-highlight">Infrastructure as a Service (IaaS)</a></li><li><a href="#platform-as-a-service-paas" class="table-of-contents__link toc-highlight">Platform as a Service (PaaS)</a></li><li><a href="#software-as-a-service-saas" class="table-of-contents__link toc-highlight">Software as a Service (SaaS)</a></li><li><a href="#container-as-a-service-caas" class="table-of-contents__link toc-highlight">Container as a Service (CaaS)</a></li></ul></li><li><a href="#major-cloud-providers" class="table-of-contents__link toc-highlight">Major Cloud Providers</a><ul><li><a href="#amazon-web-services-aws" class="table-of-contents__link toc-highlight">Amazon Web Services (AWS)</a></li><li><a href="#microsoft-azure" class="table-of-contents__link toc-highlight">Microsoft Azure</a></li><li><a href="#google-cloud-platform-gcp" class="table-of-contents__link toc-highlight">Google Cloud Platform (GCP)</a></li></ul></li><li><a href="#cloud-architecture-patterns" class="table-of-contents__link toc-highlight">Cloud Architecture Patterns</a><ul><li><a href="#multi-tier-architecture" class="table-of-contents__link toc-highlight">Multi-Tier Architecture</a></li><li><a href="#microservices-on-kubernetes" class="table-of-contents__link toc-highlight">Microservices on Kubernetes</a></li><li><a href="#serverless-architecture" class="table-of-contents__link toc-highlight">Serverless Architecture</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#cost-optimization" class="table-of-contents__link toc-highlight">Cost Optimization</a></li><li><a href="#security" class="table-of-contents__link toc-highlight">Security</a></li><li><a href="#high-availability" class="table-of-contents__link toc-highlight">High Availability</a></li></ul></li><li><a href="#getting-started" class="table-of-contents__link toc-highlight">Getting Started</a><ul><li><a href="#learning-path" class="table-of-contents__link toc-highlight">Learning Path</a></li><li><a href="#hands-on-practice" class="table-of-contents__link toc-highlight">Hands-On Practice</a></li></ul></li><li><a href="#cloud-certifications" class="table-of-contents__link toc-highlight">Cloud Certifications</a><ul><li><a href="#certification-levels-explained" class="table-of-contents__link toc-highlight">Certification Levels Explained</a></li><li><a href="#aws-certifications" class="table-of-contents__link toc-highlight">AWS Certifications</a></li><li><a href="#certification-path-recommendations" class="table-of-contents__link toc-highlight">Certification Path Recommendations</a></li><li><a href="#why-get-certified" class="table-of-contents__link toc-highlight">Why Get Certified?</a></li></ul></li><li><a href="#common-use-cases" class="table-of-contents__link toc-highlight">Common Use Cases</a><ul><li><a href="#web-applications" class="table-of-contents__link toc-highlight">Web Applications</a></li><li><a href="#microservices" class="table-of-contents__link toc-highlight">Microservices</a></li><li><a href="#data-analytics" class="table-of-contents__link toc-highlight">Data Analytics</a></li><li><a href="#machine-learning" class="table-of-contents__link toc-highlight">Machine Learning</a></li></ul></li><li><a href="#resources" class="table-of-contents__link toc-highlight">Resources</a><ul><li><a href="#official-documentation" class="table-of-contents__link toc-highlight">Official Documentation</a></li><li><a href="#learning-platforms" class="table-of-contents__link toc-highlight">Learning Platforms</a></li><li><a href="#communities" class="table-of-contents__link toc-highlight">Communities</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Navigation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/portfolio/">Home</a></li><li class="footer__item"><a class="footer__link-item" href="/portfolio/projects">Projects</a></li><li class="footer__item"><a class="footer__link-item" href="/portfolio/docs/intro">Documentation</a></li><li class="footer__item"><a class="footer__link-item" href="/portfolio/blog">Blog</a></li><li class="footer__item"><a href="/portfolio/files/resume.pdf" class="footer__link-item" target="_blank">Resume</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Social</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/ForeverAProgrammer" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://www.linkedin.com/in/kristina-haynes-94915147" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:kristinathecoder@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Email<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 kristina.codes</div></div></div></footer></div>
+</body>
+</html>

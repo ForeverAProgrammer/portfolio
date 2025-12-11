@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina Haynes - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            font-size: 11pt;
+        }
+
+        h1 {
+            color: #c2185b;
+            font-size: 28pt;
+            margin-bottom: 0.2in;
+            border-bottom: 3px solid #c2185b;
+            padding-bottom: 0.1in;
+        }
+
+        h2 {
+            color: #c2185b;
+            font-size: 16pt;
+            margin-top: 0.3in;
+            margin-bottom: 0.15in;
+            border-bottom: 2px solid #f48fb1;
+            padding-bottom: 0.05in;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 13pt;
+            margin-top: 0.15in;
+            margin-bottom: 0.05in;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 11pt;
+            margin-top: 0.1in;
+            margin-bottom: 0.05in;
+            font-weight: 600;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 0.3in;
+        }
+
+        .tagline {
+            font-size: 13pt;
+            color: #555;
+            margin-bottom: 0.1in;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            color: #666;
+            margin-top: 0.1in;
+        }
+
+        .contact-info a {
+            color: #c2185b;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 0.25in;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.05in;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .job-meta {
+            color: #666;
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        .company {
+            color: #555;
+            font-size: 11pt;
+            margin-bottom: 0.1in;
+        }
+
+        ul {
+            margin-left: 0.25in;
+            margin-bottom: 0.1in;
+        }
+
+        li {
+            margin-bottom: 0.05in;
+            font-size: 10pt;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.15in;
+            margin-top: 0.1in;
+        }
+
+        .skill-category {
+            break-inside: avoid;
+        }
+
+        .skill-category h4 {
+            color: #c2185b;
+            margin-bottom: 0.05in;
+        }
+
+        .skill-list {
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .education-item {
+            margin-bottom: 0.15in;
+            break-inside: avoid;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.05in;
+        }
+
+        .degree {
+            font-size: 10pt;
+            color: #555;
+            margin-bottom: 0.03in;
+        }
+
+        .honors {
+            font-size: 10pt;
+            color: #c2185b;
+            font-weight: 600;
+        }
+
+        .activities {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        @media print {
+            body {
+                padding: 0.4in;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Kristina Haynes</h1>
+        <div class="tagline">DevOps Engineer & Full Stack Developer</div>
+        <div class="contact-info">
+            <a href="mailto:kristinathecoder@gmail.com">kristinathecoder@gmail.com</a> •
+            <a href="https://kristina.codes">kristina.codes</a> •
+            <a href="https://github.com/ForeverAProgrammer">GitHub</a> •
+            <a href="https://www.linkedin.com/in/kristina-haynes-94915147">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Full Stack Engineer specializing in web development, database optimization, and cloud infrastructure. Experienced in building scalable applications, managing DevOps workflows, and leading technical teams.</p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Languages & Frameworks</h4>
+                <div class="skill-list">JavaScript, TypeScript, Java, VB.NET, ASP.NET, HTML5, CSS3, Node.js, React, Angular, AngularJS</div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Frontend Development</h4>
+                <div class="skill-list">jQuery, Bootstrap, HTML5 & CSS3, React, AngularJS & Angular, TypeScript, Responsive Design</div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Backend & Databases</h4>
+                <div class="skill-list">Microsoft SQL Server, SQL & T-SQL, MongoDB, Database Design, Query Optimization, NodeJS, Express.js, Spring Boot</div>
+            </div>
+
+            <div class="skill-category">
+                <h4>DevOps & Tools</h4>
+                <div class="skill-list">Docker & Kubernetes, Ansible, Vagrant, Jenkins, GitLab CI, Git & GitHub, Linux Administration</div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Cloud & Infrastructure</h4>
+                <div class="skill-list">AWS, ArgoCD, Terraform, Infrastructure as Code, Monitoring & Logging</div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Professional Skills</h4>
+                <div class="skill-list">Software Development, Business Analysis, Testing & QA, Agile/Scrum, Technical Documentation, Team Leadership</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Work Experience</h2>
+
+        <div class="job-header">
+            <h3>Software Engineer</h3>
+            <span class="job-meta">Jul 2018 - Present</span>
+        </div>
+        <div class="company">Itential</div>
+        <p style="font-size: 10pt; margin-bottom: 0.1in;">Network automation company providing solutions for enterprise IT infrastructure management. Career progression through multiple roles:</p>
+        <ul>
+            <li><strong>Network Automation Engineer</strong> - Developed automation solutions for network infrastructure</li>
+            <li><strong>Software Architecture/Team Lead on Customer Projects</strong> - Designed custom React, Angular, and AngularJS applications for customers and led customer project delivery</li>
+            <li><strong>Manager, Internal Tools Department</strong> - Managed team building internal automation and productivity tools</li>
+            <li><strong>Testing and Release Engineer (DevOps Engineer)</strong> - Built CI/CD pipelines, managed UAT environments, and automated release processes</li>
+            <li><strong>Software Engineer</strong> - Full-stack development working on the Itential Automation Platform (IAP/P6) product</li>
+        </ul>
+
+        <div class="job-header" style="margin-top: 0.2in;">
+            <h3>Software Engineer</h3>
+            <span class="job-meta">Mar 2012 - Jul 2018</span>
+        </div>
+        <div class="company">ClearCorrect</div>
+
+        <h4>Web Development</h4>
+        <ul>
+            <li>Developed and maintained a responsive website that displays 3D models using jQuery, AJAX, JavaScript, CSS and HTML5 with different views on mobile and desktop devices</li>
+            <li>Developed and maintained websites using ASP.NET, VB.NET, jQuery, JavaScript, AJAX, CSS and HTML5</li>
+            <li>Worked directly with the Product Architect to develop new features and enhancements</li>
+            <li>Designed and developed a job scheduler for an ASP.NET website</li>
+        </ul>
+
+        <h4>Application Development</h4>
+        <ul>
+            <li>Maintained a C# desktop application that controls a Laser Marker</li>
+            <li>Refactored existing code to enhance performance, reliability, and maintainability</li>
+            <li>Diagnosed and resolved problems arising from trimmer machines running software written in C#</li>
+            <li>Diagnosed and resolved problems arising from C++ 3D software</li>
+        </ul>
+
+        <h4>Database</h4>
+        <ul>
+            <li>Supported multiple database modifications and development to multiple Microsoft SQL Server databases</li>
+            <li>Identified and resolved problems with the databases such as poorly performing queries, missing foreign keys, identifying queries that are causing deadlocks and missing indexes</li>
+            <li>Spearheaded the creation of a reporting database to reduce the load on the production database and improve the production database performance</li>
+        </ul>
+
+        <h4>JIRA</h4>
+        <ul>
+            <li>Assisted with the administration of Atlassian tools</li>
+            <li>Setup JIRA for tracking enhancements, bugs and Help Desk requests</li>
+            <li>Created and maintained JIRA workflows for the Software Development department</li>
+            <li>Integrated JIRA with HipChat and BitBucket</li>
+            <li>Created and managed security schemes, permission schemes and configurations</li>
+            <li>Managed and administered JIRA/BitBucket add-ons, plugins, and extensions</li>
+        </ul>
+
+        <h4>Help Desk</h4>
+        <ul>
+            <li>Migrated the Help Desk from JitBit to Zendesk</li>
+            <li>Managed Tier 1, Tier 2 and Tier 3 Help Desk using JitBit, JIRA and Zendesk</li>
+            <li>Integrated Zendesk with an ASP.NET site so that users can log Help Desk tickets from within the site</li>
+        </ul>
+
+        <div class="job-header" style="margin-top: 0.2in;">
+            <h3>Senior Consultant</h3>
+            <span class="job-meta">Dec 2010 - Jan 2012</span>
+        </div>
+        <div class="company">Quorum Business Solutions</div>
+
+        <h4>Midstream Support Hub</h4>
+        <ul>
+            <li>Led a small team in charge of solving client application specific issues</li>
+            <li>Served as an assistant Business Liaison for Client Support issues</li>
+            <li>Became the Technical Expert in the Support Hub charged with providing training for junior consultants in how to use and understand the TIPS application code and other database structures</li>
+            <li>Completed multiple smaller client oriented projects with a 100% satisfaction rate</li>
+            <li>Approved issue estimates for the Support Hub in order to guarantee that issues were being completed in a timely manner, within budget, and that the estimates from the developers were both reasonable and realistic</li>
+            <li>Served as a Mentor to Junior Employees for direct training and support</li>
+            <li>Prepared and executed test cases to ensure proper configuration of TIPS</li>
+            <li>Prepared configuration documentation for Clients, explaining in detail their current TIPS configuration with the data provided</li>
+        </ul>
+
+        <h4>Core Team Developer</h4>
+        <ul>
+            <li>Used C++ to debug the TIPS application code and make enhancements based on specific client requests and designs</li>
+            <li>Worked directly with the Project Architect to develop new features and enhancements</li>
+            <li>Refactored existing code to enhance performance, reliability, and maintainability</li>
+        </ul>
+
+        <div class="job-header" style="margin-top: 0.2in;">
+            <h3>Consultant</h3>
+            <span class="job-meta">Jul 2008 - Nov 2010</span>
+        </div>
+        <div class="company">Quorum Business Solutions</div>
+        <ul>
+            <li>Developed and Repaired Crystal Reports for the Quorum TIPS, QCM, and QDOD applications</li>
+            <li>Performed in the role of Debug and Support technician focusing on the resolving of database data conflicts and the correction and enhancement of existing client database objects (procedures, views, etc.)</li>
+            <li>Became a functional expert on the Quorum TIPS application</li>
+            <li>Was deployed directly a client's site to help implement and transition a new project into the Quorum support hub, and provide direct support for existing Clients</li>
+            <li>Was assigned high profile issues and maintained them throughout their entire life cycle</li>
+            <li>Setup Demo environments and Presentations for Training</li>
+        </ul>
+
+        <div class="job-header" style="margin-top: 0.2in;">
+            <h3>Help Desk Support</h3>
+            <span class="job-meta">Sep 2006 - May 2008</span>
+        </div>
+        <div class="company">Texas A&M</div>
+        <ul>
+            <li>Provided one-on-one customer software support</li>
+            <li>Taught the usage of Group Decision Support Systems Software</li>
+            <li>Provided hardware trouble-shooting and diagnosis</li>
+            <li>Created clear and concise directions for various technical tasks</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <div class="education-header">
+                <h3>Texas A&M</h3>
+                <span class="job-meta">2006 - 2008</span>
+            </div>
+            <div class="degree">Bachelor of Business Administration, Management Information Systems</div>
+            <div class="activities"><strong>Activities:</strong> Association of Information Technology Professionals, Japan Club, TAMU Linux Users Group, Texas A&M University Kendo Kyokai, Texas A&M Iaido Kyokai</div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-header">
+                <h3>Blinn College</h3>
+                <span class="job-meta">2004 - 2006</span>
+            </div>
+            <div class="degree">Associate in Science, Business • 3.7 GPA</div>
+            <div class="honors">Graduated Magna Cum Laude • Dean's List • President's Scholar</div>
+            <div class="activities"><strong>Activities:</strong> Phi Theta Kappa, Sigma Kappa Delta, Kappa Kappa Psi, Band</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>HTML5 from W3C - edX</li>
+            <li>HTML5.2x: HTML5 Part 2: Advanced Techniques for Designing HTML5 Apps - edX</li>
+            <li>HTML5.1x: HTML5 Part 1: HTML5 Coding Essentials and Best Practices - edX</li>
+            <li>HTML5 Introduction - edX Verified Certificate</li>
+            <li>Querying with Transact-SQL - edX Honor Code Certificate</li>
+        </ul>
+    </div>
+</body>
+</html>
