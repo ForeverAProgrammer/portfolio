@@ -22,23 +22,23 @@ function HomepageHeader() {
           <span className="tag">CI/CD</span>
         </div>
         <div className={styles.buttons}>
-          <Link
+          <a
             className="button button--secondary button--lg"
-            to="/#work">
+            href="#work">
             View My Work
-          </Link>
-          <Link
+          </a>
+          <a
             className="button button--secondary button--lg"
-            to="/#education"
+            href="#education"
             style={{ marginLeft: '1rem' }}>
             Education
-          </Link>
-          <Link
+          </a>
+          <a
             className="button button--secondary button--lg"
-            to="/#resume"
+            href="#resume"
             style={{ marginLeft: '1rem' }}>
             Skills & Resume
-          </Link>
+          </a>
         </div>
       </div>
     </header>
