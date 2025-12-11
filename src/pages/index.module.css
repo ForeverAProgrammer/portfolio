@@ -20,4 +20,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .buttons a {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 !important;
+  }
 }
