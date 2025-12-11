@@ -64,28 +64,28 @@ A class should have only one reason to change.
 ### Creational Patterns
 Deal with object creation mechanisms.
 
-- **[Singleton](./singleton)** - Ensure a class has only one instance
-- **[Factory Method](./factory-method)** - Define an interface for creating objects
-- **[Abstract Factory](./abstract-factory)** - Create families of related objects
+- **[Singleton](./creational/singleton)** - Ensure a class has only one instance
+- **[Factory Method](./creational/factory-method)** - Define an interface for creating objects
+- **[Abstract Factory](./creational/abstract-factory)** - Create families of related objects
 
 ### Behavioral Patterns
 Deal with object collaboration and delegation.
 
-- **[Strategy](./strategy)** - Define a family of algorithms and make them interchangeable
-- **[Observer](./observer)** - Define one-to-many dependency between objects
-- **[Command](./command)** - Encapsulate a request as an object
-- **[Template Method](./template-method)** - Define skeleton of algorithm in base class
-- **[Iterator](./iterator)** - Access elements of collection sequentially
-- **[State](./state)** - Allow object to alter behavior when internal state changes
+- **[Strategy](./behavioral/strategy)** - Define a family of algorithms and make them interchangeable
+- **[Observer](./behavioral/observer)** - Define one-to-many dependency between objects
+- **[Command](./behavioral/command)** - Encapsulate a request as an object
+- **[Template Method](./behavioral/template-method)** - Define skeleton of algorithm in base class
+- **[Iterator](./behavioral/iterator)** - Access elements of collection sequentially
+- **[State](./behavioral/state)** - Allow object to alter behavior when internal state changes
 
 ### Structural Patterns
 Deal with object composition and structure.
 
-- **[Decorator](./decorator)** - Add responsibilities to objects dynamically
-- **[Adapter](./adapter)** - Convert interface of class into another interface
-- **[Facade](./facade)** - Provide unified interface to subsystem
-- **[Composite](./composite)** - Compose objects into tree structures
-- **[Proxy](./proxy)** - Provide surrogate or placeholder for another object
+- **[Decorator](./structural/decorator)** - Add responsibilities to objects dynamically
+- **[Adapter](./structural/adapter)** - Convert interface of class into another interface
+- **[Facade](./structural/facade)** - Provide unified interface to subsystem
+- **[Composite](./structural/composite)** - Compose objects into tree structures
+- **[Proxy](./structural/proxy)** - Provide surrogate or placeholder for another object
 
 ## Pattern Quick Reference
 
@@ -242,11 +242,11 @@ Design Principles
 
 Start your journey with these fundamental patterns:
 
-1. **[Strategy Pattern](./strategy)** - Learn to encapsulate algorithms
-2. **[Observer Pattern](./observer)** - Master event-driven design
-3. **[Decorator Pattern](./decorator)** - Extend objects dynamically
-4. **[Factory Patterns](./factory-method)** - Control object creation
-5. **[Singleton Pattern](./singleton)** - Manage single instances
+1. **[Strategy Pattern](./behavioral/strategy)** - Learn to encapsulate algorithms
+2. **[Observer Pattern](./behavioral/observer)** - Master event-driven design
+3. **[Decorator Pattern](./structural/decorator)** - Extend objects dynamically
+4. **[Factory Patterns](./creational/factory-method)** - Control object creation
+5. **[Singleton Pattern](./creational/singleton)** - Manage single instances
 
 ## Additional Resources
 

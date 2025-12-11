@@ -66,9 +66,9 @@ Learn object-oriented design patterns and principles for writing maintainable, f
 
 **Topics covered:**
 - **[Design Principles](design-patterns/)** - Encapsulation, composition, and interfaces
-- **Behavioral Patterns** - [Command](design-patterns/command), [Strategy](design-patterns/strategy), [Observer](design-patterns/observer), [State](design-patterns/state), [Template Method](design-patterns/template-method), [Iterator](design-patterns/iterator)
-- **Creational Patterns** - [Factory Method](design-patterns/factory-method), [Singleton](design-patterns/singleton)
-- **Structural Patterns** - [Decorator](design-patterns/decorator), [Adapter](design-patterns/adapter), [Composite](design-patterns/composite), [Proxy](design-patterns/proxy)
+- **Behavioral Patterns** - [Command](design-patterns/behavioral/command), [Strategy](design-patterns/behavioral/strategy), [Observer](design-patterns/behavioral/observer), [State](design-patterns/behavioral/state), [Template Method](design-patterns/behavioral/template-method), [Iterator](design-patterns/behavioral/iterator)
+- **Creational Patterns** - [Factory Method](design-patterns/creational/factory-method), [Singleton](design-patterns/creational/singleton)
+- **Structural Patterns** - [Decorator](design-patterns/structural/decorator), [Adapter](design-patterns/structural/adapter), [Composite](design-patterns/structural/composite), [Proxy](design-patterns/structural/proxy)
 
 **[Explore Design Patterns →](design-patterns/)**
 
