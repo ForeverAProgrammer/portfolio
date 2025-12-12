@@ -81,7 +81,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/', label: 'Home', position: 'left' },
+          { to: '/', label: 'Home', position: 'left', exact: true },
           { to: '/projects', label: 'Projects', position: 'left' },
           { to: '/docs/intro', label: 'Documentation', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
