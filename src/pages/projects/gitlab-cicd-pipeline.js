@@ -1,25 +1,24 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import { getProjectById } from '../../data/projects';
 
 export default function GitLabCICDPipeline() {
+  const project = getProjectById('gitlab-cicd-pipeline');
+
   return (
     <Layout
-      title="GitLab CI/CD Pipeline"
-      description="Production-ready CI/CD pipeline with GitLab">
+      title={project.title}
+      description={project.description}>
       <main className="container margin-vert--lg">
         <div className="row">
           <div className="col col--8 col--offset-2">
-            <h1>GitLab CI/CD Pipeline</h1>
+            <h1>{project.title}</h1>
 
             <div className="margin-vert--lg">
               <h2>Overview</h2>
               <p>
-                This project demonstrates a production-ready CI/CD pipeline built with GitLab CI/CD,
-                showcasing automated build, test, and deployment workflows. The pipeline implements
-                industry best practices for continuous integration and continuous deployment, including
-                Docker containerization, intelligent caching, artifact management, and automated testing
-                with code coverage reporting.
+                {project.overview}
               </p>
             </div>
 
@@ -79,13 +78,9 @@ Stage 3 (Deploy):
             <div className="margin-vert--lg">
               <h2>Technologies Used</h2>
               <div className="tech-stack">
-                <span className="tech-badge">GitLab CI/CD</span>
-                <span className="tech-badge">Docker</span>
-                <span className="tech-badge">Node.js</span>
-                <span className="tech-badge">Jest</span>
-                <span className="tech-badge">DevOps</span>
-                <span className="tech-badge">Automation</span>
-                <span className="tech-badge">YAML</span>
+                {project.technologies.map((tech, idx) => (
+                  <span key={idx} className="tech-badge">{tech}</span>
+                ))}
               </div>
             </div>
 
@@ -123,11 +118,11 @@ Stage 3 (Deploy):
 
             <div className="margin-vert--lg" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <a
-                href="https://gitlab.com/kristina-portfolio/gitlab-cicd-pipeline-example"
+                href={project.githubUrl}
                 className="button button--primary button--lg"
                 target="_blank"
                 rel="noopener noreferrer">
-                View on GitLab
+                {project.githubUrl.includes('gitlab.com') ? 'View on GitLab' : 'View on GitHub'}
               </a>
               <a
                 href="https://gitlab-cicd-pipeline-example-c2a1fe.gitlab.io/"

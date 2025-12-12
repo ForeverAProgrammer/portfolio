@@ -1,23 +1,24 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import { getProjectById } from '../../data/projects';
 
 export default function MermaidDemos() {
+  const project = getProjectById('mermaid-demos');
+
   return (
     <Layout
-      title="Mermaid Demos"
-      description="Collection of Mermaid diagram examples and visualizations">
+      title={project.title}
+      description={project.description}>
       <main className="container margin-vert--lg">
         <div className="row">
           <div className="col col--8 col--offset-2">
-            <h1>Mermaid Demos</h1>
+            <h1>{project.title}</h1>
 
             <div className="margin-vert--lg">
               <h2>Overview</h2>
               <p>
-                This project showcases various Mermaid diagram types and visualization techniques.
-                Mermaid is a JavaScript-based diagramming and charting tool that uses Markdown-inspired
-                text definitions to create and modify diagrams dynamically.
+                {project.overview}
               </p>
             </div>
 
@@ -36,11 +37,9 @@ export default function MermaidDemos() {
             <div className="margin-vert--lg">
               <h2>Technologies Used</h2>
               <div className="tech-stack">
-                <span className="tech-badge">Mermaid</span>
-                <span className="tech-badge">Markdown</span>
-                <span className="tech-badge">JavaScript</span>
-                <span className="tech-badge">Documentation</span>
-                <span className="tech-badge">Visualization</span>
+                {project.technologies.map((tech, idx) => (
+                  <span key={idx} className="tech-badge">{tech}</span>
+                ))}
               </div>
             </div>
 
@@ -60,16 +59,16 @@ export default function MermaidDemos() {
 
             <div className="margin-vert--lg" style={{ display: 'flex', gap: '1rem' }}>
               <a
-                href="https://github.com/ForeverAProgrammer/demos_mermaid"
+                href={project.githubUrl}
                 className="button button--primary button--lg"
                 target="_blank"
                 rel="noopener noreferrer">
-                View on GitHub
+                {project.githubUrl.includes('gitlab.com') ? 'View on GitLab' : 'View on GitHub'}
               </a>
               <Link
-                to="/"
+                to="/projects"
                 className="button button--secondary button--lg">
-                Back to Home
+                Back to Projects
               </Link>
             </div>
           </div>

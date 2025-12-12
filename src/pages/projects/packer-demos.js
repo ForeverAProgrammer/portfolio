@@ -1,24 +1,24 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import { getProjectById } from '../../data/projects';
 
 export default function PackerDemos() {
+  const project = getProjectById('packer-demos');
+
   return (
     <Layout
-      title="Packer Demos"
-      description="Demonstrations and examples of using HashiCorp Packer">
+      title={project.title}
+      description={project.description}>
       <main className="container margin-vert--lg">
         <div className="row">
           <div className="col col--8 col--offset-2">
-            <h1>Packer Demos</h1>
+            <h1>{project.title}</h1>
 
             <div className="margin-vert--lg">
               <h2>Overview</h2>
               <p>
-                This project contains demonstrations and examples of using HashiCorp Packer
-                for creating machine images across multiple platforms. Packer is an open-source
-                tool for creating identical machine images for multiple platforms from a single
-                source configuration.
+                {project.overview}
               </p>
             </div>
 
@@ -36,11 +36,9 @@ export default function PackerDemos() {
             <div className="margin-vert--lg">
               <h2>Technologies Used</h2>
               <div className="tech-stack">
-                <span className="tech-badge">Packer</span>
-                <span className="tech-badge">HCL</span>
-                <span className="tech-badge">Infrastructure as Code</span>
-                <span className="tech-badge">Automation</span>
-                <span className="tech-badge">DevOps</span>
+                {project.technologies.map((tech, idx) => (
+                  <span key={idx} className="tech-badge">{tech}</span>
+                ))}
               </div>
             </div>
 
@@ -54,16 +52,16 @@ export default function PackerDemos() {
 
             <div className="margin-vert--lg" style={{ display: 'flex', gap: '1rem' }}>
               <a
-                href="https://github.com/ForeverAProgrammer/demos_packer"
+                href={project.githubUrl}
                 className="button button--primary button--lg"
                 target="_blank"
                 rel="noopener noreferrer">
-                View on GitHub
+                {project.githubUrl.includes('gitlab.com') ? 'View on GitLab' : 'View on GitHub'}
               </a>
               <Link
-                to="/"
+                to="/projects"
                 className="button button--secondary button--lg">
-                Back to Home
+                Back to Projects
               </Link>
             </div>
           </div>

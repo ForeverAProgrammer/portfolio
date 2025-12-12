@@ -4,6 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import { getFeaturedProjects } from '../data/projects';
+import { getFeaturedExperiences } from '../data/experience';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -64,45 +66,7 @@ function AboutSection() {
 }
 
 function WorkHighlights() {
-  const highlights = [
-    {
-      title: 'Software Engineer',
-      company: 'Itential',
-      period: 'Jul 2018 - Present',
-      description: 'Network automation company providing solutions for enterprise IT infrastructure management. Career progression through multiple roles from Network Automation Engineer to current Software Engineer role.',
-      achievements: [
-        'Developed automation solutions for network infrastructure',
-        'Designed custom React, Angular, and AngularJS applications for customers',
-        'Built CI/CD pipelines, managed UAT environments, and automated release processes',
-        'Full-stack development on the Itential Automation Platform (IAP/P6) product'
-      ],
-      tech: ['React', 'Angular', 'Node.js', 'CI/CD', 'DevOps', 'Network Automation']
-    },
-    {
-      title: 'Software Engineer',
-      company: 'ClearCorrect',
-      period: 'Mar 2012 - Jul 2018',
-      description: 'Led full-stack development of responsive web applications with 3D model visualization, managed SQL Server databases, and implemented JIRA workflows for the development team.',
-      achievements: [
-        'Built responsive 3D model viewer with jQuery and HTML5',
-        'Created reporting database to improve production performance',
-        'Integrated Zendesk Help Desk with ASP.NET applications'
-      ],
-      tech: ['ASP.NET', 'C#', 'JavaScript', 'SQL Server', 'JIRA']
-    },
-    {
-      title: 'Senior Consultant',
-      company: 'Quorum Business Solutions',
-      period: 'Dec 2010 - Jan 2012',
-      description: 'Led support team for enterprise software solutions, mentored junior developers, and worked directly with clients to deliver custom C++ enhancements.',
-      achievements: [
-        'Led team solving client application issues with 100% satisfaction',
-        'Trained junior consultants on application architecture',
-        'Worked with Project Architect on new feature development'
-      ],
-      tech: ['C++', 'SQL', 'Team Leadership', 'Client Relations']
-    }
-  ];
+  const highlights = getFeaturedExperiences();
 
   return (
     <section id="work" className="portfolio-section">
@@ -123,7 +87,7 @@ function WorkHighlights() {
                 ))}
               </ul>
               <div className="tech-stack">
-                {job.tech.map((tech, i) => (
+                {job.technologies.map((tech, i) => (
                   <span key={i} className="tech-badge">{tech}</span>
                 ))}
               </div>
@@ -144,29 +108,7 @@ function WorkHighlights() {
 }
 
 function FeaturedProjects() {
-  const projects = [
-    {
-      title: 'GitLab CI/CD Pipeline',
-      description: 'Production-ready CI/CD pipeline demonstrating automated build, test, and deployment workflows',
-      technologies: ['GitLab CI/CD', 'Docker', 'DevOps'],
-      githubUrl: 'https://gitlab.com/kristina-portfolio/gitlab-cicd-pipeline-example',
-      link: '/projects/gitlab-cicd-pipeline'
-    },
-    {
-      title: 'Packer Demos',
-      description: 'Demonstrations and examples of using HashiCorp Packer for creating machine images across multiple platforms',
-      technologies: ['Packer', 'Infrastructure as Code', 'Automation'],
-      githubUrl: 'https://github.com/ForeverAProgrammer/demos_packer',
-      link: '/projects/packer-demos'
-    },
-    {
-      title: 'Mermaid Demos',
-      description: 'Collection of Mermaid diagram examples showcasing different chart types and visualization techniques',
-      technologies: ['Mermaid', 'Diagrams', 'Documentation'],
-      githubUrl: 'https://github.com/ForeverAProgrammer/demos_mermaid',
-      link: '/projects/mermaid-demos'
-    }
-  ];
+  const projects = getFeaturedProjects();
 
   return (
     <section id="projects" className="portfolio-section">
@@ -177,7 +119,7 @@ function FeaturedProjects() {
         </p>
         <div className="projects-grid">
           {projects.map((project, idx) => (
-            <div key={idx} className="project-card">
+            <Link key={idx} to={project.link} className="project-card" style={{ textDecoration: 'none', color: 'inherit' }}>
               <h3>{project.title}</h3>
               <p className="project-description">{project.description}</p>
               <div className="tech-stack">
@@ -186,19 +128,20 @@ function FeaturedProjects() {
                 ))}
               </div>
               <div className="project-links">
-                <Link to={project.link} className="button button--secondary button--sm">
+                <span className="button button--secondary button--sm">
                   Learn More
-                </Link>
+                </span>
                 <a
                   href={project.githubUrl}
                   className="button button--outline button--secondary button--sm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem' }}>
+                  style={{ marginLeft: '0.5rem' }}
+                  onClick={(e) => e.stopPropagation()}>
                   {project.githubUrl.includes('gitlab.com') ? 'View on GitLab' : 'View on GitHub'}
                 </a>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
