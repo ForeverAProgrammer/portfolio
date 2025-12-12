@@ -872,4 +872,38 @@ a {
   .portfolio-section {
     padding: 3rem 1rem;
   }
+
+  /* Work section mobile - stack title and date vertically */
+  .timeline-item > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .timeline-meta {
+    font-size: 0.85rem;
+  }
+
+  /* Fix timeline red dot cutoff on mobile */
+  .timeline {
+    padding-left: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  /* Ensure container doesn't clip the timeline dot */
+  .portfolio-section .container {
+    overflow: visible;
+  }
+
+  #work .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
