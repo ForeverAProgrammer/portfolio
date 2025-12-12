@@ -35,13 +35,13 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #f48fb1;
-  --ifm-color-primary-dark: #f06292;
-  --ifm-color-primary-darker: #ec407a;
-  --ifm-color-primary-darkest: #e91e63;
-  --ifm-color-primary-light: #f8bbd0;
-  --ifm-color-primary-lighter: #fce4ec;
-  --ifm-color-primary-lightest: #fff0f5;
+  --ifm-color-primary: #c2185b;
+  --ifm-color-primary-dark: #ad1457;
+  --ifm-color-primary-darker: #a31150;
+  --ifm-color-primary-darkest: #880e4f;
+  --ifm-color-primary-light: #d81b60;
+  --ifm-color-primary-lighter: #e91e63;
+  --ifm-color-primary-lightest: #ec407a;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   /* Dark mode backgrounds */
@@ -372,6 +372,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-sm);
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -646,7 +647,7 @@
 }
 
 [data-theme='dark'] .section-title::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30'%3E%3Cpath d='M10,15 Q60,10 100,15 T190,15' stroke='%23f48fb1' stroke-width='2' fill='none'/%3E%3Ccircle cx='30' cy='13' r='4' fill='%23fce4ec'/%3E%3Ccircle cx='70' cy='12' r='4' fill='%23fce4ec'/%3E%3Ccircle cx='100' cy='15' r='5' fill='%23f8bbd0'/%3E%3Ccircle cx='130' cy='12' r='4' fill='%23fce4ec'/%3E%3Ccircle cx='170' cy='13' r='4' fill='%23fce4ec'/%3E%3Ccircle cx='50' cy='18' r='3' fill='%23f48fb1' opacity='0.7'/%3E%3Ccircle cx='90' cy='20' r='3' fill='%23f48fb1' opacity='0.7'/%3E%3Ccircle cx='150' cy='18' r='3' fill='%23f48fb1' opacity='0.7'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30'%3E%3Cpath d='M10,15 Q60,10 100,15 T190,15' stroke='%23c2185b' stroke-width='2' fill='none'/%3E%3Ccircle cx='30' cy='13' r='4' fill='%23d81b60'/%3E%3Ccircle cx='70' cy='12' r='4' fill='%23d81b60'/%3E%3Ccircle cx='100' cy='15' r='5' fill='%23e91e63'/%3E%3Ccircle cx='130' cy='12' r='4' fill='%23d81b60'/%3E%3Ccircle cx='170' cy='13' r='4' fill='%23d81b60'/%3E%3Ccircle cx='50' cy='18' r='3' fill='%23c2185b' opacity='0.7'/%3E%3Ccircle cx='90' cy='20' r='3' fill='%23c2185b' opacity='0.7'/%3E%3Ccircle cx='150' cy='18' r='3' fill='%23c2185b' opacity='0.7'/%3E%3C/svg%3E");
 }
 
 /* Button Styling - No Emojis */
