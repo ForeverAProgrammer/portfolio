@@ -505,7 +505,7 @@ export default function BlogIndex({ posts }) {
 
             <div className="tags">
               {post.tags.map((tag) => (
-                <span key={tag.slug} className="tag">
+                <span key={tag.slug} className="tag-button">
                   {tag.name}
                 </span>
               ))}
@@ -606,7 +606,7 @@ export default function BlogPost({ post }) {
 
         <div className="tags">
           {post.tags.map((tag) => (
-            <span key={tag.slug} className="tag">
+            <span key={tag.slug} className="tag-button">
               {tag.name}
             </span>
           ))}

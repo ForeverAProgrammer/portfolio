@@ -17,11 +17,11 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">Full Stack Engineer specializing in web development, database optimization, and cloud infrastructure</p>
         <div className="hero-tags">
-          <span className="tag">AWS</span>
-          <span className="tag">Docker</span>
-          <span className="tag">Kubernetes</span>
-          <span className="tag">React • Node.js</span>
-          <span className="tag">CI/CD</span>
+          <span className="tag-button">AWS</span>
+          <span className="tag-button">Docker</span>
+          <span className="tag-button">Kubernetes</span>
+          <span className="tag-button">React • Node.js</span>
+          <span className="tag-button">CI/CD</span>
         </div>
         <div className={styles.buttons}>
           <a

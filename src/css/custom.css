@@ -116,7 +116,7 @@
   margin: 2rem 0;
 }
 
-.tag {
+.tag-button {
   background: rgba(255, 255, 255, 0.2);
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -856,7 +856,7 @@ a {
     padding: 0 0.5rem;
   }
 
-  .tag {
+  .tag-button {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
@@ -875,7 +875,7 @@ a {
   }
 
   /* Work section mobile - stack title and date vertically */
-  .timeline-item > div[style*="display: flex"] {
+  .timeline-item > div[style*='display: flex'] {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
