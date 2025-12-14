@@ -71,8 +71,8 @@ npm start
 
 ## Related Topics
 
-- [JavaScript Fundamentals](../../languages/javascript/fundamentals/) - Essential JavaScript knowledge
-- [TypeScript](../../languages/typescript/fundamentals/) - Add type safety to React
+- [JavaScript](../../languages/javascript/) - Essential JavaScript knowledge
+- [TypeScript](../../languages/typescript/) - Add type safety to React
 - [Testing](../../testing/) - Universal testing concepts
 - [Web Development](../../web-development/) - HTML, CSS, HTTP basics
 

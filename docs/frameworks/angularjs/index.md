@@ -126,7 +126,7 @@ If you're maintaining an AngularJS app:
 
 - [Angular (Modern)](../angular/) - The successor to AngularJS
 - [React](../react/) - Popular migration alternative
-- [JavaScript Fundamentals](../../languages/javascript/fundamentals/) - Modern JavaScript
+- [JavaScript](../../languages/javascript/) - Modern JavaScript
 - [Testing](../../testing/) - Universal testing concepts
 
 ---

@@ -12,8 +12,8 @@ This section focuses on Java best practices that make a real difference in your 
 
 ## Topics
 
-### Java Best Practices
-Essential patterns and practices for writing clean, maintainable Java code.
+### Java Variable Types and Best Practices
+Comprehensive guide to understanding Java variable types, best practices, and modern features.
 
 **You'll learn:**
 - **Interface vs Concrete Types**
@@ -32,21 +32,13 @@ Essential patterns and practices for writing clean, maintainable Java code.
   - Text blocks and pattern matching
   - Switch expressions
 
-[Read Best Practices Guide →](./best-practices)
+- **Real-World Examples**
+  - DAO pattern implementations
+  - Configuration classes
+  - Method parameter best practices
+  - Collection type selection strategies
 
----
-
-### Java Variable Types Deep Dive
-Comprehensive guide to understanding Java variable types and their uses.
-
-**You'll learn:**
-- Detailed comparison of primitives vs wrappers
-- Collection type selection strategies
-- DAO pattern implementations
-- Method parameter best practices
-- Real-world code examples
-
-[Read Variable Types Guide →](./variable-types)
+[Read Variable Types and Best Practices Guide →](./variable-types)
 
 ---
 
@@ -138,7 +130,7 @@ if (a.equals(b)) { }  // Always correct
 ## Learning Resources
 
 ### Books
-- **Effective Java** by Joshua Bloch (highly recommended)
+- **Effective Java** by Joshua Bloch
 - **Clean Code** by Robert Martin
 - **Java Concurrency in Practice** by Brian Goetz
 

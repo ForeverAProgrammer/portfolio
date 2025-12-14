@@ -11,7 +11,7 @@ JUnit 5 is the latest version of the most popular testing framework for Java. Th
 **JUnit 5** (also known as JUnit Jupiter) is a complete rewrite of JUnit with:
 
 - Modern Java features (Java 8+)
-- 🏗️ More flexible architecture
+- More flexible architecture
 - Better extension model
 - Lambda support
 - Parameterized tests

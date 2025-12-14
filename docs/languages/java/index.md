@@ -11,24 +11,24 @@ Java is a powerful, object-oriented programming language known for its "write on
 Comprehensive Java development from fundamentals to testing and build tools.
 
 ### [Fundamentals](./fundamentals/)
-Master core Java programming concepts and best practices.
+Master Java best practices and modern language features.
 
 **Topics covered:**
-- Java syntax and language features
-- Object-oriented programming
-- Data types and variables
-- Best practices and coding standards
+- Variable types and best practices
+- Interface vs concrete types
+- Primitives vs wrapper classes
+- Modern Java features (records, pattern matching, text blocks)
 
-### [Testing](./testing/junit5/)
+### [Testing](./testing/)
 Write reliable, maintainable tests for your Java applications.
 
 **Topics covered:**
 - JUnit 5 (Jupiter) testing framework
-- Test-driven development (TDD)
 - Mocking with Mockito
-- Integration testing
+- Test coverage with JaCoCo
+- Parameterized and nested tests
 
-### [Build Tools](./build-tools/gradle)
+### [Build Tools](./build-tools/)
 Automate your Java build process with modern tools.
 
 **Topics covered:**
@@ -90,9 +90,9 @@ java Hello
 
 ## Learning Path
 
-1. **Start with [Fundamentals](./fundamentals/)** - Learn Java syntax, OOP, and best practices
-2. **Learn [Testing](./testing/junit5)** - Write tests with JUnit 5
-3. **Master [Build Tools](./build-tools/gradle)** - Automate with Gradle or Maven
+1. **Start with [Fundamentals](./fundamentals/)** - Learn Java best practices and modern features
+2. **Learn [Testing](./testing/)** - Write tests with JUnit 5
+3. **Master [Build Tools](./build-tools/)** - Automate with Gradle or Maven
 4. **Explore Frameworks** - Spring Boot, Jakarta EE, Micronaut
 
 ## Related Topics

@@ -55,10 +55,8 @@ Manage and deliver content efficiently with modern CMS platforms.
 ## Related Topics
 
 - [Frontend Frameworks](../frameworks/) - React, Angular, Vue
-- [JavaScript](../languages/javascript/fundamentals/) - The language of the web
-- [TypeScript](../languages/typescript/fundamentals/) - Type-safe web development
+- [JavaScript](../languages/javascript/) - The language of the web
+- [TypeScript](../languages/typescript/) - Type-safe web development
 - [DevOps](../devops/) - Deployment and CI/CD
 
 ---
-
-**Build for the web - the world's most accessible platform!**

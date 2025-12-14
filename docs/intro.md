@@ -108,8 +108,8 @@ Master the programming languages that power modern software development.
 
 **Languages covered:**
 - **[Java](languages/java/)** - Enterprise applications and object-oriented programming
-- **[JavaScript](languages/javascript/fundamentals/)** - Web development and Node.js
-- **[TypeScript](languages/typescript/fundamentals/)** - Type-safe JavaScript for large applications
+- **[JavaScript](languages/javascript/)** - Web development and Node.js
+- **[TypeScript](languages/typescript/)** - Type-safe JavaScript for large applications
 
 **[Explore Languages →](languages/)**
 

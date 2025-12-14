@@ -95,14 +95,14 @@ The original Angular framework (v1.x) - now in long-term support.
 ## Learning Paths
 
 ### React Developer Path
-1. [JavaScript fundamentals](../languages/javascript/fundamentals/)
+1. [JavaScript](../languages/javascript/)
 2. [React fundamentals](./react/fundamentals/)
 3. [React testing](./react/react-testing)
 4. State management (Redux, Context API)
 5. Next.js for server-side rendering
 
 ### Angular Developer Path
-1. [TypeScript fundamentals](../languages/typescript/fundamentals/)
+1. [TypeScript](../languages/typescript/)
 2. [Angular fundamentals](./angular/fundamentals/)
 3. [Angular testing](./angular/angular-testing/)
 4. RxJS and reactive programming
