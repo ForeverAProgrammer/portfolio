@@ -452,8 +452,119 @@ Is it a collection?
 5. **Don't forget to check for null with wrappers**
 6. **Don't use primitives when null is meaningful**
 
+## Modern Java Best Practices
+
+### Use var for Local Variables (Java 10+)
+
+```java
+// Improves readability
+var names = new ArrayList<String>();
+var config = ConfigurationBuilder.newBuilder()
+    .withTimeout(30)
+    .build();
+
+// Still type-safe - compiler infers type
+```
+
+### Use Records for Data Classes (Java 14+)
+
+```java
+// ❌ Old way
+public class Person {
+    private final String name;
+    private final int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() { return name; }
+    public int getAge() { return age; }
+
+    @Override
+    public boolean equals(Object o) { /* boilerplate */ }
+    @Override
+    public int hashCode() { /* boilerplate */ }
+}
+
+// ✅ New way
+public record Person(String name, int age) {
+    // Automatically generates constructor, getters, equals, hashCode, toString
+}
+```
+
+### Use Text Blocks for Multi-line Strings (Java 15+)
+
+```java
+// ❌ Old way
+String json = "{\n" +
+              "  \"name\": \"John\",\n" +
+              "  \"age\": 30\n" +
+              "}";
+
+// ✅ New way
+String json = """
+    {
+      "name": "John",
+      "age": 30
+    }
+    """;
+```
+
+### Use Pattern Matching (Java 16+)
+
+```java
+// ❌ Old way
+if (obj instanceof String) {
+    String str = (String) obj;
+    System.out.println(str.length());
+}
+
+// ✅ New way
+if (obj instanceof String str) {
+    System.out.println(str.length());
+}
+```
+
+### Use Switch Expressions (Java 14+)
+
+```java
+// ❌ Old way
+String result;
+switch (day) {
+    case MONDAY:
+    case FRIDAY:
+        result = "Work day";
+        break;
+    case SATURDAY:
+    case SUNDAY:
+        result = "Weekend";
+        break;
+    default:
+        result = "Unknown";
+}
+
+// ✅ New way
+String result = switch (day) {
+    case MONDAY, FRIDAY -> "Work day";
+    case SATURDAY, SUNDAY -> "Weekend";
+    default -> "Unknown";
+};
+```
+
+## Summary Table
+
+| Scenario | Use | Example |
+|----------|-----|---------|
+| Variable declarations | Interface | `List<String> items` |
+| Need specific functionality | Concrete class | `LinkedList<T> queue` |
+| Simple counters/calculations | Primitive | `int count` |
+| Collections | Wrapper | `List<Integer>` |
+| Null is meaningful | Wrapper | `Integer age` |
+| Performance critical | Primitive | `double price` |
+
 ## Resources
 
-- [Effective Java by Joshua Bloch](https://www.oreilly.com/library/view/effective-java/9780134686097/) - Item 64: Refer to objects by their interfaces
 - [Java Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/)
 - [Autoboxing and Unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)
