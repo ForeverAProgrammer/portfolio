@@ -15,7 +15,7 @@ This documentation covers a wide range of topics including:
 - **Design Patterns** - Object-oriented design patterns and principles
 - **DevOps** - Docker, Kubernetes, CI/CD, GitOps, and Infrastructure as Code
 - **Frontend Frameworks** - React, Angular, and AngularJS
-- **Programming Languages** - Java, JavaScript, and TypeScript
+- **Programming Languages** - Go, Java, JavaScript, and TypeScript
 - **Linux** - Distributions, terminal basics, and user management
 - **Testing** - TDD, BDD, testing patterns, and best practices
 - **Web Development** - HTML, character encoding, and static site generators
@@ -107,6 +107,7 @@ Build modern, interactive web applications with industry-leading frameworks.
 Master the programming languages that power modern software development.
 
 **Languages covered:**
+- **[Go](languages/go/)** - Concurrent programming and systems development
 - **[Java](languages/java/)** - Enterprise applications and object-oriented programming
 - **[JavaScript](languages/javascript/)** - Web development and Node.js
 - **[TypeScript](languages/typescript/)** - Type-safe JavaScript for large applications
