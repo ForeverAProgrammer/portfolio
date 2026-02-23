@@ -24,23 +24,31 @@ You need different variations of an algorithm, and you want to be able to switch
 
 ## UML Diagram
 
-```
-┌─────────────────┐
-│    Context      │
-├─────────────────┤              ┌──────────────────┐
-│ - strategy      │───────────>  │   <<interface>>  │
-├─────────────────┤              │    Strategy      │
-│ + setStrategy() │              ├──────────────────┤
-│ + execute()     │              │ + algorithm()    │
-└─────────────────┘              └──────────────────┘
-                                          △
-                   ┌──────────────────────┼──────────────────────┐
-                   │                      │                      │
-          ┌────────────────┐    ┌────────────────┐    ┌────────────────┐
-          │ ConcreteStrategyA│   │ ConcreteStrategyB│   │ ConcreteStrategyC│
-          ├────────────────┤    ├────────────────┤    ├────────────────┤
-          │ + algorithm()  │    │ + algorithm()  │    │ + algorithm()  │
-          └────────────────┘    └────────────────┘    └────────────────┘
+```mermaid
+classDiagram
+    class Context {
+        -Strategy strategy
+        +setStrategy(Strategy)
+        +execute()
+    }
+    class Strategy {
+        <<interface>>
+        +algorithm()
+    }
+    class ConcreteStrategyA {
+        +algorithm()
+    }
+    class ConcreteStrategyB {
+        +algorithm()
+    }
+    class ConcreteStrategyC {
+        +algorithm()
+    }
+
+    Context o-- Strategy : strategy
+    Strategy <|.. ConcreteStrategyA : implements
+    Strategy <|.. ConcreteStrategyB : implements
+    Strategy <|.. ConcreteStrategyC : implements
 ```
 
 ## Implementation
