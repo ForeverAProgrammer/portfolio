@@ -24,43 +24,38 @@ You need to traverse a collection of objects without exposing the internal struc
 
 ## UML Diagram
 
-```
-┌───────────────────┐         ┌──────────────────────┐
-│    Client         │────────>│   <<interface>>      │
-└───────────────────┘         │   Aggregate          │
-                              ├──────────────────────┤
-                              │ + createIterator()   │
-                              └──────────────────────┘
-                                        △
-                                        │
-                              ┌──────────────────────┐
-                              │  ConcreteAggregate   │
-                              ├──────────────────────┤
-                              │ - items[]            │
-                              ├──────────────────────┤
-                              │ + createIterator()   │◄───┐
-                              └──────────────────────┘    │
-                                                          │
-       ┌──────────────────────┐                          │
-       │   <<interface>>      │                          │
-       │   Iterator           │                          │
-       ├──────────────────────┤                          │
-       │ + hasNext()          │                          │
-       │ + next()             │                          │
-       │ + remove()           │                          │
-       └──────────────────────┘                          │
-                 △                                        │
-                 │                                        │
-       ┌──────────────────────┐                         │
-       │  ConcreteIterator    │─────────────────────────┘
-       ├──────────────────────┤
-       │ - aggregate          │
-       │ - current            │
-       ├──────────────────────┤
-       │ + hasNext()          │
-       │ + next()             │
-       │ + remove()           │
-       └──────────────────────┘
+```mermaid
+classDiagram
+    class Aggregate {
+        <<interface>>
+        +createIterator()
+    }
+    class Iterator {
+        <<interface>>
+        +hasNext()
+        +next()
+        +remove()
+    }
+    class ConcreteAggregate {
+        -items[]
+        +createIterator()
+    }
+    class ConcreteIterator {
+        -aggregate
+        -current
+        +hasNext()
+        +next()
+        +remove()
+    }
+    class Client {
+        <<actor>>
+    }
+    note for Client "Represents any code that uses the pattern, not a concrete class"
+    Client --> Aggregate
+    Aggregate <|.. ConcreteAggregate : implements
+    Iterator <|.. ConcreteIterator : implements
+    ConcreteAggregate ..> ConcreteIterator : creates
+    ConcreteIterator --> ConcreteAggregate : aggregate
 ```
 
 ## Implementation
