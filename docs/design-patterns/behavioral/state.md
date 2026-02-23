@@ -25,22 +25,27 @@ An object needs to change its behavior based on its internal state, and the stat
 
 ## UML Diagram
 
-```
-┌──────────────────┐         ┌──────────────────────┐
-│    Context       │────────>│       State          │
-├──────────────────┤         │    <<interface>>     │
-│ - state          │         ├──────────────────────┤
-├──────────────────┤         │ + handleRequest()    │
-│ + request()      │         └──────────────────────┘
-│ + setState()     │                   △
-└──────────────────┘                   │
-                              ┌────────┴────────┐
-                              │                 │
-                     ┌────────────────┐  ┌────────────────┐
-                     │  ConcreteStateA│  │  ConcreteStateB│
-                     ├────────────────┤  ├────────────────┤
-                     │+ handleRequest()│ │+ handleRequest()│
-                     └────────────────┘  └────────────────┘
+```mermaid
+classDiagram
+    class Context {
+        -State state
+        +request()
+        +setState(State)
+    }
+    class State {
+        <<interface>>
+        +handleRequest()
+    }
+    class ConcreteStateA {
+        +handleRequest()
+    }
+    class ConcreteStateB {
+        +handleRequest()
+    }
+
+    Context o-- State : state
+    State <|.. ConcreteStateA : implements
+    State <|.. ConcreteStateB : implements
 ```
 
 ## Implementation
