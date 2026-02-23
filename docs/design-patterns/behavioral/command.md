@@ -25,44 +25,43 @@ You need to decouple the object that invokes an operation from the object that k
 
 ## UML Diagram
 
-```
-┌──────────────┐         ┌──────────────────┐
-│   Client     │────────>│    Command       │
-└──────────────┘         │  <<interface>>   │
-                         ├──────────────────┤
-       │                 │ + execute()      │
-       │                 │ + undo()         │
-       │                 └──────────────────┘
-       │                          △
-       │                          │
-       │         ┌────────────────┴────────────────┐
-       │         │                                  │
-       │    ┌────────────────┐           ┌────────────────┐
-       │    │ ConcreteCommand│           │ ConcreteCommand│
-       │    │      A         │           │      B         │
-       │    ├────────────────┤           ├────────────────┤
-       │    │ - receiver     │           │ - receiver     │
-       ├───>│ + execute()    │           │ + execute()    │
-       │    │ + undo()       │           │ + undo()       │
-       │    └────────────────┘           └────────────────┘
-       │            │                            │
-       │            v                            v
-       │    ┌──────────────┐            ┌──────────────┐
-       │    │   Receiver   │            │   Receiver   │
-       │    │      A       │            │      B       │
-       │    ├──────────────┤            ├──────────────┤
-       │    │ + action()   │            │ + action()   │
-       │    └──────────────┘            └──────────────┘
-       │
-       v
-┌──────────────┐
-│   Invoker    │
-├──────────────┤
-│ - command    │
-├──────────────┤
-│ + setCommand()│
-│ + executeCmd()│
-└──────────────┘
+```mermaid
+classDiagram
+    class Command {
+        <<interface>>
+        +execute()
+        +undo()
+    }
+    class ConcreteCommandA {
+        -receiver
+        +execute()
+        +undo()
+    }
+    class ConcreteCommandB {
+        -receiver
+        +execute()
+        +undo()
+    }
+    class ReceiverA {
+        +action()
+    }
+    class ReceiverB {
+        +action()
+    }
+    class Invoker {
+        -command
+        +setCommand()
+        +executeCmd()
+    }
+    class Client
+
+    Client --> Command
+    Client --> ConcreteCommandA
+    Client --> Invoker
+    Command <|.. ConcreteCommandA : implements
+    Command <|.. ConcreteCommandB : implements
+    ConcreteCommandA --> ReceiverA
+    ConcreteCommandB --> ReceiverB
 ```
 
 ## Implementation
