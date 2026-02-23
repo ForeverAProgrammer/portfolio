@@ -25,17 +25,17 @@ You need to ensure that a class has exactly one instance and provide a single gl
 
 ## UML Diagram
 
-```
-┌────────────────────────┐
-│      Singleton         │
-├────────────────────────┤
-│ - uniqueInstance       │ ←─┐
-│                        │   │ Self-reference
-├────────────────────────┤   │
-│ - Singleton()          │   │ Private constructor
-│ + getInstance()        │───┘ Returns unique instance
-│ + singletonOperation() │
-└────────────────────────┘
+```mermaid
+classDiagram
+    class Singleton {
+        -Singleton instance$
+        -Singleton()
+        +getInstance()$ Singleton
+        +singletonOperation()
+    }
+
+    note for Singleton "Private constructor · Returns unique instance"
+    Singleton --> Singleton : self-reference
 ```
 
 ## Implementation Approaches
