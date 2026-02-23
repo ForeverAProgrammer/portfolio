@@ -24,22 +24,27 @@ You need to control access to an object, add functionality when accessing an obj
 
 ## UML Diagram
 
-```
-┌──────────────────┐         ┌──────────────────────┐
-│     Client       │────────>│      Subject         │
-└──────────────────┘         │    <<interface>>     │
-                             ├──────────────────────┤
-                             │ + request()          │
-                             └──────────────────────┘
-                                       △
-                         ┌─────────────┴─────────────┐
-                         │                           │
-                ┌────────────────┐          ┌────────────────┐
-                │   RealSubject  │          │     Proxy      │
-                ├────────────────┤          ├────────────────┤
-                │ + request()    │◄─────────│ - realSubject  │
-                └────────────────┘          │ + request()    │
-                                            └────────────────┘
+```mermaid
+classDiagram
+    class Client {
+        <<actor>>
+    }
+    class Subject {
+        <<interface>>
+        +request()
+    }
+    class RealSubject {
+        +request()
+    }
+    class Proxy {
+        -RealSubject realSubject
+        +request()
+    }
+    note for Client "Represents any code that uses the pattern, not a concrete class"
+    Client --> Subject
+    Subject <|.. RealSubject : implements
+    Subject <|.. Proxy : implements
+    Proxy --> RealSubject : realSubject
 ```
 
 ## Types of Proxies
