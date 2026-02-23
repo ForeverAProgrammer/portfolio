@@ -16,3 +16,4 @@ Behavioral patterns deal with object collaboration and delegation, focusing on h
 - **[Iterator](./iterator)** - Access elements of collection sequentially
 - **[State](./state)** - Allow object to alter behavior when internal state changes
 - **[Chain of Responsibility](./chain-of-responsibility)** - Pass request along a chain of handlers until one handles it
+- **[Interpreter](./interpreter)** - Define a grammar and an interpreter for sentences in that language

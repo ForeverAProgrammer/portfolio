@@ -87,6 +87,7 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 
 - Base URL is `/portfolio/` — all internal links must account for this
 - Broken links are configured to throw build errors (`onBrokenLinks: 'throw'`)
+- Cross-directory doc links (e.g. from `behavioral/` to `design-patterns/`) must use absolute paths like `/portfolio/docs/design-patterns/class-and-object-patterns` — relative `../` links do not resolve correctly inside admonition blocks with `trailingSlash: true`
 - `trailingSlash: true` is set — **do not remove this**. Without it, category index pages (e.g. `docs/cloud/aws/index.md`) are served without a trailing slash, causing relative links like `./cloudformation` to resolve one level too high (e.g. `/docs/cloud/cloudformation` instead of `/docs/cloud/aws/cloudformation`)
 - Syntax highlighting uses GitHub theme (light) and Dracula (dark)
 - MDX is supported in both docs and blog — React components can be embedded in Markdown
