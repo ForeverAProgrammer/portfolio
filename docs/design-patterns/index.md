@@ -92,6 +92,7 @@ Deal with object collaboration and delegation.
 - **[Chain of Responsibility](./behavioral/chain-of-responsibility)** - Pass request along a chain of handlers until one handles it
 - **[Interpreter](./behavioral/interpreter)** - Define a grammar and an interpreter for sentences in that language
 - **[Mediator](./behavioral/mediator)** - Define an object that encapsulates how a set of objects interact
+- **[Memento](./behavioral/memento)** - Capture and restore an object's internal state without breaking encapsulation
 
 ### Structural Patterns
 Deal with object composition and structure.
@@ -128,6 +129,7 @@ Deal with object composition and structure.
 | Flyweight | Share objects to reduce memory | Large numbers of similar fine-grained objects |
 | Interpreter | Evaluate sentences in a grammar | Repeatable language or notation to parse |
 | Mediator | Centralise object interactions | Many objects communicating in complex ways |
+| Memento | Snapshot and restore object state | Undo/redo or save/restore functionality needed |
 
 ## How to Use This Guide
 
