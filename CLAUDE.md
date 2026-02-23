@@ -86,6 +86,7 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 - `trailingSlash: true` is set — **do not remove this**. Without it, category index pages (e.g. `docs/cloud/aws/index.md`) are served without a trailing slash, causing relative links like `./cloudformation` to resolve one level too high (e.g. `/docs/cloud/cloudformation` instead of `/docs/cloud/aws/cloudformation`)
 - Syntax highlighting uses GitHub theme (light) and Dracula (dark)
 - MDX is supported in both docs and blog — React components can be embedded in Markdown
+- Mermaid diagrams are enabled via `@docusaurus/theme-mermaid` — use fenced ` ```mermaid ` blocks in any Markdown file
 
 ## Deployment
 

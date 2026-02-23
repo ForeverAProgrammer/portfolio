@@ -97,6 +97,7 @@ Deal with object composition and structure.
 - **[Facade](./structural/facade)** - Provide unified interface to subsystem
 - **[Composite](./structural/composite)** - Compose objects into tree structures
 - **[Proxy](./structural/proxy)** - Provide surrogate or placeholder for another object
+- **[Bridge](./structural/bridge)** - Decouple abstraction from implementation so both can vary independently
 
 ## Pattern Quick Reference
 
@@ -116,6 +117,7 @@ Deal with object composition and structure.
 | Composite | Tree structures of objects | Part-whole hierarchies |
 | State | Behavior varies with state | Object behavior depends on state |
 | Proxy | Control access to objects | Add wrapper to control access |
+| Bridge | Decouple abstraction from implementation | Two independent dimensions of variation |
 
 ## How to Use This Guide
 

@@ -14,3 +14,4 @@ Structural patterns deal with object composition and structure, helping to ensur
 - **[Facade](./facade)** - Provide unified interface to subsystem
 - **[Composite](./composite)** - Compose objects into tree structures
 - **[Proxy](./proxy)** - Provide surrogate or placeholder for another object
+- **[Bridge](./bridge)** - Decouple abstraction from implementation so both can vary independently
