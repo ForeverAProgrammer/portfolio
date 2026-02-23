@@ -24,34 +24,38 @@ You need to notify multiple objects when another object's state changes, without
 
 ## UML Diagram
 
-```
-┌──────────────────┐                    ┌──────────────────┐
-│  <<interface>>   │                    │  <<interface>>   │
-│     Subject      │                    │     Observer     │
-├──────────────────┤                    ├──────────────────┤
-│ + attach()       │                    │ + update()       │
-│ + detach()       │                    └──────────────────┘
-│ + notify()       │                             △
-└──────────────────┘                             │
-         △                                       │
-         │                                       │
-         │                                       │
-┌──────────────────┐                             │
-│ ConcreteSubject  │                             │
-├──────────────────┤        observers            │
-│ - state          │─────────────────────────────┤
-│ - observers      │   1                      0..*│
-├──────────────────┤                             │
-│ + getState()     │                             │
-│ + setState()     │                             │
-│ + attach()       │              ┌──────────────┴──────────────┐
-│ + detach()       │              │                             │
-│ + notify()       │     ┌────────────────┐           ┌────────────────┐
-└──────────────────┘     │ConcreteObserver│           │ConcreteObserver│
-                         │       A        │           │       B        │
-                         ├────────────────┤           ├────────────────┤
-                         │ + update()     │           │ + update()     │
-                         └────────────────┘           └────────────────┘
+```mermaid
+classDiagram
+    class Subject {
+        <<interface>>
+        +attach(Observer)
+        +detach(Observer)
+        +notify()
+    }
+    class Observer {
+        <<interface>>
+        +update()
+    }
+    class ConcreteSubject {
+        -state
+        -observers
+        +getState()
+        +setState()
+        +attach(Observer)
+        +detach(Observer)
+        +notify()
+    }
+    class ConcreteObserverA {
+        +update()
+    }
+    class ConcreteObserverB {
+        +update()
+    }
+
+    Subject <|.. ConcreteSubject : implements
+    Observer <|.. ConcreteObserverA : implements
+    Observer <|.. ConcreteObserverB : implements
+    ConcreteSubject "1" o-- "0..*" Observer : observers
 ```
 
 ## Implementation
