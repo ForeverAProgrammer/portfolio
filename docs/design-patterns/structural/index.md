@@ -15,3 +15,4 @@ Structural patterns deal with object composition and structure, helping to ensur
 - **[Composite](./composite)** - Compose objects into tree structures
 - **[Proxy](./proxy)** - Provide surrogate or placeholder for another object
 - **[Bridge](./bridge)** - Decouple abstraction from implementation so both can vary independently
+- **[Flyweight](./flyweight)** - Share fine-grained objects to reduce memory usage

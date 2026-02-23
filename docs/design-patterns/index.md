@@ -100,6 +100,7 @@ Deal with object composition and structure.
 - **[Composite](./structural/composite)** - Compose objects into tree structures
 - **[Proxy](./structural/proxy)** - Provide surrogate or placeholder for another object
 - **[Bridge](./structural/bridge)** - Decouple abstraction from implementation so both can vary independently
+- **[Flyweight](./structural/flyweight)** - Share fine-grained objects to reduce memory usage
 
 ## Pattern Quick Reference
 
@@ -122,6 +123,7 @@ Deal with object composition and structure.
 | Proxy | Control access to objects | Add wrapper to control access |
 | Bridge | Decouple abstraction from implementation | Two independent dimensions of variation |
 | Chain of Responsibility | Pass request along a chain | Multiple handlers may handle a request |
+| Flyweight | Share objects to reduce memory | Large numbers of similar fine-grained objects |
 
 ## How to Use This Guide
 
