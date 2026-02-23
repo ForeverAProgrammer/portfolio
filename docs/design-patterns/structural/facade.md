@@ -24,20 +24,28 @@ Complex subsystems with multiple interdependent classes are difficult to use. Cl
 
 ## UML Diagram
 
-```
-┌───────────┐
-│  Client   │
-└─────┬─────┘
-      │
-      ▼
-┌───────────┐
-│  Facade   │────────────┐
-└─────┬─────┘            │
-      │                  │
-      ▼                  ▼
-┌──────────────┐   ┌──────────────┐
-│ SubsystemA   │   │ SubsystemB   │
-└──────────────┘   └──────────────┘
+```mermaid
+classDiagram
+    class Client {
+        <<actor>>
+    }
+    class Facade {
+        +operation()
+    }
+    class SubsystemA {
+        +operationA()
+    }
+    class SubsystemB {
+        +operationB()
+    }
+    class SubsystemC {
+        +operationC()
+    }
+    note for Client "Represents any code that uses the pattern, not a concrete class"
+    Client --> Facade
+    Facade --> SubsystemA
+    Facade --> SubsystemB
+    Facade --> SubsystemC
 ```
 
 ## Implementation
