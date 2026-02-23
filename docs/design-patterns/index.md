@@ -59,6 +59,17 @@ A class should have only one reason to change.
 
 **Benefit:** Classes are more cohesive and easier to maintain.
 
+## Pattern Scope: Class vs Object
+
+GoF also groups patterns by **scope** — whether they work primarily through inheritance or composition:
+
+| Scope | Mechanism | Set at | Examples |
+|-------|-----------|--------|---------|
+| **Class** | Inheritance | Compile time | Factory Method, Adapter, Template Method, Interpreter |
+| **Object** | Composition | Runtime | Strategy, Observer, Composite, Decorator, and all others |
+
+See **[Class and Object Patterns](./class-and-object-patterns)** for a full breakdown with code examples.
+
 ## Pattern Categories
 
 ### Creational Patterns
@@ -254,6 +265,10 @@ Start your journey with these fundamental patterns:
 - **Head First Design Patterns** (2nd Edition) - Eric Freeman & Elisabeth Robson
 - **Design Patterns: Elements of Reusable Object-Oriented Software** - Gang of Four
 - **Refactoring to Patterns** - Joshua Kerievsky
+
+### Online References
+
+- [Hillside Patterns Catalog](https://hillside.net/patterns/patterns-catalog) - Comprehensive catalog of software patterns maintained by the Hillside Group, the community behind the original pattern conferences
 
 ### Practice
 - Identify patterns in existing codebases
