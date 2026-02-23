@@ -28,6 +28,9 @@ You want to use an existing class, but its interface doesn't match the one you n
 
 ```mermaid
 classDiagram
+    class Client {
+        <<actor>>
+    }
     class Target {
         <<interface>>
         +request()
@@ -39,7 +42,8 @@ classDiagram
     class Adaptee {
         +specificRequest()
     }
-
+    note for Client "Represents any code that uses the pattern, not a concrete class"
+    Client --> Target
     Target <|.. Adapter : implements
     Adapter --> Adaptee : adaptee
 
@@ -49,6 +53,9 @@ classDiagram
 
 ```mermaid
 classDiagram
+    class Client {
+        <<actor>>
+    }
     class Target {
         <<interface>>
         +request()
@@ -59,7 +66,8 @@ classDiagram
     class Adaptee {
         +specificRequest()
     }
-
+    note for Client "Represents any code that uses the pattern, not a concrete class"
+    Client --> Target
     Target <|.. Adapter : implements
     Adapter <|-- Adaptee : extends
 
