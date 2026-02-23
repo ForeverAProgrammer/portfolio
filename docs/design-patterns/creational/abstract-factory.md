@@ -24,23 +24,36 @@ You need to create families of related objects that must be used together, and y
 
 ## UML Diagram
 
-```
-┌────────────────────┐
-│AbstractFactory     │
-├────────────────────┤
-│+createProductA()   │
-│+createProductB()   │
-└──────────┬─────────┘
-           △
-           │
-    ┌──────┴────────┐
-    │               │
-┌────────────────┐ ┌────────────────┐
-│ConcreteFactory1│ │ConcreteFactory2│
-├────────────────┤ ├────────────────┤
-│+createProductA()│ │+createProductA()│
-│+createProductB()│ │+createProductB()│
-└────────────────┘ └────────────────┘
+```mermaid
+classDiagram
+    class AbstractFactory {
+        <<interface>>
+        +createProductA()
+        +createProductB()
+    }
+    class ConcreteFactory1 {
+        +createProductA()
+        +createProductB()
+    }
+    class ConcreteFactory2 {
+        +createProductA()
+        +createProductB()
+    }
+    class AbstractProductA {
+        <<interface>>
+        +operationA()
+    }
+    class AbstractProductB {
+        <<interface>>
+        +operationB()
+    }
+
+    AbstractFactory <|.. ConcreteFactory1 : implements
+    AbstractFactory <|.. ConcreteFactory2 : implements
+    ConcreteFactory1 ..> AbstractProductA : creates
+    ConcreteFactory1 ..> AbstractProductB : creates
+    ConcreteFactory2 ..> AbstractProductA : creates
+    ConcreteFactory2 ..> AbstractProductB : creates
 ```
 
 ## Implementation
