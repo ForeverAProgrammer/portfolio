@@ -26,53 +26,43 @@ You want to use an existing class, but its interface doesn't match the one you n
 
 ### Object Adapter (using Composition)
 
-```
-┌───────────────┐         ┌───────────────────┐
-│    Client     │────────>│     Target        │
-└───────────────┘         │   <<interface>>   │
-                          ├───────────────────┤
-                          │ + request()       │
-                          └───────────────────┘
-                                   △
-                                   │
-                          ┌───────────────────┐
-                          │     Adapter       │
-                          ├───────────────────┤
-                          │ - adaptee         │───┐
-                          ├───────────────────┤   │
-                          │ + request()       │   │
-                          └───────────────────┘   │
-                                                  │
-                                                  v
-                                          ┌───────────────────┐
-                                          │     Adaptee       │
-                                          ├───────────────────┤
-                                          │ + specificRequest()│
-                                          └───────────────────┘
+```mermaid
+classDiagram
+    class Target {
+        <<interface>>
+        +request()
+    }
+    class Adapter {
+        -Adaptee adaptee
+        +request()
+    }
+    class Adaptee {
+        +specificRequest()
+    }
+
+    Target <|.. Adapter : implements
+    Adapter --> Adaptee : adaptee
+
 ```
 
 ### Class Adapter (using Inheritance)
 
-```
-┌───────────────┐         ┌───────────────────┐
-│    Client     │────────>│     Target        │
-└───────────────┘         │   <<interface>>   │
-                          ├───────────────────┤
-                          │ + request()       │
-                          └───────────────────┘
-                                   △
-                                   │
-                          ┌───────────────────┐
-                          │     Adapter       │◄───┐
-                          ├───────────────────┤    │
-                          │ + request()       │    │ extends
-                          └───────────────────┘    │
-                                                   │
-                                          ┌───────────────────┐
-                                          │     Adaptee       │
-                                          ├───────────────────┤
-                                          │ + specificRequest()│
-                                          └───────────────────┘
+```mermaid
+classDiagram
+    class Target {
+        <<interface>>
+        +request()
+    }
+    class Adapter {
+        +request()
+    }
+    class Adaptee {
+        +specificRequest()
+    }
+
+    Target <|.. Adapter : implements
+    Adapter <|-- Adaptee : extends
+
 ```
 
 ## Implementation
