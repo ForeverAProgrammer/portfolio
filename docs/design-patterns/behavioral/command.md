@@ -53,8 +53,10 @@ classDiagram
         +setCommand()
         +executeCmd()
     }
-    class Client
-
+    class Client {
+        <<actor>>
+    }
+    note for Client "Represents any code that uses the pattern, not a concrete class"
     Client --> Command
     Client --> ConcreteCommandA
     Client --> Invoker
