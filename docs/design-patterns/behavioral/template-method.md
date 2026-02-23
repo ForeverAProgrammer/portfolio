@@ -26,31 +26,26 @@ You have several classes that implement similar algorithms with only minor diffe
 
 ## UML Diagram
 
-```
-┌────────────────────────────┐
-│    AbstractClass           │
-├────────────────────────────┤
-│ + templateMethod()         │◄────┐ final
-│ # primitiveOperation1()    │     │ (can't override)
-│ # primitiveOperation2()    │     │
-│ # hook()                   │     │
-└────────────────────────────┘     │
-            △                       │
-            │                       │
-    ┌───────┴────────┐             │
-    │                │             │
-┌───────────┐  ┌───────────┐      │
-│ConcreteA  │  │ConcreteB  │      │
-├───────────┤  ├───────────┤      │
-│+ primOp1()│  │+ primOp1()│      │
-│+ primOp2()│  │+ primOp2()│      │
-│+ hook()   │  │+ hook()   │      │
-└───────────┘  └───────────┘      │
-                                  │
-Template Method calls:            │
-1. primitiveOperation1() ─────────┘
-2. primitiveOperation2()
-3. hook()
+```mermaid
+classDiagram
+    class AbstractClass {
+        +templateMethod() final
+        #primitiveOperation1()*
+        #primitiveOperation2()*
+        #hook()
+    }
+    class ConcreteA {
+        #primitiveOperation1()
+        #primitiveOperation2()
+        #hook()
+    }
+    class ConcreteB {
+        #primitiveOperation1()
+        #primitiveOperation2()
+    }
+    note for AbstractClass "templateMethod() calls: 1. primitiveOperation1() · 2. primitiveOperation2() · 3. hook()"
+    AbstractClass <|-- ConcreteA : extends
+    AbstractClass <|-- ConcreteB : extends
 ```
 
 ## Implementation
