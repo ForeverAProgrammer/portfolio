@@ -24,34 +24,34 @@ You need to represent hierarchical tree structures where individual objects and 
 
 ## UML Diagram
 
-```
-┌──────────────────┐
-│     Client       │
-└──────────────────┘
-         │
-         v
-┌──────────────────────┐
-│     Component        │
-│   <<abstract>>       │
-├──────────────────────┤
-│ + operation()        │
-│ + add(Component)     │
-│ + remove(Component)  │
-│ + getChild(int)      │
-└──────────────────────┘
-         △
-         │
-    ┌────┴────┐
-    │         │
-┌───────────┐ ┌───────────────────┐
-│   Leaf    │ │    Composite      │
-├───────────┤ ├───────────────────┤
-│+operation│ │ - children        │
-└───────────┘ │ + operation()     │
-              │ + add()           │
-              │ + remove()        │
-              │ + getChild()      │
-              └───────────────────┘
+```mermaid
+classDiagram
+    class Component {
+        <<abstract>>
+        +operation()
+        +add(Component)
+        +remove(Component)
+        +getChild(int)
+    }
+    class Leaf {
+        +operation()
+    }
+    class Composite {
+        -children
+        +operation()
+        +add(Component)
+        +remove(Component)
+        +getChild(int)
+    }
+
+    class Client {
+        <<actor>>
+    }
+    note for Client "Represents any code that uses the pattern, not a concrete class"
+    Client --> Component
+    Component <|-- Leaf : extends
+    Component <|-- Composite : extends
+    Composite o-- Component : children
 ```
 
 ## Implementation
