@@ -12,3 +12,4 @@ Creational patterns deal with object creation mechanisms, trying to create objec
 - **[Singleton](./singleton)** - Ensure a class has only one instance
 - **[Factory Method](./factory-method)** - Define an interface for creating objects
 - **[Abstract Factory](./abstract-factory)** - Create families of related objects
+- **[Builder](./builder)** - Separate construction of a complex object from its representation

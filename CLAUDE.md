@@ -79,6 +79,10 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 - Run `npx prettier --write .` before committing (respects `.prettierignore`)
 - File naming: kebab-case for all files and directories
 
+## Markdown Lint Rules
+
+- **MD032** — Lists must be surrounded by blank lines. Always add a blank line before and after any ordered or unordered list, including lists that immediately follow bold label text like `**Common Scenarios:**`.
+
 ## Docusaurus-Specific Notes
 
 - Base URL is `/portfolio/` — all internal links must account for this

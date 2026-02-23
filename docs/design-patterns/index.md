@@ -78,6 +78,7 @@ Deal with object creation mechanisms.
 - **[Singleton](./creational/singleton)** - Ensure a class has only one instance
 - **[Factory Method](./creational/factory-method)** - Define an interface for creating objects
 - **[Abstract Factory](./creational/abstract-factory)** - Create families of related objects
+- **[Builder](./creational/builder)** - Separate construction of a complex object from its representation
 
 ### Behavioral Patterns
 Deal with object collaboration and delegation.
@@ -108,6 +109,7 @@ Deal with object composition and structure.
 | Decorator | Add responsibilities dynamically | Extend functionality without subclassing |
 | Factory Method | Defer instantiation to subclasses | Don't know exact types needed |
 | Abstract Factory | Create families of related objects | Multiple product families |
+| Builder | Construct complex objects step by step | Complex object with many configuration options |
 | Singleton | One instance only | Exactly one instance needed |
 | Command | Encapsulate requests | Parameterize, queue, or log requests |
 | Adapter | Convert interfaces | Make incompatible interfaces work together |
