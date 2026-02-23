@@ -13,3 +13,4 @@ Creational patterns deal with object creation mechanisms, trying to create objec
 - **[Factory Method](./factory-method)** - Define an interface for creating objects
 - **[Abstract Factory](./abstract-factory)** - Create families of related objects
 - **[Builder](./builder)** - Separate construction of a complex object from its representation
+- **[Prototype](./prototype)** - Create new objects by copying an existing instance

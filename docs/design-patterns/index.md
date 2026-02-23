@@ -79,6 +79,7 @@ Deal with object creation mechanisms.
 - **[Factory Method](./creational/factory-method)** - Define an interface for creating objects
 - **[Abstract Factory](./creational/abstract-factory)** - Create families of related objects
 - **[Builder](./creational/builder)** - Separate construction of a complex object from its representation
+- **[Prototype](./creational/prototype)** - Create new objects by copying an existing instance
 
 ### Behavioral Patterns
 Deal with object collaboration and delegation.
@@ -114,6 +115,7 @@ Deal with object composition and structure.
 | Decorator | Add responsibilities dynamically | Extend functionality without subclassing |
 | Factory Method | Defer instantiation to subclasses | Don't know exact types needed |
 | Abstract Factory | Create families of related objects | Multiple product families |
+| Prototype | Clone existing objects | Object creation is expensive or class unknown at compile time |
 | Builder | Construct complex objects step by step | Complex object with many configuration options |
 | Singleton | One instance only | Exactly one instance needed |
 | Command | Encapsulate requests | Parameterize, queue, or log requests |
