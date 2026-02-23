@@ -24,27 +24,27 @@ You need to create objects without specifying their exact classes, and you want 
 
 ## UML Diagram
 
-```
-┌──────────────────┐                 ┌──────────────────┐
-│     Creator      │                 │  <<interface>>   │
-├──────────────────┤                 │     Product      │
-│ + factoryMethod()│────creates────> ├──────────────────┤
-│ + anOperation()  │                 │ + operation()    │
-└──────────────────┘                 └──────────────────┘
-         △                                     △
-         │                                     │
-         │                                     │
-┌──────────────────┐                 ┌──────────────────┐
-│ ConcreteCreatorA │                 │ ConcreteProductA │
-├──────────────────┤                 ├──────────────────┤
-│+ factoryMethod() │────creates────> │ + operation()    │
-└──────────────────┘                 └──────────────────┘
+```mermaid
+classDiagram
+    class Creator {
+        +factoryMethod()* Product
+        +anOperation()
+    }
+    class ConcreteCreator {
+        +factoryMethod() Product
+    }
+    class Product {
+        <<interface>>
+        +operation()
+    }
+    class ConcreteProduct {
+        +operation()
+    }
 
-┌──────────────────┐                 ┌──────────────────┐
-│ ConcreteCreatorB │                 │ ConcreteProductB │
-├──────────────────┤                 ├──────────────────┤
-│+ factoryMethod() │────creates────> │ + operation()    │
-└──────────────────┘                 └──────────────────┘
+    Creator <|-- ConcreteCreator : extends
+    Creator ..> Product : creates
+    Product <|.. ConcreteProduct : implements
+    ConcreteCreator ..> ConcreteProduct : creates
 ```
 
 ## Implementation
