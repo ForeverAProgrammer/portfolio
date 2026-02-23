@@ -30,6 +30,7 @@ const config = {
   organizationName: 'ForeverAProgrammer', // Usually your GitHub org/user name.
   projectName: 'portfolio', // Usually your repo name.
   deploymentBranch: 'gh-pages',
+  trailingSlash: true,
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
