@@ -89,6 +89,7 @@ Deal with object collaboration and delegation.
 - **[Template Method](./behavioral/template-method)** - Define skeleton of algorithm in base class
 - **[Iterator](./behavioral/iterator)** - Access elements of collection sequentially
 - **[State](./behavioral/state)** - Allow object to alter behavior when internal state changes
+- **[Chain of Responsibility](./behavioral/chain-of-responsibility)** - Pass request along a chain of handlers until one handles it
 
 ### Structural Patterns
 Deal with object composition and structure.
@@ -120,6 +121,7 @@ Deal with object composition and structure.
 | State | Behavior varies with state | Object behavior depends on state |
 | Proxy | Control access to objects | Add wrapper to control access |
 | Bridge | Decouple abstraction from implementation | Two independent dimensions of variation |
+| Chain of Responsibility | Pass request along a chain | Multiple handlers may handle a request |
 
 ## How to Use This Guide
 

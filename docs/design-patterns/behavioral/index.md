@@ -15,3 +15,4 @@ Behavioral patterns deal with object collaboration and delegation, focusing on h
 - **[Template Method](./template-method)** - Define skeleton of algorithm in base class
 - **[Iterator](./iterator)** - Access elements of collection sequentially
 - **[State](./state)** - Allow object to alter behavior when internal state changes
+- **[Chain of Responsibility](./chain-of-responsibility)** - Pass request along a chain of handlers until one handles it
