@@ -24,34 +24,33 @@ You need to add responsibilities to objects without modifying their code, and yo
 
 ## UML Diagram
 
-```
-┌──────────────────┐
-│  <<interface>>   │
-│    Component     │
-├──────────────────┤
-│ + operation()    │
-└──────────────────┘
-         △
-         │
-         ├────────────────────────────────────┐
-         │                                    │
-┌──────────────────┐              ┌──────────────────┐
-│ ConcreteComponent│              │    Decorator     │
-├──────────────────┤              ├──────────────────┤
-│ + operation()    │              │ - component      │◇───┐
-└──────────────────┘              ├──────────────────┤    │
-                                  │ + operation()    │    │
-                                  └──────────────────┘    │
-                                           △              │
-                                           │              │
-                   ┌───────────────────────┴─────────┐   │
-                   │                                 │   │
-          ┌────────────────┐               ┌────────────────┐
-          │ConcreteDecoratorA│              │ConcreteDecoratorB│
-          ├────────────────┤               ├────────────────┤
-          │ + operation()  │               │ + operation()  │
-          │ + addedBehavior()              │ + addedState   │
-          └────────────────┘               └────────────────┘
+```mermaid
+classDiagram
+    class Component {
+        <<interface>>
+        +operation()
+    }
+    class ConcreteComponent {
+        +operation()
+    }
+    class Decorator {
+        -Component component
+        +operation()
+    }
+    class ConcreteDecoratorA {
+        +operation()
+        +addedBehavior()
+    }
+    class ConcreteDecoratorB {
+        -addedState
+        +operation()
+    }
+
+    Component <|.. ConcreteComponent : implements
+    Component <|.. Decorator : implements
+    Decorator o-- Component : component
+    Decorator <|-- ConcreteDecoratorA : extends
+    Decorator <|-- ConcreteDecoratorB : extends
 ```
 
 ## Implementation
