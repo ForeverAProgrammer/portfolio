@@ -94,6 +94,7 @@ Deal with object collaboration and delegation.
 - **[Interpreter](./behavioral/interpreter)** - Define a grammar and an interpreter for sentences in that language
 - **[Mediator](./behavioral/mediator)** - Define an object that encapsulates how a set of objects interact
 - **[Memento](./behavioral/memento)** - Capture and restore an object's internal state without breaking encapsulation
+- **[Visitor](./behavioral/visitor)** - Define a new operation on elements of an object structure without changing their classes
 
 ### Structural Patterns
 Deal with object composition and structure.
@@ -132,6 +133,7 @@ Deal with object composition and structure.
 | Interpreter | Evaluate sentences in a grammar | Repeatable language or notation to parse |
 | Mediator | Centralise object interactions | Many objects communicating in complex ways |
 | Memento | Snapshot and restore object state | Undo/redo or save/restore functionality needed |
+| Visitor | Define new operations on an object structure without changing element classes | Frequently add new operations to a stable object structure |
 
 ## How to Use This Guide
 
