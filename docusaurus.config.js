@@ -20,10 +20,9 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://ForeverAProgrammer.github.io',
+  url: 'https://kristina.codes',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/portfolio/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
