@@ -374,6 +374,6 @@ helm list
 
 ## Next Steps
 
-- Review [Monitoring & Logging](./monitoring/)
-- Explore [CI/CD Setup](./cicd.md) for automated deployments
-- Learn [Docker Guide](./docker.md) for containerization
+- Review [Monitoring & Logging](/docs/devops/monitoring/)
+- Explore [CI/CD Setup](/docs/devops/cicd) for automated deployments
+- Learn [Docker Guide](/docs/devops/docker) for containerization

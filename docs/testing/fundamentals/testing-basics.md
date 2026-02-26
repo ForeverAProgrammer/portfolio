@@ -955,7 +955,7 @@ API: REST Assured (Java) or Supertest (Node.js)
 ## Next Steps
 
 Now that you understand testing fundamentals, explore:
-- **[JUnit 5 Guide](../../languages/java/testing/junit5)** - Complete JUnit testing guide
+- **[JUnit 5 Guide](/docs/languages/java/testing/junit5/)** - Complete JUnit testing guide
 - **Test-Driven Development (TDD)** - Write tests first
 - **Behavior-Driven Development (BDD)** - Given/When/Then style
 - **Mutation Testing** - Verify test effectiveness

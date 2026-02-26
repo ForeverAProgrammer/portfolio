@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Microsoft SQL Server T-SQL Guide
 
-T-SQL (Transact-SQL) is Microsoft's proprietary extension to standard SQL. While standard SQL covers basic querying (covered in the [SQL Guide](./sql)), T-SQL adds procedural programming, enhanced error handling, and Microsoft-specific features.
+T-SQL (Transact-SQL) is Microsoft's proprietary extension to standard SQL. While standard SQL covers basic querying (covered in the [SQL Guide](/docs/database/sql)), T-SQL adds procedural programming, enhanced error handling, and Microsoft-specific features.
 
 ## What is T-SQL?
 
@@ -19,7 +19,7 @@ T-SQL (Transact-SQL) is Microsoft's proprietary extension to standard SQL. While
 
 ### T-SQL vs Standard SQL
 
-**Standard SQL** (see [SQL Guide](./sql)):
+**Standard SQL** (see [SQL Guide](/docs/database/sql)):
 - Basic SELECT, INSERT, UPDATE, DELETE
 - JOINs, subqueries, CTEs
 - Aggregate functions

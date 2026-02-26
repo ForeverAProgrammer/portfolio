@@ -730,4 +730,4 @@ cy.screenshot();
 
 - [TypeScript Testing Overview](./index.md) - Testing framework comparison
 - [Mocha + Chai Testing](./mocha-chai.md) - Unit testing with Mocha and Chai
-- [TypeScript Fundamentals](../fundamentals/) - Core TypeScript concepts
+- [TypeScript Fundamentals](/docs/languages/typescript/fundamentals/) - Core TypeScript concepts

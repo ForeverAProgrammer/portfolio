@@ -562,8 +562,8 @@ function register({ email, password }) {
 
 1. Practice the Red-Green-Refactor cycle
 2. Start with simple functions (calculators, validators)
-3. Learn [Test Doubles](./test-doubles) for complex dependencies
-4. Explore [BDD](./bdd) for behavior-focused testing
+3. Learn [Test Doubles](/docs/testing/fundamentals/test-doubles) for complex dependencies
+4. Explore [BDD](/docs/testing/fundamentals/bdd) for behavior-focused testing
 5. Apply TDD to your next feature
 
 ---

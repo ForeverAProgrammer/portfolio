@@ -35,14 +35,14 @@ Browse the sidebar to explore different topics. Each section contains:
 Learn cloud computing with Amazon Web Services (AWS) to build, deploy, and scale applications in the cloud.
 
 **Topics covered:**
-- **[AWS Overview](cloud/aws)** - Getting started with Amazon Web Services
-- **[CloudFormation](cloud/aws/cloudformation)** - Infrastructure as Code templates and stacks
-- **[EC2](cloud/aws/ec2)** - Virtual servers and compute instances
-- **[ECR](cloud/aws/ecr)** - Container image registry
-- **[EKS](cloud/aws/eks)** - Managed Kubernetes service
-- **[Cost Optimization](cloud/aws/cost-optimization)** - Strategies for reducing cloud costs
+- **[AWS Overview](/docs/cloud/aws/)** - Getting started with Amazon Web Services
+- **[CloudFormation](/docs/cloud/aws/cloudformation)** - Infrastructure as Code templates and stacks
+- **[EC2](/docs/cloud/aws/ec2)** - Virtual servers and compute instances
+- **[ECR](/docs/cloud/aws/ecr)** - Container image registry
+- **[EKS](/docs/cloud/aws/eks)** - Managed Kubernetes service
+- **[Cost Optimization](/docs/cloud/aws/cost-optimization)** - Strategies for reducing cloud costs
 
-**[Explore Cloud →](cloud/)**
+**[Explore Cloud →](/docs/cloud/)**
 
 ---
 
@@ -51,12 +51,12 @@ Learn cloud computing with Amazon Web Services (AWS) to build, deploy, and scale
 Master relational and NoSQL databases for efficient data management and application development.
 
 **Topics covered:**
-- **[T-SQL & SQL Server](database/tsql-guide)** - Query syntax, stored procedures, and optimization
-- **[MongoDB](database/mongodb)** - Document database, CRUD operations, and aggregation
+- **[T-SQL & SQL Server](/docs/database/tsql-guide)** - Query syntax, stored procedures, and optimization
+- **[MongoDB](/docs/database/mongodb)** - Document database, CRUD operations, and aggregation
 - Character encoding in databases
 - Query optimization and performance tuning
 
-**[Explore Database →](database/)**
+**[Explore Database →](/docs/database/)**
 
 ---
 
@@ -65,12 +65,12 @@ Master relational and NoSQL databases for efficient data management and applicat
 Learn object-oriented design patterns and principles for writing maintainable, flexible code.
 
 **Topics covered:**
-- **[Design Principles](design-patterns/)** - Encapsulation, composition, and interfaces
-- **Behavioral Patterns** - [Command](design-patterns/behavioral/command), [Strategy](design-patterns/behavioral/strategy), [Observer](design-patterns/behavioral/observer), [State](design-patterns/behavioral/state), [Template Method](design-patterns/behavioral/template-method), [Iterator](design-patterns/behavioral/iterator)
-- **Creational Patterns** - [Factory Method](design-patterns/creational/factory-method), [Singleton](design-patterns/creational/singleton)
-- **Structural Patterns** - [Decorator](design-patterns/structural/decorator), [Adapter](design-patterns/structural/adapter), [Composite](design-patterns/structural/composite), [Proxy](design-patterns/structural/proxy)
+- **[Design Principles](/docs/design-patterns/)** - Encapsulation, composition, and interfaces
+- **Behavioral Patterns** - [Command](/docs/design-patterns/behavioral/command), [Strategy](/docs/design-patterns/behavioral/strategy), [Observer](/docs/design-patterns/behavioral/observer), [State](/docs/design-patterns/behavioral/state), [Template Method](/docs/design-patterns/behavioral/template-method), [Iterator](/docs/design-patterns/behavioral/iterator)
+- **Creational Patterns** - [Factory Method](/docs/design-patterns/creational/factory-method), [Singleton](/docs/design-patterns/creational/singleton)
+- **Structural Patterns** - [Decorator](/docs/design-patterns/structural/decorator), [Adapter](/docs/design-patterns/structural/adapter), [Composite](/docs/design-patterns/structural/composite), [Proxy](/docs/design-patterns/structural/proxy)
 
-**[Explore Design Patterns →](design-patterns/)**
+**[Explore Design Patterns →](/docs/design-patterns/)**
 
 ---
 
@@ -79,13 +79,13 @@ Learn object-oriented design patterns and principles for writing maintainable, f
 Learn how to build, deploy, and manage scalable infrastructure using modern DevOps practices.
 
 **Topics covered:**
-- **[Docker](devops/docker)** - Containerization basics
-- **[Kubernetes](devops/kubernetes)** - Container orchestration
-- **[CI/CD Setup](devops/cicd)** - Continuous Integration and Deployment
-- **[GitOps](devops/gitops)** - Infrastructure and deployment automation
-- **[Security](devops/security)** - Security best practices
+- **[Docker](/docs/devops/docker)** - Containerization basics
+- **[Kubernetes](/docs/devops/kubernetes)** - Container orchestration
+- **[CI/CD Setup](/docs/devops/cicd)** - Continuous Integration and Deployment
+- **[GitOps](/docs/devops/gitops)** - Infrastructure and deployment automation
+- **[Security](/docs/devops/security)** - Security best practices
 
-**[Explore DevOps →](devops/)**
+**[Explore DevOps →](/docs/devops/)**
 
 ---
 
@@ -94,11 +94,11 @@ Learn how to build, deploy, and manage scalable infrastructure using modern DevO
 Build modern, interactive web applications with industry-leading frameworks.
 
 **Frameworks covered:**
-- **[React](frameworks/react/)** - Component-based UI library
-- **[Angular](frameworks/angular/)** - Complete TypeScript framework
-- **[AngularJS](frameworks/angularjs/)** - Classic Angular framework
+- **[React](/docs/frameworks/react/)** - Component-based UI library
+- **[Angular](/docs/frameworks/angular/)** - Complete TypeScript framework
+- **[AngularJS](/docs/frameworks/angularjs/)** - Classic Angular framework
 
-**[Explore Frameworks →](frameworks/)**
+**[Explore Frameworks →](/docs/frameworks/)**
 
 ---
 
@@ -107,12 +107,12 @@ Build modern, interactive web applications with industry-leading frameworks.
 Master the programming languages that power modern software development.
 
 **Languages covered:**
-- **[Go](languages/go/)** - Concurrent programming and systems development
-- **[Java](languages/java/)** - Enterprise applications and object-oriented programming
-- **[JavaScript](languages/javascript/)** - Web development and Node.js
-- **[TypeScript](languages/typescript/)** - Type-safe JavaScript for large applications
+- **[Go](/docs/languages/go/)** - Concurrent programming and systems development
+- **[Java](/docs/languages/java/)** - Enterprise applications and object-oriented programming
+- **[JavaScript](/docs/languages/javascript/)** - Web development and Node.js
+- **[TypeScript](/docs/languages/typescript/)** - Type-safe JavaScript for large applications
 
-**[Explore Languages →](languages/)**
+**[Explore Languages →](/docs/languages/)**
 
 ---
 
@@ -121,13 +121,13 @@ Master the programming languages that power modern software development.
 Master Linux system administration from distributions to terminal commands and user management.
 
 **Topics covered:**
-- **[Linux Distributions](linux/distributions)** - Ubuntu, Debian, CentOS, and more
-- **[Terminal Basics](linux/terminal-basics)** - Essential commands and shell navigation
-- **[User Management](linux/user-management)** - Users, groups, and permissions
-- **[Package Management](linux/package-management)** - Installing and managing software
-- **[System Administration](linux/system-admin)** - System configuration and maintenance
+- **[Linux Distributions](/docs/linux/distributions)** - Ubuntu, Debian, CentOS, and more
+- **[Terminal Basics](/docs/linux/terminal-basics)** - Essential commands and shell navigation
+- **[User Management](/docs/linux/user-management)** - Users, groups, and permissions
+- **[Package Management](/docs/linux/package-management)** - Installing and managing software
+- **[System Administration](/docs/linux/system-admin)** - System configuration and maintenance
 
-**[Explore Linux →](linux/)**
+**[Explore Linux →](/docs/linux/)**
 
 ---
 
@@ -136,12 +136,12 @@ Master Linux system administration from distributions to terminal commands and u
 Master software testing fundamentals, practices, and tools that apply across all languages and frameworks.
 
 **Topics covered:**
-- **[Testing Types](testing/fundamentals/testing-types)** - Unit, Integration, E2E, and more
-- **[Test-Driven Development (TDD)](testing/fundamentals/tdd)** - Red, Green, Refactor cycle
-- **[Behavior-Driven Development (BDD)](testing/fundamentals/bdd)** - Given/When/Then approach
-- **[Test Doubles](testing/fundamentals/test-doubles)** - Mocks, stubs, spies, and fakes
+- **[Testing Types](/docs/testing/fundamentals/testing-types)** - Unit, Integration, E2E, and more
+- **[Test-Driven Development (TDD)](/docs/testing/fundamentals/tdd)** - Red, Green, Refactor cycle
+- **[Behavior-Driven Development (BDD)](/docs/testing/fundamentals/bdd)** - Given/When/Then approach
+- **[Test Doubles](/docs/testing/fundamentals/test-doubles)** - Mocks, stubs, spies, and fakes
 
-**[Explore Testing →](testing/)**
+**[Explore Testing →](/docs/testing/)**
 
 ---
 
@@ -150,12 +150,12 @@ Master software testing fundamentals, practices, and tools that apply across all
 Learn the fundamentals of web development, from character encoding to building static sites with modern tools.
 
 **Topics covered:**
-- **[Character Encoding](web-development/character-encoding)** - UTF-8, Unicode, and text encoding
-- **[HTML Basics](web-development/html-basics)** - Semantic markup and HTML essentials
-- **[JAMstack](web-development/jamstack/)** - Hugo, Gatsby, and Docusaurus static site generators
-- **[CMS](web-development/cms/)** - Headless CMS solutions
+- **[Character Encoding](/docs/web-development/character-encoding)** - UTF-8, Unicode, and text encoding
+- **[HTML Basics](/docs/web-development/html-basics)** - Semantic markup and HTML essentials
+- **[JAMstack](/docs/web-development/jamstack/)** - Hugo, Gatsby, and Docusaurus static site generators
+- **[CMS](/docs/web-development/cms/)** - Headless CMS solutions
 
-**[Explore Web Development →](web-development/)**
+**[Explore Web Development →](/docs/web-development/)**
 
 ## Philosophy
 

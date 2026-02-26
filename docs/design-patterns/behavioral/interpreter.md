@@ -7,7 +7,7 @@ sidebar_position: 8
 Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 
 :::note Class Pattern
-Interpreter is one of the four **class-scope patterns** in GoF. It relies on inheritance — each grammar rule maps to a subclass of `AbstractExpression`. See [Class and Object Patterns](/portfolio/docs/design-patterns/class-and-object-patterns) for details.
+Interpreter is one of the four **class-scope patterns** in GoF. It relies on inheritance — each grammar rule maps to a subclass of `AbstractExpression`. See [Class and Object Patterns](/docs/design-patterns/class-and-object-patterns) for details.
 :::
 
 ## Problem

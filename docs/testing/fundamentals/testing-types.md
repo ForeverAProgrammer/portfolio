@@ -472,9 +472,9 @@ describe('Smoke Tests', () => {
 
 ## Next Steps
 
-1. Read [Testing Basics](./testing-basics) for fundamentals
-2. Learn [Test-Driven Development](./tdd) methodology
-3. Explore [Test Doubles](./test-doubles) (mocks, stubs, spies)
+1. Read [Testing Basics](/docs/testing/fundamentals/testing-basics) for fundamentals
+2. Learn [Test-Driven Development](/docs/testing/fundamentals/tdd) methodology
+3. Explore [Test Doubles](/docs/testing/fundamentals/test-doubles) (mocks, stubs, spies)
 4. Apply to your language/framework
 
 ---

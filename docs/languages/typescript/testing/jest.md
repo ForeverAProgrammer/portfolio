@@ -908,4 +908,4 @@ expect(mockFn).toHaveBeenLastCalledWith(arg);
 - [Vitest Testing](./vitest.md) - Next-generation testing with Vitest
 - [Mocha + Chai Testing](./mocha-chai.md) - BDD/TDD style testing
 - [Cypress E2E Testing](./cypress.md) - End-to-end testing
-- [TypeScript Fundamentals](../fundamentals/) - Core TypeScript concepts
+- [TypeScript Fundamentals](/docs/languages/typescript/fundamentals/) - Core TypeScript concepts

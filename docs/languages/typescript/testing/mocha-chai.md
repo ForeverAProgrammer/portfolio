@@ -769,4 +769,4 @@ expect(promise).to.be.rejected;
 
 - [TypeScript Testing Overview](./index.md) - Testing framework comparison
 - [Cypress E2E Testing](./cypress.md) - End-to-end testing with Cypress
-- [TypeScript Fundamentals](../fundamentals/) - Core TypeScript concepts
+- [TypeScript Fundamentals](/docs/languages/typescript/fundamentals/) - Core TypeScript concepts

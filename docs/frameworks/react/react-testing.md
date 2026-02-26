@@ -866,6 +866,6 @@ afterAll(() => server.close());
 
 ## Next Steps
 
-- [Testing Fundamentals](../../testing/fundamentals/) - Core testing concepts
-- [Mocking and Test Doubles](../../testing/fundamentals/test-doubles) - Advanced mocking techniques
-- [TDD Guide](../../testing//fundamentals/tdd.md) - Test-Driven Development
+- [Testing Fundamentals](/docs/testing/fundamentals/) - Core testing concepts
+- [Mocking and Test Doubles](/docs/testing/fundamentals/test-doubles) - Advanced mocking techniques
+- [TDD Guide](/docs/testing/fundamentals/tdd) - Test-Driven Development

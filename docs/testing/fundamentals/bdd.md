@@ -542,7 +542,7 @@ Scenario: Search products
 
 ## Next Steps
 
-1. Learn [TDD](./tdd) if you haven't already
+1. Learn [TDD](/docs/testing/fundamentals/tdd) if you haven't already
 2. Practice writing Given-When-Then scenarios
 3. Set up Cucumber or similar BDD framework
 4. Organize "Three Amigos" meetings with your team

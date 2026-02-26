@@ -777,7 +777,7 @@ WHERE id NOT IN (
 
 While SQL is standardized, each database has extensions:
 
-- **[T-SQL (SQL Server)](./tsql-guide)** - Microsoft's extensions (variables, procedures, error handling)
+- **[T-SQL (SQL Server)](/docs/database/tsql-guide)** - Microsoft's extensions (variables, procedures, error handling)
 - **PL/SQL (Oracle)** - Oracle's procedural extensions
 - **PL/pgSQL (PostgreSQL)** - PostgreSQL's procedural language
 - **MySQL Extensions** - Stored procedures, triggers, events
