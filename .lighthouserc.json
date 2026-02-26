@@ -5,6 +5,8 @@
       "url": [
         "http://localhost/",
         "http://localhost/projects/",
+        "http://localhost/projects/gitlab-cicd-pipeline/",
+        "http://localhost/experience/",
         "http://localhost/docs/intro/",
         "http://localhost/blog/"
       ]
