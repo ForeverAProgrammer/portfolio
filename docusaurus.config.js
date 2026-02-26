@@ -46,6 +46,16 @@ const config = {
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-21C6F7B0PE',
+        anonymizeIP: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -92,7 +102,7 @@ const config = {
           { to: '/docs/intro', label: 'Documentation', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: '/files/resume.pdf',
+            href: 'https://kristina.codes/files/resume.pdf',
             label: 'Resume',
             position: 'left',
             target: '_blank',
@@ -128,7 +138,7 @@ const config = {
               },
               {
                 label: 'Resume',
-                href: '/files/resume.pdf',
+                href: 'https://kristina.codes/files/resume.pdf',
                 target: '_blank',
               },
             ],

@@ -89,6 +89,7 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 - Broken links are configured to throw build errors (`onBrokenLinks: 'throw'`)
 - Cross-directory doc links (e.g. from `behavioral/` to `design-patterns/`) must use absolute paths like `/docs/design-patterns/class-and-object-patterns` — relative `../` links do not resolve correctly inside admonition blocks with `trailingSlash: true`
 - `trailingSlash: true` is set — **do not remove this**. Without it, category index pages (e.g. `docs/cloud/aws/index.md`) are served without a trailing slash, causing relative links like `./cloudformation` to resolve one level too high (e.g. `/docs/cloud/cloudformation` instead of `/docs/cloud/aws/cloudformation`)
+- **Static file links in navbar/footer config** must use full absolute URLs (e.g. `https://kristina.codes/files/resume.pdf`), NOT root-relative paths like `/files/resume.pdf`. Docusaurus processes navbar `href` values through `useBaseUrl` with `forcePrependBaseUrl`, and `trailingSlash: true` causes it to append a trailing slash — turning `/files/resume.pdf` into `/files/resume.pdf/` (broken). Full URLs with a protocol are treated as external and left unchanged. React page `<a href>` tags are unaffected and can safely use root-relative paths.
 - Syntax highlighting uses GitHub theme (light) and Dracula (dark)
 - MDX is supported in both docs and blog — React components can be embedded in Markdown
 - Mermaid diagrams are enabled via `@docusaurus/theme-mermaid` — use fenced ` ```mermaid ` blocks in any Markdown file
