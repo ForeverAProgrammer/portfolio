@@ -20,6 +20,16 @@ export const projects = [
     featured: true
   },
   {
+    id: 'java-design-patterns',
+    title: 'Java Design Patterns',
+    description: 'Java implementations of the classic GoF design patterns with working examples and explanations, based on Head First Design Patterns. Covers behavioral, structural, creational, and compound patterns.',
+    overview: 'Java implementations of all classic Gang of Four design patterns, built while working through Head First Design Patterns by Eric Freeman and Elisabeth Robson. Organized into behavioral (Command, Iterator, Observer, State, Strategy, Template Method), structural (Adapter, Composite, Decorator, Facade, Proxy), creational (Factory, Singleton), and compound patterns (MVC, Multi-Pattern Duck Simulator). Each example is self-contained and compiles independently. Reinforces nine core design principles including encapsulation, programming to interfaces, and composition over inheritance.',
+    technologies: ['Java', 'OOP', 'Design Patterns', 'GoF', 'Software Architecture'],
+    githubUrl: 'https://github.com/ForeverAProgrammer/learn_java-design-patterns',
+    link: '/projects/java-design-patterns',
+    featured: true
+  },
+  {
     id: 'mermaid-demos',
     title: 'Mermaid Demos',
     description: 'Collection of Mermaid diagram examples showcasing different chart types and visualization techniques. Includes flowcharts, sequence diagrams, Gantt charts, class diagrams, state diagrams, and entity relationship diagrams.',
