@@ -13,6 +13,9 @@ npm run build      # Build static site to /build/
 npm run serve      # Serve built site locally
 npm run deploy     # Deploy to GitHub Pages (gh-pages branch)
 npm run clear      # Clear Docusaurus cache
+npm run lint       # Run all linters (JS + Markdown)
+npm run lint:js    # ESLint — src/, docusaurus.config.js, sidebars.js
+npm run lint:md    # markdownlint — docs/**/*.md, blog/**/*.md, *.md
 ```
 
 ## Project Structure
@@ -79,9 +82,23 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 - Run `npx prettier --write .` before committing (respects `.prettierignore`)
 - File naming: kebab-case for all files and directories
 
-## Markdown Lint Rules
+## Linting
 
-- **MD032** — Lists must be surrounded by blank lines. Always add a blank line before and after any ordered or unordered list, including lists that immediately follow bold label text like `**Common Scenarios:**`.
+Run `npm run lint` after editing JS or Markdown files. Husky runs `lint-staged` automatically on `git commit`.
+
+**ESLint** (`eslint.config.mjs`) — covers `src/`, `docusaurus.config.js`, `sidebars.js`:
+
+- `eslint:recommended` + `eslint-plugin-react` + `eslint-plugin-react-hooks`
+- `react/prop-types` and `react/react-in-jsx-scope` are disabled (no TypeScript, React 17+ JSX transform)
+- Escape apostrophes and quotes in JSX text with HTML entities (`&apos;`, `&quot;`) — raw `'` and `"` in JSX text content trigger `react/no-unescaped-entities`
+
+**markdownlint** (`.markdownlint.json`) — covers `docs/**/*.md`, `blog/**/*.md`, `*.md`:
+
+- MD012 — no multiple consecutive blank lines
+- MD034 — no bare URLs (use `<url>` or `[text](url)`)
+- MD047 — files must end with a single newline
+- MD056 — table column counts must be consistent (escape `|` in table cells as `\|`)
+- Disabled: MD013 (line length), MD022 (blanks around headings), MD024 (duplicate headings), MD025 (single H1), MD026 (trailing punctuation), MD029 (ordered list prefix), MD031 (blanks around fences), MD032 (blanks around lists), MD033 (inline HTML), MD036 (emphasis as heading), MD040 (fenced code language), MD041 (first-line heading), MD060 (table column style)
 
 ## Docusaurus-Specific Notes
 

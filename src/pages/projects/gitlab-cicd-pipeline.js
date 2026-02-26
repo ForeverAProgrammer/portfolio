@@ -71,7 +71,7 @@ Stage 3 (Deploy):
                 <li><strong>Fail Fast:</strong> Test stage runs quickly using cached dependencies</li>
                 <li><strong>Artifact Expiration:</strong> Prevents storage bloat with appropriate expiration times</li>
                 <li><strong>Branch Rules:</strong> Prevents accidental deployments with branch-specific job execution</li>
-                <li><strong>Coverage Integration:</strong> Regex extraction integrates coverage percentages into GitLab's UI</li>
+                <li><strong>Coverage Integration:</strong> Regex extraction integrates coverage percentages into GitLab&apos;s UI</li>
               </ul>
             </div>
 
@@ -93,7 +93,7 @@ Stage 3 (Deploy):
                 <li>How to structure multi-stage pipelines for efficiency</li>
                 <li>When to use push vs pull cache policies</li>
                 <li>How to pass build artifacts between pipeline stages</li>
-                <li>How to integrate code coverage into GitLab's native UI</li>
+                <li>How to integrate code coverage into GitLab&apos;s native UI</li>
                 <li>How to implement branch-based deployment strategies</li>
                 <li>How to monitor and optimize pipeline performance</li>
               </ul>

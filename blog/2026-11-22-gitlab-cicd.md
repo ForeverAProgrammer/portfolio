@@ -17,7 +17,7 @@ GitLab CI/CD is a powerful tool for automating your software development lifecyc
 
 **Example Project**: [gitlab-cicd-pipeline-example](https://gitlab.com/kristina-portfolio/gitlab-cicd-pipeline-example)
 
-**Live Demo**: https://gitlab-cicd-pipeline-example-c2a1fe.gitlab.io/
+**Live Demo**: <https://gitlab-cicd-pipeline-example-c2a1fe.gitlab.io/>
 
 ## Pipeline Architecture
 

@@ -859,7 +859,6 @@ class UserServiceTest {
 }
 ```
 
-
 ## Test Coverage with JaCoCo
 
 JaCoCo measures code coverage and generates reports.

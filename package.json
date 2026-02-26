@@ -11,7 +11,11 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "lint:js": "eslint src docusaurus.config.js sidebars.js",
+    "lint:md": "markdownlint-cli2 'docs/**/*.md' 'blog/**/*.md' '*.md'",
+    "lint": "npm run lint:js && npm run lint:md",
+    "prepare": "husky"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
@@ -26,8 +30,16 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "@eslint/js": "^9.39.3",
     "@lhci/cli": "^0.15.1",
+    "eslint": "^9.39.3",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "gh-pages": "^6.3.0",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "markdownlint-cli2": "^0.21.0",
     "prettier": "^3.8.1"
   },
   "browserslist": {
@@ -44,5 +56,9 @@
   },
   "engines": {
     "node": ">=20.0"
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --max-warnings=0",
+    "**/*.md": "markdownlint-cli2"
   }
 }
