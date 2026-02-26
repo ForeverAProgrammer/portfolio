@@ -54,7 +54,7 @@ function AboutSection() {
         <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
           <h2 className="section-title">About Me</h2>
           <p className="about-text">
-            I'm a Full Stack Engineer with over 10 years of experience building scalable web applications,
+            I'm a Full Stack Engineer with over 15 years of experience building scalable web applications,
             optimizing database performance, and implementing DevOps workflows. I specialize in cloud infrastructure,
             containerization, and modern web development. When I'm not coding, I create technical documentation
             and tutorials to help others learn DevOps and full-stack development.

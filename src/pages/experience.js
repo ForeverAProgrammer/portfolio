@@ -15,7 +15,7 @@ export default function ExperiencePage() {
           <div className="col col--10 col--offset-1">
             <h1 className="section-title">Work Experience</h1>
             <p className="section-subtitle">
-              Over 10 years of professional software development experience across full-stack web development,
+              Over 15 years of professional software development experience across full-stack web development,
               database optimization, and enterprise software solutions.
             </p>
 
