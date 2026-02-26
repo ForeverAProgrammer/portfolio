@@ -3,12 +3,12 @@
 ## Project Overview
 
 Personal portfolio and technical knowledge base for Kristina Haynes (DevOps Engineer & Full Stack Developer).
-Built with Docusaurus 3.9.2, React 19, deployed to GitHub Pages at `ForeverAProgrammer.github.io/portfolio/`.
+Built with Docusaurus 3.9.2, React 19, deployed to GitHub Pages at `kristina.codes`.
 
 ## Key Commands
 
 ```bash
-npm start          # Local dev server (http://localhost:3000/portfolio/)
+npm start          # Local dev server (http://localhost:3000/)
 npm run build      # Build static site to /build/
 npm run serve      # Serve built site locally
 npm run deploy     # Deploy to GitHub Pages (gh-pages branch)
@@ -85,9 +85,9 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 
 ## Docusaurus-Specific Notes
 
-- Base URL is `/portfolio/` — all internal links must account for this
+- Base URL is `/` — all internal absolute links start with `/docs/...`, `/blog/...`, etc.
 - Broken links are configured to throw build errors (`onBrokenLinks: 'throw'`)
-- Cross-directory doc links (e.g. from `behavioral/` to `design-patterns/`) must use absolute paths like `/portfolio/docs/design-patterns/class-and-object-patterns` — relative `../` links do not resolve correctly inside admonition blocks with `trailingSlash: true`
+- Cross-directory doc links (e.g. from `behavioral/` to `design-patterns/`) must use absolute paths like `/docs/design-patterns/class-and-object-patterns` — relative `../` links do not resolve correctly inside admonition blocks with `trailingSlash: true`
 - `trailingSlash: true` is set — **do not remove this**. Without it, category index pages (e.g. `docs/cloud/aws/index.md`) are served without a trailing slash, causing relative links like `./cloudformation` to resolve one level too high (e.g. `/docs/cloud/cloudformation` instead of `/docs/cloud/aws/cloudformation`)
 - Syntax highlighting uses GitHub theme (light) and Dracula (dark)
 - MDX is supported in both docs and blog — React components can be embedded in Markdown
@@ -95,6 +95,7 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 
 ## Deployment
 
-- Target: `https://ForeverAProgrammer.github.io/portfolio/`
+- Target: `https://kristina.codes`
+- Custom domain configured via `static/CNAME`
 - Branch: `gh-pages` (auto-managed by `npm run deploy`)
 - The `static/.nojekyll` file disables Jekyll — do not remove it
