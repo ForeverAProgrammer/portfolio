@@ -58,6 +58,7 @@ When adding a new pattern page, add it to both its category `index.md` and the q
 - Filename format: `YYYY-MM-DD-slug.md`
 - Required frontmatter: `title`, `authors` (from `blog/authors.yml`), `tags` (from `blog/tags.yml`)
 - Authors and tags must be pre-registered in their respective YAML files
+- **Do not use `<url>` autolink syntax** — Docusaurus parses all `.md` files through MDX, which treats `<...>` as JSX. Use `[text](url)` instead (also enforced by markdownlint MD034)
 
 ### Adding Projects
 
