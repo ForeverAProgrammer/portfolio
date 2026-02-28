@@ -432,7 +432,6 @@ Content Management Systems aren't just a nice-to-have—they're essential for mo
 
 The question isn't whether you should use a CMS—it's which one is right for your situation.
 
-
 ## Resources
 
 ### CMS Platforms

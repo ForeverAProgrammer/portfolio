@@ -753,7 +753,7 @@ SET TRANSACTION ISOLATION LEVEL SNAPSHOT;          -- Row versioning
 | **Limit rows** | `LIMIT 10` | `TOP 10` |
 | **Variables** | Not supported | `DECLARE @Var INT` |
 | **Error handling** | Varies | `TRY...CATCH` |
-| **String concat** | `||` or `CONCAT()` | `+` or `CONCAT()` |
+| **String concat** | \|\| or `CONCAT()` | `+` or `CONCAT()` |
 | **Temporary tables** | Varies | `#temp`, `##global` |
 | **Table variables** | Not supported | `DECLARE @Table TABLE (...)` |
 | **Procedures** | Standard syntax | T-SQL enhanced |
