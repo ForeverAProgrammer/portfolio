@@ -141,6 +141,10 @@ vite.config.ts.timestamp-*
 # Lighthouse CI
 .lighthouseci/
 
+# OpenSpec
+openspec/
+.claude/
+
 # Misc
 .DS_Store
 settings.local.json

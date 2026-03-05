@@ -48,13 +48,17 @@ const config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   plugins: [
-    [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-21C6F7B0PE',
-        anonymizeIP: true,
-      },
-    ],
+    ...(process.env.NODE_ENV === 'production'
+      ? [
+          [
+            '@docusaurus/plugin-google-gtag',
+            {
+              trackingID: 'G-21C6F7B0PE',
+              anonymizeIP: true,
+            },
+          ],
+        ]
+      : []),
   ],
 
   presets: [
