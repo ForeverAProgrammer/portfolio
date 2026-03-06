@@ -16,6 +16,7 @@ This section covers fundamental Go concepts:
 - [Strings and formatting](./strings-and-formatting)
 - [Math operations and arithmetic operators](./math-operations)
 - [Comparison operators and boolean logic](./comparison-operators)
+- [Type conversions](./type-conversions)
 
 ## Basic Program Structure
 
@@ -296,7 +297,17 @@ Learn how to compare values and use boolean logic.
 - Greater than (&gt;), less than (&lt;)
 - Greater/less than or equal (&gt;=, &lt;=)
 - Comparing strings and booleans
+
 - Using comparisons in control flow
+
+### [Type Conversions](./type-conversions)
+Numeric and string type conversions — explicit syntax, truncation behaviour, and the `strconv` package.
+
+**Topics covered:**
+- Explicit conversion syntax: `targetType(value)`
+- Numeric conversions: int ↔ float64, widening, narrowing overflow
+- String conversions: `strconv.Itoa`, `strconv.Atoi`, `strconv.FormatFloat`, `strconv.ParseFloat`
+- The `string(n)` gotcha
 
 ## Next Steps
 
