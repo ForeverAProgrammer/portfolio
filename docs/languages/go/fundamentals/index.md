@@ -17,6 +17,7 @@ This section covers fundamental Go concepts:
 - [Math operations and arithmetic operators](./math-operations)
 - [Comparison operators and boolean logic](./comparison-operators)
 - [Type conversions](./type-conversions)
+- [Package names and import paths](./packages)
 
 ## Basic Program Structure
 
@@ -308,6 +309,16 @@ Numeric and string type conversions — explicit syntax, truncation behaviour, a
 - Numeric conversions: int ↔ float64, widening, narrowing overflow
 - String conversions: `strconv.Itoa`, `strconv.Atoi`, `strconv.FormatFloat`, `strconv.ParseFloat`
 - The `string(n)` gotcha
+
+### [Package Names and Import Paths](./packages)
+How import paths and package names relate, and best practices for naming your own packages.
+
+**Topics covered:**
+- Import path vs package name distinction
+- Standard library examples (`math/rand` → `rand`, `archive/tar` → `tar`)
+- Resolving name conflicts with aliases
+- Best practices for naming packages you write
+- The `package main` special case
 
 ## Next Steps
 
