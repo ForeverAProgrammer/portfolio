@@ -30,6 +30,18 @@ export const projects = [
     featured: true
   },
   {
+    id: 'claude-commands',
+    title: 'Claude Code Commands',
+    description:
+      'A collection of productivity-focused slash commands for the Claude Code VS Code extension. Streamlines common development tasks like standup updates, PR descriptions, commit messages, branch naming, emails, action items, and GitHub PR creation.',
+    overview:
+      'A curated set of slash commands that extend Claude Code with productivity-focused workflows. Commands install via symlinks to ~/.claude/commands/, enabling automatic updates on git pull without reinstalling. Covers nine commands across common dev tasks: standup updates (with git log integration), PR and commit message generation, professional email drafting, action item extraction, branch naming, and GitHub PR creation via the GitHub CLI.',
+    technologies: ['Shell', 'Claude Code', 'GitHub CLI', 'Developer Tooling', 'Automation'],
+    githubUrl: 'https://github.com/ForeverAProgrammer/claude-commands',
+    link: '/projects/claude-commands',
+    featured: true,
+  },
+  {
     id: 'mermaid-demos',
     title: 'Mermaid Demos',
     description: 'Collection of Mermaid diagram examples showcasing different chart types and visualization techniques. Includes flowcharts, sequence diagrams, Gantt charts, class diagrams, state diagrams, and entity relationship diagrams.',
