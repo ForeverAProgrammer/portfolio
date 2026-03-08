@@ -31,13 +31,13 @@ export const projects = [
   },
   {
     id: 'claude-commands',
-    title: 'Claude Code Commands',
+    title: 'Claude Devflow',
     description:
-      'A collection of productivity-focused slash commands for the Claude Code VS Code extension. Streamlines common development tasks like standup updates, PR descriptions, commit messages, branch naming, emails, action items, and GitHub PR creation.',
+      'A Claude Code plugin with 24 productivity-focused skills covering the full development workflow — commit messages, PR creation, standup updates, ADRs, design documents, GitHub issue automation, code review, and more.',
     overview:
-      'A curated set of slash commands that extend Claude Code with productivity-focused workflows. Commands install via symlinks to ~/.claude/commands/, enabling automatic updates on git pull without reinstalling. Covers nine commands across common dev tasks: standup updates (with git log integration), PR and commit message generation, professional email drafting, action item extraction, branch naming, and GitHub PR creation via the GitHub CLI.',
-    technologies: ['Shell', 'Claude Code', 'GitHub CLI', 'Developer Tooling', 'Automation'],
-    githubUrl: 'https://github.com/ForeverAProgrammer/claude-commands',
+      'Claude Devflow is a Claude Code plugin that extends the editor with 24 developer workflow skills. It installs via the Claude plugin system and skills are available as /devflow:<skill-name>. Covers the full dev lifecycle: writing conventional commits, generating PR descriptions from git history, drafting standup updates, creating Jira-style tickets, generating HLD and LLD design documents, automating GitHub issue resolution end-to-end, reviewing code with severity-rated feedback, and resolving merge conflicts via rebase.',
+    technologies: ['Claude Code', 'Claude Plugin', 'GitHub CLI', 'Developer Tooling', 'Automation', 'Shell'],
+    githubUrl: 'https://github.com/ForeverAProgrammer/claude-devflow',
     link: '/projects/claude-commands',
     featured: true,
   },
