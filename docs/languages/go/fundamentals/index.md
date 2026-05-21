@@ -19,6 +19,7 @@ This section covers fundamental Go concepts:
 - [Type conversions](./type-conversions)
 - [Package names and import paths](./packages)
 - [Logging with the log package](./log-package)
+- [Comments](./comments)
 
 ## Basic Program Structure
 
@@ -333,6 +334,16 @@ Logging in Go using the standard library `log` package.
 - Writing log output to a file
 - Mirroring output with `io.MultiWriter`
 - `Lmsgprefix` — moving the prefix after the timestamp
+
+### [Comments](./comments)
+Comment styles, documentation comments, and best practices for writing useful comments in Go.
+
+**Topics covered:**
+- Single-line `//` comments and block `/* */` comments
+- Documentation comments — format, placement, and `go doc` integration
+- Package-level doc comments
+- `// TODO:` and `// NOTE:` conventions
+- Best practices: comment the why, keep close to code, avoid redundancy
 
 ## Next Steps
 
