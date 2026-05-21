@@ -18,6 +18,7 @@ This section covers fundamental Go concepts:
 - [Comparison operators and boolean logic](./comparison-operators)
 - [Type conversions](./type-conversions)
 - [Package names and import paths](./packages)
+- [Logging with the log package](./log-package)
 
 ## Basic Program Structure
 
@@ -319,6 +320,19 @@ How import paths and package names relate, and best practices for naming your ow
 - Resolving name conflicts with aliases
 - Best practices for naming packages you write
 - The `package main` special case
+
+### [The log Package](./log-package)
+Logging in Go using the standard library `log` package.
+
+**Topics covered:**
+- Default logger — writes to stderr with date/time prefix
+- Customising with `log.SetPrefix` and `log.SetFlags`
+- Flag reference (`Ldate`, `Ltime`, `Lshortfile`, `Llongfile`, `LUTC`, etc.)
+- Creating separate loggers with `log.New`
+- `log.Fatal` vs `log.Panic` — when and why to use each
+- Writing log output to a file
+- Mirroring output with `io.MultiWriter`
+- `Lmsgprefix` — moving the prefix after the timestamp
 
 ## Next Steps
 
