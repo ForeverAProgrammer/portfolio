@@ -12,10 +12,11 @@ Master the programming languages that power modern software development. From Go
 Modern, efficient programming language designed for simplicity and high-performance concurrent systems.
 
 **What you'll learn:**
-- Go fundamentals and syntax
-- Output and string formatting
-- Package management
-- Standard library usage
+- Output, strings, math, and comparison operators
+- Type conversions and package imports
+- Standard library — `fmt`, `log`, `strconv`
+- Conditionals (`if`, `switch`) and loops (`for`, `range`)
+- Variable declaration, zero values, and naming rules
 
 **Best for:** Cloud services, microservices, DevOps tools, concurrent systems
 

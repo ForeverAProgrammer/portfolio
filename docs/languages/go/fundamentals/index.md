@@ -371,12 +371,17 @@ All loop patterns in Go using the single `for` keyword.
 - `range` over integers (Go 1.22+)
 - Labeled `break` — exit an outer loop from a nested one
 
+### [Variables](./variables/)
+How Go handles variables — declaration, scope, and common pitfalls.
+
+**Topics covered:**
+- [Variable declaration](./variables/declaration) — `var`, `:=`, zero values, grouped blocks, naming rules
+- [Variable shadowing](./variables/variable-shadowing) — inner-scope declarations hiding outer variables and how to avoid it
+
 ## Next Steps
 
 After mastering these fundamentals, explore:
-- **Variables and Types** - Declare and use variables
 - **Functions** - Create reusable code blocks
-- **Control Flow** - if/else, loops, switch statements
 - **Data Structures** - Arrays, slices, maps, structs
 - **Concurrency** - Goroutines and channels
 
