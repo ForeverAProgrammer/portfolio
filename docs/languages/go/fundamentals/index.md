@@ -21,6 +21,7 @@ This section covers fundamental Go concepts:
 - [Logging with the log package](./log-package)
 - [Comments](./comments)
 - [Conditionals](./conditionals)
+- [Loops](./loops)
 
 ## Basic Program Structure
 
@@ -354,6 +355,20 @@ Conditional logic in Go using `if` statements and `switch` statements.
 - `if` with a short initialization statement
 - `switch` on a value — no fall-through by default, multiple values per case
 - Conditionless `switch` as an idiomatic alternative to long `if-else if` chains
+
+### [Loops](./loops)
+All loop patterns in Go using the single `for` keyword.
+
+**Topics covered:**
+- Classic `for` loop (init; condition; post)
+- `for` as `while` — condition-only form
+- Infinite loop with `break`
+- `range` over slices — index, value, or both
+- `range` over maps — key-value pairs, random order
+- `continue` — skip the current iteration
+- `range` over strings — Unicode runes, not bytes
+- `range` over integers (Go 1.22+)
+- Labeled `break` — exit an outer loop from a nested one
 
 ## Next Steps
 
