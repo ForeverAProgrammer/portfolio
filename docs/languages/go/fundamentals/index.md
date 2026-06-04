@@ -22,6 +22,7 @@ This section covers fundamental Go concepts:
 - [Comments](./comments)
 - [Conditionals](./conditionals)
 - [Loops](./loops)
+- [Variables](./variables/)
 
 ## Basic Program Structure
 
