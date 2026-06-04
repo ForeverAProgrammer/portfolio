@@ -10,15 +10,15 @@ Welcome to my technical documentation hub! Here you'll find comprehensive guides
 
 This documentation covers a wide range of topics including:
 
-- **Cloud Platforms** - AWS services and cloud-native architectures
-- **Database** - T-SQL, SQL Server, MongoDB, and query optimization
-- **Design Patterns** - Object-oriented design patterns and principles
-- **DevOps** - Docker, Kubernetes, CI/CD, GitOps, and Infrastructure as Code
-- **Frontend Frameworks** - React, Angular, and AngularJS
-- **Programming Languages** - Go, Java, JavaScript, and TypeScript
-- **Linux** - Distributions, terminal basics, and user management
-- **Testing** - TDD, BDD, testing patterns, and best practices
-- **Web Development** - HTML, character encoding, and static site generators
+- **[Cloud Platforms](/docs/cloud/)** - AWS services and cloud-native architectures
+- **[Database](/docs/database/)** - T-SQL, SQL Server, MongoDB, and query optimization
+- **[Design Patterns](/docs/design-patterns/)** - Object-oriented design patterns and principles
+- **[DevOps](/docs/devops/)** - Docker, Kubernetes, CI/CD, GitOps, and Infrastructure as Code
+- **[Frontend Frameworks](/docs/frameworks/)** - React, Angular, and AngularJS
+- **[Programming Languages](/docs/languages/)** - Go, Java, JavaScript, and TypeScript
+- **[Linux](/docs/linux/)** - Distributions, terminal basics, and user management
+- **[Testing](/docs/testing/)** - TDD, BDD, testing patterns, and best practices
+- **[Web Development](/docs/web-development/)** - HTML, character encoding, and static site generators
 
 ## Getting Started
 
