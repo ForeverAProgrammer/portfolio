@@ -20,6 +20,7 @@ This section covers fundamental Go concepts:
 - [Package names and import paths](./packages)
 - [Logging with the log package](./log-package)
 - [Comments](./comments)
+- [Conditionals](./conditionals)
 
 ## Basic Program Structure
 
@@ -344,6 +345,15 @@ Comment styles, documentation comments, and best practices for writing useful co
 - Package-level doc comments
 - `// TODO:` and `// NOTE:` conventions
 - Best practices: comment the why, keep close to code, avoid redundancy
+
+### [Conditionals](./conditionals)
+Conditional logic in Go using `if` statements and `switch` statements.
+
+**Topics covered:**
+- Basic `if`, `if-else`, and `if-else if-else` chains
+- `if` with a short initialization statement
+- `switch` on a value — no fall-through by default, multiple values per case
+- Conditionless `switch` as an idiomatic alternative to long `if-else if` chains
 
 ## Next Steps
 
