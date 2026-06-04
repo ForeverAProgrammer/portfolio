@@ -46,6 +46,16 @@ The four **class-scope patterns** are: Factory Method, Adapter (class variant), 
 
 When adding a new pattern page, add it to both its category `index.md` and the quick-reference table in `docs/design-patterns/index.md`.
 
+### Adding Go Documentation (`docs/languages/go/`)
+
+When a new Go docs page is added anywhere under `docs/languages/go/`, update these index pages before finishing the task:
+
+1. **The immediate parent `index.md`** — the `index.md` in the same directory as the new page (e.g. `fundamentals/index.md` for pages in `fundamentals/`, `fundamentals/variables/index.md` for pages in `fundamentals/variables/`). Add the new page to the "What's Covered" list and add a subsection entry in "More Fundamentals" (or equivalent section).
+2. **`docs/languages/go/index.md`** — update the "What's Covered" section to include the new topic with a direct link.
+3. **`docs/languages/index.md`** — update the Go "What you'll learn" bullet list if the new topic represents a meaningfully new area of coverage.
+
+This rule applies only when **adding** new Go pages — not when editing existing ones.
+
 ### Adding Documentation
 
 - Place Markdown files under `docs/<category>/`

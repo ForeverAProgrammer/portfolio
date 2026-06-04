@@ -26,14 +26,27 @@ Go (also known as Golang) is a statically typed, compiled programming language k
 This section covers Go fundamentals and core concepts for learning the language.
 
 ### [Fundamentals](./fundamentals/)
-Learn the basics of Go programming.
+Core language mechanics — output, types, operators, control flow, and the standard library.
 
 **Topics covered:**
-- Output with fmt.Println
-- Importing and using packages
-- Strings and formatting (escape characters, raw strings)
-- Math operations and arithmetic operators
-- Comparison operators and boolean logic
+- Basic program structure and the `main` function
+- Output with `fmt.Println`, `fmt.Printf`, `fmt.Print`
+- [Strings and formatting](./fundamentals/strings-and-formatting) — escape characters, raw strings, tabs
+- [Math operations](./fundamentals/math-operations) — arithmetic, increment/decrement, compound assignment
+- [Comparison operators](./fundamentals/comparison-operators) — `==`, `!=`, `<`, `>`, `<=`, `>=`
+- [Type conversions](./fundamentals/type-conversions) — explicit conversion syntax, `strconv` package
+- [Package names and import paths](./fundamentals/packages) — import paths vs package names, aliases
+- [The log package](./fundamentals/log-package) — default logger, flags, custom loggers, Fatal/Panic
+- [Comments](./fundamentals/comments) — `//`, `/* */`, doc comments, `go doc`
+- [Conditionals](./fundamentals/conditionals) — `if`, `if-else`, `if-else if`, short statements, `switch`
+- [Loops](./fundamentals/loops) — `for`, `range`, `break`, `continue`, labeled break
+
+### [Variables](./fundamentals/variables/)
+How Go handles variables — declaration, scope, and common pitfalls.
+
+**Topics covered:**
+- [Variable declaration](./fundamentals/variables/declaration) — `var`, `:=`, zero values, grouped blocks, naming rules
+- [Variable shadowing](./fundamentals/variables/variable-shadowing) — inner-scope declarations hiding outer variables
 
 ## Installation
 
