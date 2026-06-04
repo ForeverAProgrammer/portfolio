@@ -1,6 +1,6 @@
 ---
 title: Variable Shadowing
-sidebar_position: 1
+sidebar_position: 2
 description: What variable shadowing is in Go, why it causes bugs, how to avoid it, and why you should never shadow built-in identifiers like error.
 ---
 
