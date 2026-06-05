@@ -47,6 +47,7 @@ How Go handles variables — declaration, scope, and common pitfalls.
 **Topics covered:**
 - [Variable declaration](./fundamentals/variables/declaration) — `var`, `:=`, zero values, grouped blocks, naming rules
 - [Variable shadowing](./fundamentals/variables/variable-shadowing) — inner-scope declarations hiding outer variables
+- [Types](./fundamentals/variables/types/) — `bool`, integers, floats, `string`, `byte`, `rune`, complex numbers
 
 ## Installation
 

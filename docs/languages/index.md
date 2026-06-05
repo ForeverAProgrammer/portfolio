@@ -17,6 +17,7 @@ Modern, efficient programming language designed for simplicity and high-performa
 - Standard library — `fmt`, `log`, `strconv`
 - Conditionals (`if`, `switch`) and loops (`for`, `range`)
 - Variable declaration, zero values, and naming rules
+- Built-in types — `bool`, integers, floats, `string`, `byte`, `rune`, complex numbers
 
 **Best for:** Cloud services, microservices, DevOps tools, concurrent systems
 
