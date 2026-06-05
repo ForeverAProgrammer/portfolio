@@ -14,3 +14,4 @@ Go is statically typed — every variable has a fixed type set at compile time. 
 - [Strings](./strings) — UTF-8 encoded text, length, concatenation, raw literals, and byte indexing
 - [Bytes](./bytes) — `byte` (`uint8`), character literals, and byte slices
 - [Runes](./runes) — `rune` (`int32`), Unicode code points, and how runes differ from bytes
+- [Complex Numbers](./complex) — `complex64` and `complex128`, constructing values, and arithmetic
