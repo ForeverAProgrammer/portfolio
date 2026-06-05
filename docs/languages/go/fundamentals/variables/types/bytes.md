@@ -42,7 +42,7 @@ fmt.Println("Byte slice:", data)        // [72 101 108 108 111]
 fmt.Println("As string:", string(data)) // Hello
 ```
 
-Converting a `[]byte` to `string` and back is a zero-copy-optimised operation in Go.
+Converting between `[]byte` and `string` is a common pattern — `string(data)` produces an immutable copy of the byte slice.
 
 ## Key Takeaways
 
